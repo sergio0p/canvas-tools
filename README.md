@@ -1,4 +1,4 @@
-# Canvas Appointment Tools
+# Canvas Tools
 
 Scripts for automating appointment group creation, file unpublishing, and module management in UNC's Canvas LMS.
 
