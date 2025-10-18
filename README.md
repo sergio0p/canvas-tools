@@ -1,20 +1,20 @@
 # Canvas Tools
 
-Scripts for automating appointment group creation, file unpublishing, module management, assignment administration, and AI-powered quiz grading in UNC's Canvas LMS.
+Scripts for automating appointment group creation, file unpublishing, module management, assignment administration, and AI-powered essay grading in UNC's Canvas LMS.
 
 ## Setup
 
 ### Prerequisites
 
-- Python 3.9+
+- Python 3.x
 - Canvas API access token
 - OpenAI API key (for AI grading scripts)
-- Required packages: `requests`, `keyring`, `openai`, `tqdm` (optional)
+- Required packages: `requests`, `keyring`, `openai`, `beautifulsoup4`
 
 ### Installation
 
 ```bash
-pip install requests keyring openai tqdm
+pip install requests keyring openai beautifulsoup4
 ```
 
 ### API Token Setup
@@ -38,67 +38,65 @@ To generate a Canvas API token:
 For AI grading scripts, store your OpenAI API key in macOS keychain:
 
 ```bash
-security add-generic-password -s "openai" -a "openai" -w "your_openai_api_key_here"
+security add-generic-password -a openai -s openai_api_key -w 'your_openai_api_key_here'
 ```
 
 ## Scripts
 
-### AI-Powered Quiz Grading
+### AI-Powered Essay Grading
 
-#### quiz_ai_grader_collect.py
+This repository contains an essay grading system for Canvas New Quizzes that uses OpenAI API for automated grading. The system is split into two parts for flexibility and resumability.
 
-Collects student quiz submissions and grades them using OpenAI API. Results are saved to JSON files for validation.
+#### Files
 
-**Features:**
-- Select course, quiz, and essay question interactively
-- Custom grading guidelines for AI
-- Grades all submissions automatically
-- Menu-driven workflow to grade multiple questions/quizzes/courses
-- Saves results to JSON (does not post to Canvas)
+- `essay_grader.py` - Original monolithic script (kept for reference)
+- `essay_grader_part_a.py` - Script A: Fetches submissions and grades with AI
+- `essay_grader_part_b.py` - Script B: Reviews and uploads grades to Canvas
 
-**Usage:**
+#### How It Works
+
+**Script A - Grading Phase:**
+1. Authenticates with Canvas and OpenAI
+2. Prompts user to select course → assignment → essay question
+3. Gets grading guidelines (from file or manual input)
+4. Fetches all student submissions
+5. Grades essays in parallel using OpenAI API
+6. Serializes complete state to `essays_{course_id}_{timestamp}.json`
+
+**Script B - Validation Phase:**
+1. Lists all available grading sessions from JSON files
+2. User selects which session to continue
+3. Creates backup (.bak.json)
+4. Deserializes state and resumes validation
+5. For each student, displays essay and AI grading
+6. User chooses:
+   - **(v)alidate** - Upload AI grade immediately
+   - **(o)verride** - Provide custom grade/feedback and upload
+   - **(s)kip** - Move to next student
+   - **(q)uit** - Exit and save progress
+7. Updates JSON after each upload (removes processed students)
+8. Can pause/resume anytime
+
+#### State Serialization (Checkpointing)
+
+The scripts use state serialization to split the workflow. Script A saves all necessary data to JSON:
+- Grading results (student submissions, AI grades, AI feedback)
+- Course/assignment/question metadata
+- Skipped students list
+
+Script B loads this exact state and continues from validation, requiring no additional user input about course/assignment selection.
+
+#### Usage
+
+**Step 1: Grade essays**
 ```bash
-python3 quiz_ai_grader_collect.py
+python3 essay_grader_part_a.py
 ```
 
-**Workflow:**
-1. Select course → quiz → essay question
-2. Provide grading guidelines
-3. AI grades all submissions
-4. Results saved to `grading_session_<course>_<quiz>_<question>_<timestamp>.json`
-5. Choose to grade another question, quiz, or course
-
-#### quiz_ai_grader_validate.py
-
-Reviews AI-graded submissions and posts validated grades to Canvas.
-
-**Features:**
-- Load grading session from JSON file
-- Automatic backup creation
-- Review each submission with full answer text
-- Options per submission:
-  - **(v) Validate** - Accept and post AI grade immediately
-  - **(o) Override** - Provide manual grade and post immediately
-  - **(s) Skip** - Leave ungraded for manual review in SpeedGrader
-  - **(q) Quit** - Save progress and exit (resumable)
-- Updates JSON file after each posted grade
-- Resumable workflow
-
-**Usage:**
+**Step 2: Review and upload (can be done later, on different machine, etc.)**
 ```bash
-python3 quiz_ai_grader_validate.py grading_session_file.json
+python3 essay_grader_part_b.py
 ```
-
-**Workflow:**
-1. Load JSON file from collection script
-2. Review each submission
-3. Validate, override, or skip
-4. Posted grades removed from JSON immediately
-5. Quit anytime and resume later
-
-#### openai_grading_instructions.md
-
-Detailed grading rubric and instructions for constrained optimization problems, designed for use with OpenAI API.
 
 ### canvas_assignment_manager.py
 

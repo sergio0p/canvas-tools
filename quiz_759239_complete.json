@@ -1,0 +1,122 @@
+{
+  "id": "759239",
+  "title": "Test Quiz API related",
+  "instructions": null,
+  "assignment_group_id": "210738",
+  "points_possible": 4.0,
+  "due_at": null,
+  "lock_at": null,
+  "unlock_at": null,
+  "published": true,
+  "grading_type": "percent",
+  "quiz_settings": {
+    "calculator_type": "none",
+    "filter_ip_address": false,
+    "filters": {},
+    "one_at_a_time_type": "none",
+    "allow_backtracking": true,
+    "shuffle_answers": false,
+    "shuffle_questions": false,
+    "require_student_access_code": false,
+    "student_access_code": null,
+    "has_time_limit": false,
+    "session_time_limit_in_seconds": 0,
+    "multiple_attempts": {},
+    "result_view_settings": {}
+  },
+  "items": [
+    {
+      "id": "470425",
+      "position": 1,
+      "points_possible": 3.0,
+      "properties": {},
+      "entry_type": "Item",
+      "entry_editable": true,
+      "stimulus_quiz_entry_id": "",
+      "status": "mutable",
+      "entry": {
+        "title": "Black or White?",
+        "item_body": "<p>Classify in black or white.</p>",
+        "calculator_type": "none",
+        "interaction_data": {
+          "categories": {
+            "4d01fef7-bc98-4225-8816-073ac3a0ac6b": {
+              "id": "4d01fef7-bc98-4225-8816-073ac3a0ac6b",
+              "item_body": "White"
+            },
+            "f4148cfb-953c-465d-9e71-f3be992c0009": {
+              "id": "f4148cfb-953c-465d-9e71-f3be992c0009",
+              "item_body": "black"
+            }
+          },
+          "distractors": {
+            "3e10ee7e-aac0-4632-9fbc-f0bff5e2522a": {
+              "id": "3e10ee7e-aac0-4632-9fbc-f0bff5e2522a",
+              "item_body": "flour"
+            },
+            "5e3efa79-3dca-44f6-b239-1ffe658bf488": {
+              "id": "5e3efa79-3dca-44f6-b239-1ffe658bf488",
+              "item_body": "coca-cola drink"
+            },
+            "7faf8936-59d3-4269-877b-b4652f970cae": {
+              "id": "7faf8936-59d3-4269-877b-b4652f970cae",
+              "item_body": "shoe polish"
+            },
+            "800bdd7a-a1cc-4d8a-b541-d642a85600e1": {
+              "id": "800bdd7a-a1cc-4d8a-b541-d642a85600e1",
+              "item_body": "grapes"
+            },
+            "dbb562e6-f0cb-4377-99fb-5768fbc6ce88": {
+              "id": "dbb562e6-f0cb-4377-99fb-5768fbc6ce88",
+              "item_body": "milk"
+            },
+            "ee60c96e-2ba1-49b5-a7cc-7c44cb81a98a": {
+              "id": "ee60c96e-2ba1-49b5-a7cc-7c44cb81a98a",
+              "item_body": "apples"
+            }
+          },
+          "category_order": [
+            "4d01fef7-bc98-4225-8816-073ac3a0ac6b",
+            "f4148cfb-953c-465d-9e71-f3be992c0009"
+          ]
+        },
+        "properties": {
+          "shuffle_rules": {
+            "questions": {
+              "shuffled": false
+            }
+          }
+        },
+        "scoring_data": {
+          "value": [
+            {
+              "id": "4d01fef7-bc98-4225-8816-073ac3a0ac6b",
+              "scoring_data": {
+                "value": [
+                  "dbb562e6-f0cb-4377-99fb-5768fbc6ce88",
+                  "3e10ee7e-aac0-4632-9fbc-f0bff5e2522a"
+                ]
+              },
+              "scoring_algorithm": "AllOrNothing"
+            },
+            {
+              "id": "f4148cfb-953c-465d-9e71-f3be992c0009",
+              "scoring_data": {
+                "value": [
+                  "7faf8936-59d3-4269-877b-b4652f970cae",
+                  "5e3efa79-3dca-44f6-b239-1ffe658bf488"
+                ]
+              },
+              "scoring_algorithm": "AllOrNothing"
+            }
+          ],
+          "score_method": "all_or_nothing"
+        },
+        "answer_feedback": {},
+        "scoring_algorithm": "Categorization",
+        "interaction_type_slug": "categorization",
+        "feedback": {}
+      }
+    }
+  ]
+}

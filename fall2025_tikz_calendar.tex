@@ -1,0 +1,36 @@
+\large {\textsc{Tentative coverage}}\\
+% Weekday-aligned Fall 2025 calendar
+\tikzset{ms1/.style={row #1 column 1/.append style={execute at begin node=Week \space \the\numexpr#1-1}}}
+\tikzset{ms2/.style={row #1 column 1/.append style={execute at begin node=Week \space \the\numexpr#1+7}}}
+Abbreviations: Problem set (PS); Quiz (Q); To be announced (TBA) \\
+\begin{tikzpicture}
+  \matrix[
+  matrix of nodes,
+  column sep=-\pgflinewidth,
+  row sep=-\pgflinewidth,
+  execute at empty cell={\node{\phantom{$\cdot$}};},
+  nodes={draw, text width=5cm, align=left, anchor=north west,
+  text depth=0.9cm,
+  text height=0.9cm,
+  minimum width=8cm},
+  text width=8cm,
+  ms1/.list={2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18}]{
+  &Tuesday &Thursday  \\
+:  &  & 8/19: Syllabus, Mathematica tutorial \\
+:  & 8/21: Mathematica tutorial and Q1 & 8/26: Microeconomics Theory methodology \\
+:  & 8/28: Optimization (equality constraints) and Q2 & 9/2: Optimization, PS01 due \\
+:  & 9/9: Exponential and hyperbolic preferences, PS02 due & 9/11: Recursive Preferences \\
+:  & 9/16: Optimization (inequality constraints), PS03 due & 9/18: Optimization (inequality constraints) \\
+:  & 9/23: Comparative Statics and Envelope theorem, PS04 due & 9/25: The Value Function \\
+:  & 9/30: Midterm 1 & 10/2: Time consistency \\
+:  & 10/9: Complete Markets, PS05 due & 10/14: Risk and Uncertainty \\
+:  & 10/21: Incomplete Markets & 10/23: Incomplete Markets \\
+:  & 10/28: Overlapping generations, PS06 due & 10/30: Overlapping generations \\
+:  & 11/4: Search Theory, PS07 due & 11/6: Midterm 2 \\
+:  & 11/11: Repeated games, PS08 due & 11/13: Repeated games \\
+:  & 11/18: Markov games, PS09 due & 11/20: Markov games \\
+:  & 11/25: Well-being day & 12/2: PS10 due \\
+:  & 12/4: Research paper due & 12/9: Review \\
+:  & 12/11: Final Exam & \\
+};
+\end{tikzpicture}

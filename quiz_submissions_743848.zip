@@ -1,0 +1,562 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-6b53be0d94491620b86",applicationID:"781537153"};;/*! For license information please see nr-loader-rum-1.299.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let s in a)if(void 0!==e[s])try{if(null===e[s]){r[s]=null;continue}Array.isArray(e[s])&&Array.isArray(t[s])?r[s]=Array.from(new Set([...e[s],...t[s]])):"object"==typeof e[s]&&"object"==typeof t[s]?r[s]=i(e[s],t[s]):r[s]=e[s]}catch(e){r[s]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},555:(e,t,r)=>{"use strict";r.d(t,{D:()=>o,f:()=>s});var n=r(384),i=r(122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function s(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const o=e=>(0,i.a)(e,a)},699:(e,t,r)=>{"use strict";r.d(t,{It:()=>i,No:()=>n,qh:()=>s,uh:()=>a});const n=16e3,i=1e6,a="NR_CONTAINER_AGENT",s="SESSION_ERROR"},324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>a,xv:()=>n});const n="1.299.0",i="PROD",a="CDN"},154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,WN:()=>d,bv:()=>a,gm:()=>s,mw:()=>o,sb:()=>u});var n=r(863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),s=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===s?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(s.navigator?.userAgent),u=c&&"undefined"==typeof SharedWorker,d=((()=>{const e=s.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)())},241:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(154);const i="newrelic";function a(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>u,Ze:()=>f,x3:()=>d});var n=r(241),i=r(836),a=r(606),s=r(860),o=r(646);const c={};function u(e,t){const r={staged:!1,priority:s.P3[t]||0};l(e),c[e].get(t)||c[e].set(t,r)}function d(e,t){e&&c[e]&&(c[e].get(t)&&c[e].delete(t),p(e,t,!1),c[e].size&&g(e))}function l(e){if(!e)throw new Error("agentIdentifier required");c[e]||(c[e]=new Map)}function f(e="",t="feature",r=!1){if(l(e),!e||!c[e].get(t)||r)return p(e,t);c[e].get(t).staged=!0,g(e)}function g(e){const t=Array.from(c[e]);t.every((([e,t])=>t.staged))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((([t])=>{c[e].delete(t),p(e,t)})))}function p(e,t,r=!0){const s=e?i.ee.get(e):i.ee,c=a.i.handlers;if(!s.aborted&&s.backlog&&c){if((0,n.W)({agentIdentifier:e,type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=c[t];if(r){for(let t=0;e&&t<e.length;++t)m(e[t],r);Object.entries(r).forEach((([e,t])=>{Object.values(t||{}).forEach((t=>{t[0]?.on&&t[0]?.context()instanceof o.y&&t[0].on(e,t[1])}))}))}}s.isolatedBacklog||delete c[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function m(e,t){var r=e[1];Object.values(t[r]||{}).forEach((t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}}))}},836:(e,t,r)=>{"use strict";r.d(t,{P:()=>o,ee:()=>c});var n=r(384),i=r(990),a=r(646),s=r(607);const o="nr@context:".concat(s.W),c=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var o=g(n);m(e).forEach((e=>{e.apply(o,r)}));var u=v()[s[e]];u&&u.push([f,e,r,o]);return o},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((([e,n])=>{s[n]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,o,(()=>new a.y(o))):new a.y(o)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c)},646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},606:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(908);a.on=s;var i=a.handlers={};function a(e,t,r,a){s(a||n.d,i,e,t,r)}function s(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var s=t[a]=t[a]||{};(s[r]=s[r]||[]).push([e,i])}},878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(566).bz)()},566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>o,bz:()=>s});var n=r(154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function s(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?a(t,r++).toString(16):"y"===e?(3&a()|8).toString(16):e)).join("")}function o(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const s=[];for(var o=0;o<e;o++)s.push(a(r,i++).toString(16));return s.join("")}},614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>s,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>o,uh:()=>i,wk:()=>a});const n="NRBA",i="SESSION",a=144e5,s=18e5,o={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({agentIdentifier:null,drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},701:(e,t,r)=>{"use strict";r.d(t,{B:()=>a,t:()=>s});var n=r(241);const i=new Set,a={};function s(e,t){const r=t.agentIdentifier;a[r]??={},e&&"object"==typeof e&&(i.has(r)||(t.ee.emit("rumresp",[e]),a[r]=e,i.add(r),(0,n.W)({agentIdentifier:r,loaded:!0,drained:!0,type:"lifecycle",name:"load",feature:void 0,data:e})))}},990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout((()=>{i=clearTimeout(i)}),t)),n||(clearTimeout(i),i=setTimeout((()=>{e.apply(this,r)}),t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},910:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every((e=>{if(i.has(e))return i.get(e);const t="function"==typeof e&&e.toString().includes("[native code]");return t||(0,n.R)(64,e?.name||e?.toString()),i.set(e,t),t}))}},289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>a,Qr:()=>o,sB:()=>s});var n=r(878);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,n.sp)("load",e,t)}function s(e){if(i())return e();(0,n.DD)("DOMContentLoaded",e)}function o(e){if(i())return e();(0,n.sp)("popstate",e)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>s,US:()=>d,Zm:()=>o,bQ:()=>u,dV:()=>c,pV:()=>l});var n=r(154),i=r(863),a=r(910);const s={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function c(){let e=o();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,a.i)(...Object.values(e.o))),e}function u(e,t){let r=o();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function d(e,t){o()[e]=t}function l(){return function(){let e=o();const t=e.info||{};e.info={beacon:s.beacon,errorBeacon:s.errorBeacon,...t}}(),function(){let e=o();const t=e.init||{};e.init={...t}}(),c(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},843:(e,t,r)=>{"use strict";r.d(t,{u:()=>i});var n=r(878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},773:(e,t,r)=>{"use strict";r.d(t,{z_:()=>a,XG:()=>o,TZ:()=>n,rs:()=>i,xV:()=>s});r(154),r(566),r(384);const n=r(860).K7.metrics,i="sm",a="cm",s="storeSupportabilityMetrics",o="storeEventMetrics"},630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},234:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(836),i=r(687);class a{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},741:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e){return this.#e(i.Dl,e)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(){return this.#e(i.dT)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}}},261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>u,BL:()=>o,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Tb:()=>l,U2:()=>a,V1:()=>k,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>s,nb:()=>m,o5:()=>d});const n="api-",i="addPageAction",a="addToTrace",s="addRelease",o="finished",c="interaction",u="log",d="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",k="measure"},163:(e,t,r)=>{"use strict";r.d(t,{j:()=>E});var n=r(384),i=r(741);var a=r(555);r(860).K7.genericEvents;const s="experimental.marks",o="experimental.measures",c="experimental.resources",u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(614),l=r(944),f=r(122);const g="[data-nr-mask]",p=e=>(0,f.a)(e,(()=>{const e={feature_flags:[],experimental:{marks:!1,measures:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{allow_registered_children:!0,duplicate_registered_data:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{get capture_marks(){return e.feature_flags.includes(s)||e.experimental.marks},set capture_marks(t){e.experimental.marks=t},get capture_measures(){return e.feature_flags.includes(o)||e.experimental.measures},set capture_measures(t){e.experimental.measures=t},capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:d.wk,inactiveMs:d.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(g):""===t||null===t?e.mask_selector=g:(0,l.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},spa:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var m=r(154),h=r(324);let v=0;const b={buildEnv:h.F3,distMethod:h.Xs,version:h.xv,originTime:m.WN},y={appMetadata:{},customTransaction:void 0,denyList:void 0,disabled:!1,entityManager:void 0,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,jsAttributesMetadata:{bytes:0},get harvestCount(){return++v}},_=e=>{const t=(0,f.a)(e,y),r=Object.keys(b).reduce(((e,t)=>(e[t]={value:b[t],writable:!1,configurable:!0,enumerable:!0},e)),{});return Object.defineProperties(t,r)};var w=r(701);const x=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var k=r(836),S=r(241);const A={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},R=e=>(0,f.a)(e,A),T=new Set;function E(e,t={},r,s){let{init:o,info:c,loader_config:u,runtime:d={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();o=e.init,c=e.info,u=e.loader_config}e.init=p(o||{}),e.loader_config=R(u||{}),c.jsAttributes??={},m.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,a.D)(c);const f=e.init,g=[c.beacon,c.errorBeacon];T.has(e.agentIdentifier)||(f.proxy.assets&&(x(f.proxy.assets),g.push(f.proxy.assets)),f.proxy.beacon&&g.push(f.proxy.beacon),e.beacons=[...g],function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach((r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let a=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return a?a(...t):n})}))}(e),(0,n.US)("activatedFeatures",w.B),e.runSoftNavOverSpa&&=!0===f.soft_navigations.enabled&&f.feature_flags.includes("soft_nav")),d.denyList=[...f.ajax.deny_list||[],...f.ajax.block_internal?g:[]],d.ptid=e.agentIdentifier,d.loaderType=r,e.runtime=_(d),T.has(e.agentIdentifier)||(e.ee=k.ee.get(e.agentIdentifier),e.exposed=l,(0,S.W)({agentIdentifier:e.agentIdentifier,drained:!!w.B?.[e.agentIdentifier],type:"lifecycle",name:"initialize",feature:void 0,data:e.config})),T.add(e.agentIdentifier)}},374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>d,K7:()=>c,P3:()=>u,XX:()=>i,Yy:()=>o,df:()=>a,qY:()=>n,v4:()=>s});const n="events",i="jserrors",a="browser/blobs",s="rum",o="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},u={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.spa]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.softNav]:8,[c.sessionReplay]:9,[c.logging]:10,[c.genericEvents]:11},d={[c.pageViewEvent]:s,[c.pageViewTiming]:n,[c.ajax]:n,[c.spa]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:a,[c.sessionReplay]:a,[c.logging]:o,[c.genericEvents]:"ins"}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var a=n[e]={exports:{}};return r[e](a,a.exports,i),a.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.299.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.299.0.PROD:",i.l=(r,n,a,s)=>{if(e[r])e[r].push(n);else{var o,c;if(void 0!==a)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+a){o=l;break}}if(!o){c=!0;var f={296:"sha512-Cf4g7HSlF25k7Y3Kh54Vv2lQCIMl4iCvEa3R0US+n+CQuBbcjtBcHtGr2djt8/7pt1L32vnhj1iUpm9RYqqslA=="};(o=document.createElement("script")).charset="utf-8",o.timeout=120,i.nc&&o.setAttribute("nonce",i.nc),o.setAttribute("data-webpack",t+a),o.src=r,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),f[s]&&(o.integrity=f[s])}e[r]=[n];var g=(t,n)=>{o.onerror=o.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],o.parentNode&&o.parentNode.removeChild(o),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=g.bind(null,o.onerror),o.onload=g.bind(null,o.onload),c&&document.head.appendChild(o)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var a=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=a);var s=i.p+i.u(t),o=new Error;i.l(s,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var a=r&&("load"===r.type?"missing":r.type),s=r&&r.target&&r.target.src;o.message="Loading chunk "+t+" failed.\n("+a+": "+s+")",o.name="ChunkLoadError",o.type=a,o.request=s,n[1](o)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,a,[s,o,c]=r,u=0;if(s.some((t=>0!==e[t]))){for(n in o)i.o(o,n)&&(i.m[n]=o[n]);if(c)c(i)}for(t&&t(r);u<s.length;u++)a=s[u],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},r=self["webpackChunk:NRBA-1.299.0.PROD"]=self["webpackChunk:NRBA-1.299.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(374);var e=i(566),t=i(741);class r extends t.W{agentIdentifier=(0,e.LA)(16)}var n=i(860);const a=Object.values(n.K7);var s=i(163);var o=i(908),c=i(863),u=i(261),d=i(241),l=i(944),f=i(701),g=i(773);function p(e,t,i,a){const s=a||i;!s||s[e]&&s[e]!==r.prototype[e]||(s[e]=function(){(0,o.p)(g.xV,["API/"+e+"/called"],void 0,n.K7.metrics,i.ee),(0,d.W)({agentIdentifier:i.agentIdentifier,drained:!!f.B?.[i.agentIdentifier],type:"data",name:"api",feature:u.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,l.R)(23,e)}})}function m(e,t,r,n,i){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(i||null===r)&&(0,o.p)(u.Pl+n,[(0,c.t)(),t,r],void 0,"session",e.ee)}var h=i(687),v=i(234),b=i(289),y=i(154),_=i(384);const w=e=>y.RI&&!0===e?.privacy.cookies_enabled;function x(e){return!!(0,_.dV)().o.MO&&w(e)&&!0===e?.session_trace.enabled}var k=i(389),S=i(699);class A extends v.W{constructor(e,t){super(e.agentIdentifier,t),this.agentRef=e,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise(((t,r)=>{this.ee.on("manual-start-all",(0,k.J)((()=>{(0,h.Ak)(e.agentIdentifier,this.featureName),t()})))})):(0,h.Ak)(e.agentIdentifier,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;let n;this.onAggregateImported=new Promise((e=>{n=e}));const a=async()=>{let a;await this.deferred;try{if(w(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,305));a=t(e)}}catch(e){(0,l.R)(20,e),this.ee.emit("internal-error",[e]),(0,o.p)(S.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,a,e.init))return(0,h.Ze)(this.agentIdentifier,this.featureName),void n(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),n(!0)}catch(e){(0,l.R)(34,e),this.abortHandler?.(),(0,h.Ze)(this.agentIdentifier,this.featureName,!0),n(!1),this.ee&&this.ee.abort()}};y.RI?(0,b.GG)((()=>a()),!0):a()}#t(e,t,r){if(this.blocked)return!1;switch(e){case n.K7.sessionReplay:return x(r)&&!!t;case n.K7.sessionTrace:return!!t;default:return!0}}}var R=i(630),T=i(614);class E extends A{static featureName=R.T;constructor(e){var t;super(e,R.T),this.setupInspectionEvents(e.agentIdentifier),t=e,p(u.Fw,(function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,o.p)(u.Pl+u.Fw,[(0,c.t)()],void 0,void 0,t.ee))}),t),this.ee.on("api-send-rum",((e,t)=>(0,o.p)("send-rum",[e,t],void 0,this.featureName,this.ee))),this.importAggregator(e,(()=>i.e(296).then(i.bind(i,108))))}setupInspectionEvents(e){const t=(t,r)=>{t&&(0,d.W)({agentIdentifier:e,timeStamp:t.timeStamp,loaded:"complete"===t.target.readyState,type:"window",name:r,data:t.target.location+""})};(0,b.sB)((e=>{t(e,"DOMContentLoaded")})),(0,b.GG)((e=>{t(e,"load")})),(0,b.Qr)((e=>{t(e,"navigate")})),this.ee.on(T.tS.UPDATE,((t,r)=>{(0,d.W)({agentIdentifier:e,type:"lifecycle",name:"session",data:r})}))}}var N=i(843),I=i(878),j=i(782);class O extends A{static featureName=j.T;constructor(e){super(e,j.T),y.RI&&((0,N.u)((()=>(0,o.p)("docHidden",[(0,c.t)()],void 0,j.T,this.ee)),!0),(0,I.sp)("pagehide",(()=>(0,o.p)("winPagehide",[(0,c.t)()],void 0,j.T,this.ee))),this.importAggregator(e,(()=>i.e(296).then(i.bind(i,350)))))}}class P extends A{static featureName=g.TZ;constructor(e){super(e,g.TZ),y.RI&&document.addEventListener("securitypolicyviolation",(e=>{(0,o.p)(g.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)})),this.importAggregator(e,(()=>i.e(296).then(i.bind(i,623))))}}new class extends r{constructor(e){var t;(super(),y.gm)?(this.features={},(0,_.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(E),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===n.K7.softNav)),(0,s.j)(this,e,e.loaderType||"agent"),t=this,p(u.cD,(function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return m(t,e,r,u.cD,n);(0,l.R)(40,typeof r)}else(0,l.R)(39,typeof e)}),t),function(e){p(u.Dl,(function(t){if("string"==typeof t||null===t)return m(e,"enduser.id",t,u.Dl,!0);(0,l.R)(41,typeof t)}),e)}(this),function(e){p(u.nb,(function(t){if("string"==typeof t||null===t)return m(e,"application.version",t,u.nb,!1);(0,l.R)(42,typeof t)}),e)}(this),function(e){p(u.d3,(function(){e.ee.emit("manual-start-all")}),e)}(this),this.run()):(0,l.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return a.forEach((r=>{t[r]=!!e[r]?.enabled})),t}(this.init),t=[...this.desiredFeatures];t.sort(((e,t)=>n.P3[e.featureName]-n.P3[t.featureName])),t.forEach((t=>{if(!e[t.featureName]&&t.featureName!==n.K7.pageViewEvent)return;if(this.runSoftNavOverSpa&&t.featureName===n.K7.spa)return;if(!this.runSoftNavOverSpa&&t.featureName===n.K7.softNav)return;const r=function(e){switch(e){case n.K7.ajax:return[n.K7.jserrors];case n.K7.sessionTrace:return[n.K7.ajax,n.K7.pageViewEvent];case n.K7.sessionReplay:return[n.K7.sessionTrace];case n.K7.pageViewTiming:return[n.K7.pageViewEvent];default:return[]}}(t.featureName).filter((e=>!(e in this.features)));r.length>0&&(0,l.R)(36,{targetFeature:t.featureName,missingDependencies:r}),this.features[t.featureName]=new t(this)}))}catch(e){(0,l.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,_.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}({features:[E,O,P],loaderType:"lite"})})()})();</script>
+  <title>Canvas - ITS Educational Technologies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v23.9 - https://yoast.com/wordpress/plugins/seo/ -->
+	<link rel="canonical" href="https://edtech.unc.edu/service/canvas/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Canvas - ITS Educational Technologies" />
+	<meta property="og:description" content="   Separate Logins: Kenan-Flagler Business School | MPH@UNC | School of Government Non-Degree Courses Canvas replaced Sakai as the University&#8217;s learning management system after the Spring 2024 semester concluded. Learn more about the transition to Canvas. Training and Support Canvas &hellip; Read more" />
+	<meta property="og:url" content="https://edtech.unc.edu/service/canvas/" />
+	<meta property="og:site_name" content="ITS Educational Technologies" />
+	<meta property="article:modified_time" content="2025-08-17T03:27:12+00:00" />
+	<meta property="og:image" content="https://edtech.unc.edu/wp-content/uploads/sites/1218/2025/08/003322_campus_scenes307_crop-scaled.jpg" />
+	<meta property="og:image:width" content="2560" />
+	<meta property="og:image:height" content="1477" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="4 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://edtech.unc.edu/service/canvas/","url":"https://edtech.unc.edu/service/canvas/","name":"Canvas - ITS Educational Technologies","isPartOf":{"@id":"https://edtech.unc.edu/#website"},"primaryImageOfPage":{"@id":"https://edtech.unc.edu/service/canvas/#primaryimage"},"image":{"@id":"https://edtech.unc.edu/service/canvas/#primaryimage"},"thumbnailUrl":"https://edtech.unc.edu/wp-content/uploads/sites/1218/2025/08/003322_campus_scenes307_crop-scaled.jpg","datePublished":"2022-06-27T21:26:39+00:00","dateModified":"2025-08-17T03:27:12+00:00","breadcrumb":{"@id":"https://edtech.unc.edu/service/canvas/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://edtech.unc.edu/service/canvas/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://edtech.unc.edu/service/canvas/#primaryimage","url":"https://edtech.unc.edu/wp-content/uploads/sites/1218/2025/08/003322_campus_scenes307_crop-scaled.jpg","contentUrl":"https://edtech.unc.edu/wp-content/uploads/sites/1218/2025/08/003322_campus_scenes307_crop-scaled.jpg","width":2560,"height":1477,"caption":"Carolina student using laptop and surrounded by yellow autumn leaves"},{"@type":"BreadcrumbList","@id":"https://edtech.unc.edu/service/canvas/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://edtech.unc.edu/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://edtech.unc.edu/service/"},{"@type":"ListItem","position":3,"name":"Canvas"}]},{"@type":"WebSite","@id":"https://edtech.unc.edu/#website","url":"https://edtech.unc.edu/","name":"ITS Educational Technologies","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://edtech.unc.edu/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//edtech.unc.edu' />
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel='dns-prefetch' href='//its.unc.edu' />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/edtech.unc.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.2"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<link rel="stylesheet" href="https://edtech.unc.edu/wp-content/plugins/unc-cookie-banner/./dist/cookie-banner.css?ver=22447759e5dd5bf1c282">
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" href="https://edtech.unc.edu/wp-includes/css/dist/block-library/style.min.css?ver=6.8.2">
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='utility-bar-utility-bar-style-inline-css' type='text/css'>
+:root :where(#unc-utility-bar),:root :where(.wp-block-utility-bar-utility-bar){display:flex;justify-content:center;white-space:nowrap}:root :where(#unc-utility-bar):not(.wp-block),:root :where(.wp-block-utility-bar-utility-bar):not(.wp-block){font-size:11.8px;letter-spacing:normal;line-height:14.8px;margin-top:0;padding-bottom:.5rem;padding-top:.5rem}:root :where(#unc-utility-bar) .utility-bar-skip-link,:root :where(#unc-utility-bar) nav[aria-label=skip]>a,:root :where(.wp-block-utility-bar-utility-bar) .utility-bar-skip-link,:root :where(.wp-block-utility-bar-utility-bar) nav[aria-label=skip]>a{color:var(--wp--preset--color--black,#000);font-weight:700}:root :where(#unc-utility-bar)>div,:root :where(.wp-block-utility-bar-utility-bar)>div{max-width:var(--wp--style--global--content-size,1170px);width:100%}:root :where(#unc-utility-bar),:root :where(#unc-utility-bar) a,:root :where(.wp-block-utility-bar-utility-bar),:root :where(.wp-block-utility-bar-utility-bar) a{color:#fff;text-decoration:none}:root :where(#unc-utility-bar) a:focus,:root :where(#unc-utility-bar) a:hover,:root :where(.wp-block-utility-bar-utility-bar) a:focus,:root :where(.wp-block-utility-bar-utility-bar) a:hover{text-decoration:underline!important}:root :where(#unc-utility-bar) .utility-bar-container,:root :where(.wp-block-utility-bar-utility-bar) .utility-bar-container{max-width:var(--wp--style--global--content-size,1170px);padding:0;width:100%}:root :where(#unc-utility-bar) .utility-bar-row,:root :where(.wp-block-utility-bar-utility-bar) .utility-bar-row{align-content:space-between;container-name:utility-bar-row;container-type:inline-size;display:flex;flex-direction:row;justify-content:space-between}:root :where(#unc-utility-bar) #unc-link-column-left,:root :where(#unc-utility-bar) #unc-ub-title,:root :where(.wp-block-utility-bar-utility-bar) #unc-link-column-left,:root :where(.wp-block-utility-bar-utility-bar) #unc-ub-title{display:none;flex:1;font-family:Times New Roman,serif!important;margin:auto 0}@container utility-bar-row (min-width: 900px){:root :where(#unc-utility-bar) #unc-link-column-left,:root :where(#unc-utility-bar) #unc-ub-title,:root :where(.wp-block-utility-bar-utility-bar) #unc-link-column-left,:root :where(.wp-block-utility-bar-utility-bar) #unc-ub-title{display:flex;flex:0 0 auto;width:33.33333333%}}:root :where(#unc-utility-bar) #unc-link-column-left .utility-bar-unc-link,:root :where(#unc-utility-bar) #unc-ub-title .utility-bar-unc-link,:root :where(.wp-block-utility-bar-utility-bar) #unc-link-column-left .utility-bar-unc-link,:root :where(.wp-block-utility-bar-utility-bar) #unc-ub-title .utility-bar-unc-link{font-family:Times New Roman,serif!important;font-size:11.8px!important;padding:0;text-transform:uppercase}:root :where(#unc-utility-bar) #unc-link-column-left .utility-bar-unc-link span.em,:root :where(#unc-utility-bar) #unc-ub-title .utility-bar-unc-link span.em,:root :where(.wp-block-utility-bar-utility-bar) #unc-link-column-left .utility-bar-unc-link span.em,:root :where(.wp-block-utility-bar-utility-bar) #unc-ub-title .utility-bar-unc-link span.em{font-style:italic;text-transform:lowercase}:root :where(#unc-utility-bar) #unc-link-column-right,:root :where(#unc-utility-bar) #unc-ub-nav,:root :where(.wp-block-utility-bar-utility-bar) #unc-link-column-right,:root :where(.wp-block-utility-bar-utility-bar) #unc-ub-nav{flex:0 0 auto;flex:1;margin:auto 0;width:100%}@container utility-bar-row (min-width: 900px){:root :where(#unc-utility-bar) #unc-link-column-right,:root :where(#unc-utility-bar) #unc-ub-nav,:root :where(.wp-block-utility-bar-utility-bar) #unc-link-column-right,:root :where(.wp-block-utility-bar-utility-bar) #unc-ub-nav{flex:0 0 auto;flex:0;width:66.66666667%}}:root :where(#unc-utility-bar) #unc-link-column-right #utiltity-bar-nav,:root :where(#unc-utility-bar) #unc-ub-nav #utiltity-bar-nav,:root :where(.wp-block-utility-bar-utility-bar) #unc-link-column-right #utiltity-bar-nav,:root :where(.wp-block-utility-bar-utility-bar) #unc-ub-nav #utiltity-bar-nav{align-items:center;display:flex;flex-direction:row;flex-wrap:nowrap;height:100%;margin:0;padding:0}@container utility-bar-row (min-width: 900px){:root :where(#unc-utility-bar) #unc-link-column-right #utiltity-bar-nav,:root :where(#unc-utility-bar) #unc-ub-nav #utiltity-bar-nav,:root :where(.wp-block-utility-bar-utility-bar) #unc-link-column-right #utiltity-bar-nav,:root :where(.wp-block-utility-bar-utility-bar) #unc-ub-nav #utiltity-bar-nav{justify-content:end}}:root :where(#unc-utility-bar) #unc-link-column-right #utiltity-bar-nav .utiltity-bar-nav-item,:root :where(#unc-utility-bar) #unc-ub-nav #utiltity-bar-nav .utiltity-bar-nav-item,:root :where(.wp-block-utility-bar-utility-bar) #unc-link-column-right #utiltity-bar-nav .utiltity-bar-nav-item,:root :where(.wp-block-utility-bar-utility-bar) #unc-ub-nav #utiltity-bar-nav .utiltity-bar-nav-item{flex:1;font-family:Verdana,Arial,sans-serif!important;line-height:110%;list-style-type:none;margin:auto 0;text-align:center}:root :where(#unc-utility-bar) #unc-link-column-right #utiltity-bar-nav .utiltity-bar-nav-item:last-child,:root :where(#unc-utility-bar) #unc-ub-nav #utiltity-bar-nav .utiltity-bar-nav-item:last-child,:root :where(.wp-block-utility-bar-utility-bar) #unc-link-column-right #utiltity-bar-nav .utiltity-bar-nav-item:last-child,:root :where(.wp-block-utility-bar-utility-bar) #unc-ub-nav #utiltity-bar-nav .utiltity-bar-nav-item:last-child{padding-right:0}:root :where(#unc-utility-bar) #unc-link-column-right #utiltity-bar-nav .utiltity-bar-nav-item:not(:last-child),:root :where(#unc-utility-bar) #unc-ub-nav #utiltity-bar-nav .utiltity-bar-nav-item:not(:last-child),:root :where(.wp-block-utility-bar-utility-bar) #unc-link-column-right #utiltity-bar-nav .utiltity-bar-nav-item:not(:last-child),:root :where(.wp-block-utility-bar-utility-bar) #unc-ub-nav #utiltity-bar-nav .utiltity-bar-nav-item:not(:last-child){border-right:.01em solid}:root :where(#unc-utility-bar) #unc-link-column-right #utiltity-bar-nav .utiltity-bar-nav-item .utiltity-bar-link,:root :where(#unc-utility-bar) #unc-ub-nav #utiltity-bar-nav .utiltity-bar-nav-item .utiltity-bar-link,:root :where(.wp-block-utility-bar-utility-bar) #unc-link-column-right #utiltity-bar-nav .utiltity-bar-nav-item .utiltity-bar-link,:root :where(.wp-block-utility-bar-utility-bar) #unc-ub-nav #utiltity-bar-nav .utiltity-bar-nav-item .utiltity-bar-link{font-family:Verdana,Arial,sans-serif!important;font-size:11.8px!important;padding:0 .5rem;white-space:nowrap}:root :where(#unc-utility-bar) #unc-link-column-right #utiltity-bar-nav .utiltity-bar-nav-item.md-down-hidden-list-item,:root :where(#unc-utility-bar) #unc-ub-nav #utiltity-bar-nav .utiltity-bar-nav-item.md-down-hidden-list-item,:root :where(.wp-block-utility-bar-utility-bar) #unc-link-column-right #utiltity-bar-nav .utiltity-bar-nav-item.md-down-hidden-list-item,:root :where(.wp-block-utility-bar-utility-bar) #unc-ub-nav #utiltity-bar-nav .utiltity-bar-nav-item.md-down-hidden-list-item{display:none}@container utility-bar-row (min-width: 560px){:root :where(#unc-utility-bar) #unc-link-column-right #utiltity-bar-nav .utiltity-bar-nav-item.md-down-hidden-list-item,:root :where(#unc-utility-bar) #unc-ub-nav #utiltity-bar-nav .utiltity-bar-nav-item.md-down-hidden-list-item,:root :where(.wp-block-utility-bar-utility-bar) #unc-link-column-right #utiltity-bar-nav .utiltity-bar-nav-item.md-down-hidden-list-item,:root :where(.wp-block-utility-bar-utility-bar) #unc-ub-nav #utiltity-bar-nav .utiltity-bar-nav-item.md-down-hidden-list-item{display:inline}}:root :where(#unc-utility-bar).blue,:root :where(#unc-utility-bar).is-style-blue,:root :where(.wp-block-utility-bar-utility-bar).blue,:root :where(.wp-block-utility-bar-utility-bar).is-style-blue{background:#007fae}:root :where(#unc-utility-bar).gray,:root :where(#unc-utility-bar).is-style-gray,:root :where(.wp-block-utility-bar-utility-bar).gray,:root :where(.wp-block-utility-bar-utility-bar).is-style-gray{background:#747474}:root :where(#unc-utility-bar).dark-gray,:root :where(#unc-utility-bar).is-style-dark-gray,:root :where(.wp-block-utility-bar-utility-bar).dark-gray,:root :where(.wp-block-utility-bar-utility-bar).is-style-dark-gray{background:#414141}:root :where(#unc-utility-bar).is-style-navy,:root :where(#unc-utility-bar).navy,:root :where(.wp-block-utility-bar-utility-bar).is-style-navy,:root :where(.wp-block-utility-bar-utility-bar).navy{background:#13294b}:root :where(#unc-utility-bar).black,:root :where(#unc-utility-bar).is-style-black,:root :where(.wp-block-utility-bar-utility-bar).black,:root :where(.wp-block-utility-bar-utility-bar).is-style-black{background:#151515}:root :where(#unc-utility-bar).is-style-white,:root :where(#unc-utility-bar).is-style-white a,:root :where(#unc-utility-bar).white,:root :where(#unc-utility-bar).white a,:root :where(.wp-block-utility-bar-utility-bar).is-style-white,:root :where(.wp-block-utility-bar-utility-bar).is-style-white a,:root :where(.wp-block-utility-bar-utility-bar).white,:root :where(.wp-block-utility-bar-utility-bar).white a{background:#fff;color:#007fae!important}body.block-editor-page .utility-bar-unc-link,body.block-editor-page .utiltity-bar-link{cursor:not-allowed;pointer-events:none}
+
+</style>
+<link rel="stylesheet" href="https://edtech.unc.edu/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17">
+<link rel="stylesheet" href="https://edtech.unc.edu/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.8.2">
+<link rel="stylesheet" href="https://edtech.unc.edu/wp-content/plugins/toolset-blocks/public/css/views-frontend.css?ver=3.6.20">
+<style id='view_editor_gutenberg_frontend_assets-inline-css' type='text/css'>
+.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}
+.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item a {color: #444;background-color: #eeeeee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:focus {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #e5e5e5;}
+.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item a {color: #444;background-color: #eeeeee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:focus {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item {border-color: #0099cc;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item a {color: #444;background-color: #cbddeb;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue a:focus {color: #000;background-color: #95bedd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #95bedd;}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" href="https://edtech.unc.edu/wp-content/plugins/unc-utility-bar/build/frontend/index.css?ver=2.1.0">
+<link rel="stylesheet" href="https://edtech.unc.edu/wp-content/plugins/jquery-collapse-o-matic/css/core_style.css?ver=1.0">
+<link rel="stylesheet" href="https://edtech.unc.edu/wp-content/plugins/jquery-collapse-o-matic/css/light_style.css?ver=1.6">
+<link rel="stylesheet" href="https://edtech.unc.edu/wp-content/plugins/unc-easy-bootstrap-shortcode/dist/libs/libs.css?ver=1.1.17">
+<link rel="stylesheet" href="https://edtech.unc.edu/wp-content/plugins/unc-easy-bootstrap-shortcode/dist/public/public.css?ver=1.1.17">
+<link rel="stylesheet" href="https://edtech.unc.edu/wp-content/plugins/unc-easy-bootstrap-shortcode/dist/shortcodes.css?ver=1.1.17">
+<link rel="stylesheet" href="https://edtech.unc.edu/wp-content/plugins/tablepress/css/build/default.css?ver=2.4.4">
+<link rel="stylesheet" href="https://edtech.unc.edu/wp-content/plugins/tablepress-responsive-tables/css/tablepress-responsive.min.css?ver=1.8">
+<link rel="stylesheet" href="https://edtech.unc.edu/wp-content/themes/heelium/assets/css/main.min.css?ver=b3af95ee74f56fecc4120841a7d3d906">
+<style id='roots_main-inline-css' type='text/css'>
+
+body{
+background-color:#ffffff;
+background-image: url();
+background-attachment: fixed;
+background-size: cover;
+}
+.abovefold {
+background-color:#007fae;
+background-image: url(https://edtech.unc.edu/wp-content/uploads/sites/1218/2020/08/its_header.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+width: 100%;
+}
+.abovefold a{color:#ffffff;}
+</style>
+<script type="text/javascript" src="https://edtech.unc.edu/wp-content/plugins/toolset-blocks/vendor/toolset/common-es/public/toolset-common-es-frontend.js?ver=175000" id="toolset-common-es-frontend-js"></script>
+<script type="text/javascript" src="https://edtech.unc.edu/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://edtech.unc.edu/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/container-query-polyfill@1/dist/container-query-polyfill.modern.js?ver=2.1.0" id="container-query-polyfill-js"></script>
+<script type="text/javascript" src="https://edtech.unc.edu/wp-content/plugins/unc-easy-bootstrap-shortcode/dist/libs/libs.js?ver=1.1.17" id="unc-ebs-libs-js"></script>
+<script data-color="dark-gray" id="unc-ub-script" type="text/javascript" src="https://its.unc.edu/web-assets/utility-bar/utility-bar.min.js" id="unc-ub-script-js"></script>
+<script type="text/javascript" src="https://edtech.unc.edu/wp-content/themes/heelium/assets/js/vendor/modernizr-2.7.0.min.js" id="modernizr-js"></script>
+<link rel="https://api.w.org/" href="https://edtech.unc.edu/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://edtech.unc.edu/wp-json/wp/v2/service/3744" /><link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://edtech.unc.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fedtech.unc.edu%2Fservice%2Fcanvas%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://edtech.unc.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fedtech.unc.edu%2Fservice%2Fcanvas%2F&#038;format=xml" />
+	<style>
+	#wp-admin-bar-asu_support_enabled {
+		background-color: #E00000!important;
+	}
+	</style>
+<meta name="id" content="3744" />    <style type="text/css">
+
+        .bg-primary, .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus, .label-primary, .nav-tabs li a:hover{
+            background-color: #007fae;
+		}
+		.btn-primary {
+			background-color: #007fae;
+		}
+		.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus{
+			background-color: #007fae;
+		}
+        .panel-primary {
+            border-color: #007fae;
+        }
+        .btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active, .progress-bar, .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus, a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus, .panel-primary>.panel-heading {
+            background-color:;
+            border-color:;
+        }
+
+        .navbar-default {
+            background-color:#007fae;
+            border-color:#007fae;
+        }
+
+         .text-primary, .btn-primary .badge, .btn-link, .pagination>li>a, .pagination>li>span, a.list-group-item.active>.badge, .nav-pills>.active>a>.badge, .navbar-inverse .navbar-brand, .navbar-inverse .caret, .header-logo a:hover, .brand-logo a:hover, footer .widget ul>li:last-child a, footer ol.vcalendar li a, footer .widget ul li a, footer .widget ul li a:link, .widget ul.dropdown-menu li.active a:hover, footer.content-info a:hover, footer.content-info a {
+            color:#007fae;
+		}
+
+		a {
+			color:;
+		}
+		.widget ul li a:hover {
+			color:;
+		}
+
+        .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+            border-top-color: #007fae;
+            border-right-color-value: #007fae;
+            border-bottom-color: #007fae;
+            border-left-color-value: #007fae;
+        }
+
+        footer .widget ul>li a:hover, footer .widget ul>li:last-child a:hover {color: #fff;}
+
+        .btn-primary:hover,<div class="btn-primary:focus">	</div> {
+            background-color:#007fae;
+        }
+
+        .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li.active > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+            background-color:#333333;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: #333333;
+        }
+
+        a:hover, a:focus, footer.content-info a:hover {
+            color: #007fae;
+        }
+
+
+
+
+    </style>
+                    
+          <style type="text/css">
+              .single #feat-img-h, article.media #feat-img-h {}
+              .abovefold-container .search-form {}
+          </style>
+
+      					<!-- Google Analytics tracking code output by Beehive Analytics -->
+						<script async src="https://www.googletagmanager.com/gtag/js?id=G-2RRLQ5H7ZY&l=beehiveDataLayer"></script>
+		<script>
+						window.beehiveDataLayer = window.beehiveDataLayer || [];
+			function beehive_ga() {beehiveDataLayer.push(arguments);}
+			beehive_ga('js', new Date())
+						beehive_ga('config', 'G-2RRLQ5H7ZY', {
+				'anonymize_ip': false,
+				'allow_google_signals': false,
+			})
+						beehive_ga('config', 'G-374WFH7VBB', {
+				'anonymize_ip': false,
+				'allow_google_signals': false,
+			})
+					</script>
+		 <script> window.addEventListener("load",function(){ var c={script:false,link:false}; function ls(s) { if(!['script','link'].includes(s)||c[s]){return;}c[s]=true; var d=document,f=d.getElementsByTagName(s)[0],j=d.createElement(s); if(s==='script'){j.async=true;j.src='https://edtech.unc.edu/wp-content/plugins/toolset-blocks/vendor/toolset/blocks/public/js/frontend.js?v=1.6.16';}else{ j.rel='stylesheet';j.href='https://edtech.unc.edu/wp-content/plugins/toolset-blocks/vendor/toolset/blocks/public/css/style.css?v=1.6.16';} f.parentNode.insertBefore(j, f); }; function ex(){ls('script');ls('link')} window.addEventListener("scroll", ex, {once: true}); if (('IntersectionObserver' in window) && ('IntersectionObserverEntry' in window) && ('intersectionRatio' in window.IntersectionObserverEntry.prototype)) { var i = 0, fb = document.querySelectorAll("[class^='tb-']"), o = new IntersectionObserver(es => { es.forEach(e => { o.unobserve(e.target); if (e.intersectionRatio > 0) { ex();o.disconnect();}else{ i++;if(fb.length>i){o.observe(fb[i])}} }) }); if (fb.length) { o.observe(fb[i]) } } }) </script>
+	<noscript>
+		<link rel="stylesheet" href="https://edtech.unc.edu/wp-content/plugins/toolset-blocks/vendor/toolset/blocks/public/css/style.css">
+	</noscript><!-- Begin Custom CSS -->
+<style type="text/css">
+body,aside .dropdown,aside .dropdown-menu{font-family:"Open Sans",Helvetica,Arial,sans-serif;font-size:15px}#search.search-field.form-control:focus,.input-group-btn>.btn:focus{border:2px solid #505050;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)}#comments .alert-warning{display:none}.pagination>.active>a,.pagination>.active>span,.pagination>.active>a:hover,.pagination>.active>span:hover,.pagination>.active>a:focus,.pagination>.active>span:focus{background-color:#0080ae}#copyright{padding:100px 0 0}.copyright img{position:relative;top:-7em}.panel-heading button:hover,.panel-heading a:hover,.pullout-box,.panel-heading a:focus,.panel-heading button:focus,.panel-heading a:active,.panel-heading button:active{background-color:#E6E6E6!important;color:#003548!important}#search{border:thin solid #E6E6E6}@media (min-width:782px){.panopto-issues{float:right;width:40%;margin:0 0 1em 1em}}@media (min-width:550px){.poll-issues{float:right;width:30%;margin:0 0 1em 1em}}.btn-primary{background-color:#007fae}.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary{color:#fff;background-color:#333;border-color:#276fa0;text-decoration:underline!important}</style><!-- End Custom CSS -->
+
+  <link rel="alternate" type="application/rss+xml" title="ITS Educational Technologies Feed" href="https://edtech.unc.edu/feed/">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://edtech.unc.edu/wp-content/themes/heelium/assets/img/ss_img_unc_favicon.ico" />
+</head>
+<body class="wp-singular service-template-default single single-service postid-3744 single-format-standard wp-theme-heelium unc-utility-bar-plugin-enabled canvas utility-bar-displayed alert-unpublished views-template-service-single-view">
+
+
+<!--[if lt IE 8]>
+<div class="alert alert-warning">
+    You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+<div class="container-fluid">
+    <div class="row">
+        		<a class="skiptarget" href="#maincontent">Skip to main content</a>
+		<header>
+	<div class="banner navbar navbar-default  navbar-static-top " role="navigation" aria-label="main">
+		<div class="container">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+									<a class="navbar-brand" href="https://edtech.unc.edu/">ITS Educational Technologies</a>
+							</div>
+
+			<nav class="collapse navbar-collapse">
+				<!-- start primary navigation --><ul id="menu-navigation-bar" class="nav navbar-nav"><li class="menu-home"><a href="https://edtech.unc.edu/">Home</a></li>
+<li class="menu-about-us"><a href="https://edtech.unc.edu/about-us/">About Us</a></li>
+<li class="active dropdown menu-tools-and-services"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" data-target="#" href="#">Tools and Services <b class="caret"></b></a>
+<ul class="dropdown-menu">
+	<li class="menu-overview"><a href="https://edtech.unc.edu/educational-tools/">Overview</a></li>
+	<li class="active menu-canvas"><a href="https://edtech.unc.edu/service/canvas/" aria-current="page">Canvas</a></li>
+	<li class="menu-carolina-print-hub"><a href="https://edtech.unc.edu/service/carolina-print-hub/">Carolina Print Hub</a></li>
+	<li class="menu-gradescope"><a href="https://edtech.unc.edu/service/gradescope/">Gradescope</a></li>
+	<li class="menu-panopto"><a href="https://edtech.unc.edu/service/panopto/">Panopto</a></li>
+	<li class="menu-poll-everywhere"><a href="https://edtech.unc.edu/service/poll-everywhere/">Poll Everywhere</a></li>
+	<li class="menu-unc-check-in"><a href="https://edtech.unc.edu/service/unc-check-in/">UNC Check-in</a></li>
+	<li class="menu-virtual-lab"><a href="https://virtuallab.unc.edu/">Virtual Lab</a></li>
+</ul>
+</li>
+<li class="menu-personal-consultations"><a href="https://edtech.unc.edu/personal-consultations/">Personal Consultations</a></li>
+<li class="menu-workshops"><a href="https://edtech.unc.edu/workshops/">Workshops</a></li>
+<li class="active menu-blog"><a href="https://edtech.unc.edu/blog/">Blog</a></li>
+<li class="menu-help"><a href="https://help.unc.edu/">HELP</a></li>
+</ul><!-- end primary navigation -->			</nav>
+		</div>
+	</div>
+</header>    </div>
+        <div class="row">
+            <div id="feat-img-h" style="background-image: url(https://edtech.unc.edu/wp-content/uploads/sites/1218/2025/08/003322_campus_scenes307_crop-scaled.jpg);" data-type="background" data-speed="8"></div>        </div>
+
+    <div class="wrap row">
+
+        <div class="content container">
+            <div class="breadcrumbs" role="navigation" aria-label="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#"><a href="https://edtech.unc.edu/" rel="v:url" property="v:title">Home</a> / <span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" href="https://edtech.unc.edu/service/">Services</a></span> / <span class="current">Canvas</span></div><!-- .breadcrumbs -->            <div class="row ">
+				<div class="skiptarget"><a id="maincontent" tabindex="-1"></a></div>
+                <main class="main col-sm-12">
+                      <article class="post-3744 service type-service status-publish format-standard has-post-thumbnail hentry">
+    <header>
+    <div class="page-header">
+      <h1 class="entry-title">Canvas</h1>
+    </div>
+      <time class="published" datetime="2022-06-27T17:26:39-04:00">June 27, 2022</time>&nbsp;<p class="byline author vcard"> <span class="author vcard">By <a class="fn" href="https://edtech.unc.edu/author/tntu/"  rel="author">Thao Nghi Tu</a></span></p>    </header>
+    <div class="entry-content">
+      <script>
+
+    (function($) {
+        $("body, html").addClass("heels_full_width_overflow");
+    })(jQuery);
+
+   </script>
+   <div style="background-color:#f5f5f5; background-image: url(https://edtech.unc.edu/wp-content/uploads/sites/1218/2025/08/003322_campus_scenes307_crop-scaled.jpg);" data-speed="18" id="parallax-section" data-type="background" class="full-width-contained whitebackground service-parallax">
+<div class="row  oscitas-bootstrap-container">
+<div class="col-lg-6 col-md-12 col-xs-12 col-sm-12 oscitas-bootstrap-container">
+<div class="service-title-container"><h1>Canvas</h1></div>
+</div>
+<div class="col-lg-6 col-md-12 col-xs-12 col-sm-12 oscitas-bootstrap-container">
+</div>
+</div>
+</div>
+<div class="navbar-container container">
+
+<div id="second-nav">
+<ul class="nav-2 navbar-nav-2">
+ <h3>Jump to:</h3>  
+
+
+
+
+
+
+
+  
+  
+  <li><a href="#training-support">Training and Support</a></li>
+<li><a href="#site-request">Site Request</a></li>
+<li><a href="https://edtech.unc.edu/service/canvas/canvas-faq/">FAQ</a></li>
+  <li><a href="https://edtech.unc.edu/service/canvas/canvas-policies/">Policies</a></li>
+  <li><a href="https://edtech.unc.edu/service/canvas/moving-from-sakai-to-canvas/">Moving from Sakai to Canvas</a></li>
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+ 
+  
+  </ul>
+ </div>
+</div>
+<button onclick="topFunction()" id="topBtn" title="Go to top">↑ Top</button>
+<p><a class="btn btn-primary btn-lg  oscitas-bootstrap-container" target="_self" href="https://uncch.instructure.com/login/saml"><i class="glyphicon glyphicon-user" ></i> Onyen Login</a>   <a class="btn btn-primary btn-lg  oscitas-bootstrap-container" target="_self" href="https://uncch.instructure.com/login/canvas"><i class="glyphicon glyphicon-user" ></i> Non-Onyen Login</a></p>
+<p><strong>Separate Logins</strong>: <a href="https://kenan-flagler.instructure.com/" target="_blank" rel="noopener">Kenan-Flagler Business School</a> | <a href="https://digitalcampus.instructure.com/" target="_blank" rel="noopener">MPH@UNC</a> | <a href="https://sogunc.instructure.com/" target="_blank" rel="noopener">School of Government Non-Degree Courses</a></p>
+<p>Canvas replaced Sakai as the University&#8217;s learning management system after the Spring 2024 semester concluded. Learn more about the <a href="https://edtech.unc.edu/service/canvas/transition-to-canvas/">transition to Canvas</a>.<a name="training-support"></a></p>
+<h2>Training and Support</h2>
+<h3>Canvas Help Resources</h3>
+<ul>
+<li><strong>Help</strong> menu within Canvas: <strong>24/7 chat and phone support</strong></li>
+<li><a href="https://edtech.unc.edu/service/canvas/moving-from-sakai-to-canvas/">Moving from Sakai to Canvas</a>: UNC training videos and resources to help instructors move from Sakai to Canvas</li>
+<li><a href="https://edtech.unc.edu/service/canvas/canvas-faq/">UNC Canvas FAQ</a>: Curated list of guides to help users get started in Canvas</li>
+<li><a href="https://community.canvaslms.com/t5/Canvas-Instructor/ct-p/canvas_instructor" target="_blank" rel="noopener">Instructor Guides and Videos</a></li>
+<li><a href="https://community.canvaslms.com/t5/Canvas-Student/ct-p/canvas_student" target="_blank" rel="noopener">Student Guides and Videos</a></li>
+<li><a href="https://help.unc.edu/" target="_blank" rel="noopener">UNC Help</a>: <strong>Go through help.unc.edu for UNC-specific questions only, including:<br />
+</strong></p>
+<ul>
+<li>Accessing sites from past semesters or for Incomplete grades</li>
+<li>Panopto, Poll Everywhere, VoiceThread, Zoom</li>
+<li>Renaming sites</li>
+<li>Roster issues</li>
+<li>Sakai</li>
+<li>De-crosslisting manually cross-listed sites</li>
+<li>Other administrative assistance</li>
+</ul>
+</li>
+<li>All other questions about how to use Canvas or issues should go through Canvas Support (Help menu within Canvas).<a name="training"></a></li>
+</ul>
+<h3>Canvas Training</h3>
+<h4>Personal Consultations</h4>
+<p>Need one-on-one help with Canvas? Sign up for a <a href="https://edtech.unc.edu/personal-consultations/">personal consultation</a> to meet with an ITS-EdTech member over Zoom! You can also <a href="https://help.unc.edu/" target="_blank" rel="noopener">submit a help request</a> if you would like to schedule a departmental training.</p>
+<h4>Group Training</h4>
+<p>See what <a href="https://edtech.unc.edu/workshops/">workshops</a> we&#8217;re currently offering to learn more about Canvas with other instructors!</p>
+<h4>Self-Help Resources</h4>
+<p>See <a href="https://edtech.unc.edu/service/canvas/moving-from-sakai-to-canvas/">Moving from Sakai to Canvas</a> for video tutorials and guides to help instructors transition from Sakai to Canvas with tool comparisons between the two systems. This resource provides an overview of commonly used tools for instructors to manage their courses, communicate and share course materials with students, and collect and provide feedback on student work.<a name="site-request"></a></p>
+<h2>Request Forms</h2>
+<p><strong>Note</strong>: Faculty/Staff Onyen required to access request forms.</p>
+<h3>New Site Request Form</h3>
+<p><a href="https://checkindash.unc.edu/secure/canvas-request.php" target="_blank" rel="noopener"><strong>New Site Request Form</strong></a>: Submit site requests for a brand new Canvas site for course development or training, instructional, or administrative purposes (committee work, communications, reviews, etc.).</p>
+<h3>Additional Sakai to Canvas Migration</h3>
+<p>Sakai migrations have been completed for University Registrar courses taught in 2022, 2023, and Spring 2024. The additional migration request form is now closed.</p>
+<p><span class="TextRun SCXW107957399 BCX9" lang="EN-US" xml:lang="EN-US" data-contrast="auto"><span class="NormalTextRun SCXW107957399 BCX9"><strong>Note:</strong> If you require any Sakai content from course sites (pre-SP22) or project sites for re-use in Canvas, please refer to instructions on how to <a href="https://edtech.unc.edu/service/canvas/getting-course-content-into-canvas/#export-sakai">migrate content from Sakai yourself</a>.</span></span><a name="guest"></a></p>
+<h3>Guest Accounts</h3>
+<p><span data-contrast="auto">Non-Onyen guest accounts may be created for individuals not eligible for an Onyen account who will serve in instructional, advisory, or other coordinating roles in Canvas sites. Guest accounts can also be created for students from other institutions enrolled in credit-bearing courses at UNC-CH as well as for students enrolled in non-credit bearing courses or training sponsored by a UNC-CH operating unit. Only users with the role of Teacher, TA, Designer, Dean Designate, or Tech Support can create a guest account from their site. <strong>Important</strong>: Once created, active guest accounts are valid indefinitely but will be suspended after one year of inactivity (i.e., user unable to log in) and deleted after four years of inactivity (i.e., all data removed).</span></p>
+<div role="tablist" class="panel-group yourcustomclass oscitas-bootstrap-container" id="unc-accordion-0">
+<div class="panel panel-default oscitas-bootstrap-container">
+
+    <div id="panel-heading-details-0-0" class="panel-heading oscitas-bootstrap-container" role="tab">
+
+        <h4 class="panel-title oscitas-bootstrap-container">
+
+            <button class="accordion-toggle oscitas-bootstrap-container collapsed" 
+                id = "button-details-0-0"
+                data-toggle="collapse"
+                data-parent="#unc-accordion-0"    
+                aria-controls="#details-0-0"  
+                aria-expanded="false" 
+                href="#details-0-0">
+                Access instructions to create a Canvas guest account            </button>
+
+        </h4>
+
+    </div>
+
+    <div id="details-0-0" class="panel-collapse collapse  oscitas-bootstrap-container">
+
+        <div class="panel-body oscitas-bootstrap-container"></p>
+<p><span data-contrast="auto">All UNC-Chapel Hill Faculty, Students, and Staff who have an active Onyen have access to Canvas. Rosters are added automatically to Canvas for official course sites based on enrollment data in ConnectCarolina.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335551550&quot;:1,&quot;335551620&quot;:1,&quot;335559738&quot;:240,&quot;335559739&quot;:240,&quot;335559740&quot;:259}"> </span></p>
+<p><span data-contrast="auto">If needed, you may add other UNC-Chapel Hill users to your Canvas sites. For example: tech support, instructional designers, departmental colleagues, or students not on the roster. To do this, go to the site and select People &gt; +People &gt; select Login ID &gt; enter their Onyen &gt; select role &gt; Next &gt; Add User.</span></p>
+<p><span data-contrast="auto">Only complete the following steps if you need to </span><a href="https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-add-users-to-a-course/ta-p/1119" target="_blank" rel="noopener"><span data-contrast="none">add a user to your Canvas site</span></a><span data-contrast="auto"> who </span><b><span data-contrast="auto">does not have an Onyen.</span></b><span data-contrast="auto"> Note: Only Teachers, TAs, Designers, and Tech Support can create users in their sites. </span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335551550&quot;:1,&quot;335551620&quot;:1,&quot;335559685&quot;:0,&quot;335559737&quot;:0,&quot;335559738&quot;:240,&quot;335559739&quot;:240,&quot;335559740&quot;:259}"> </span></p>
+<ol>
+<li><span data-contrast="auto">Log into Canvas at canvas.unc.edu</span></li>
+<li><span data-contrast="auto">Go to your site where you would like to add a guest</span></li>
+<li><span data-contrast="auto">Go to <strong>People</strong></span></li>
+<li><span data-contrast="auto">Click <strong>People+</strong> button</span></li>
+<li><span data-contrast="auto">Select <strong>Login ID</strong></span></li>
+<li><span data-contrast="auto">Enter the guest’s Email address in the box</span></li>
+<li><span data-contrast="auto">Select a <strong>Role</strong> and <strong>Section</strong> for the guest</span></li>
+<li><span data-contrast="auto">Check the box if the guest should only interact with this section</span></li>
+<li><span data-contrast="auto">Click <strong>Next</strong> Button</span></li>
+<li><span data-contrast="auto">If the guest does not have an account in Canvas, you will receive the following message: “We were unable to find matches below. Select any you would like to create as new users. Unselected will be skipped at this time.”</span></li>
+<li><span data-contrast="auto">Carefully check the box next to the guest</span></li>
+<li><span data-contrast="auto">Type their Full Name into the Name box (e.g. “First Last”)</span></li>
+<li><span data-contrast="auto">Click <strong>Next</strong> button</span></li>
+<li><span data-contrast="auto">Confirm that the guest’s name and email are correct</span></li>
+<li><span data-contrast="auto">Click <strong>Add Users</strong> button</span></li>
+</ol>
+<p><span data-contrast="auto">The guest will then be added to the site with Pending status. </span><span data-contrast="auto">The guest will also receive an email from Instructure Canvas with steps to create their account. <strong>Important:</strong> The guest should respond that they <strong>Do Not have a Canvas account</strong> (in our UNC-CH instance) if prompted during setup, even if they have one at another institution. </span><span data-contrast="auto">After creating their account, the guest will be able to log into Canvas at canvas.unc.edu using the Non-Onyen Login button. <strong>Note: </strong>Users may be added to sites during the current term but not after courses have concluded.<br />
+</span></p>
+<p></div>
+
+    </div>
+        
+</div></div>
+    </div>
+    <footer>
+    <div class="meta">
+          </div>
+     <div class="post-nav">
+           </div>
+    </footer>
+    
+
+  </article>
+                </main><!-- /.main -->
+                                            </div>
+        </div><!-- /.content -->
+    </div><!-- /.wrap -->
+    <div class="row">
+            </div>
+
+    <div class="row">
+        <footer class="content-info">
+  <div class="footer-container container">
+	  <div class="row">
+		<section class="widget text-4 widget_text col-md-4 col-sm-6">			<div class="textwidget"></div>
+		</section><section class="widget media_image-3 widget_media_image col-md-4 col-sm-6"><a href="https://edtech.unc.edu/"><img width="300" height="35" src="https://edtech.unc.edu/wp-content/uploads/sites/1218/2020/09/ITS_EdTech_logo-300x35.png" class="image wp-image-697  attachment-medium size-medium" alt="UNC ITS Educational Technologies home" style="max-width: 100%; height: auto;" decoding="async" loading="lazy" srcset="https://edtech.unc.edu/wp-content/uploads/sites/1218/2020/09/ITS_EdTech_logo-300x35.png 300w, https://edtech.unc.edu/wp-content/uploads/sites/1218/2020/09/ITS_EdTech_logo.png 500w" sizes="auto, (max-width: 300px) 100vw, 300px" /></a></section><section class="widget search-4 widget_search col-md-4 col-sm-6"><form role="search" method="get" class="search-form form-inline" action="https://edtech.unc.edu/">
+	<div class="input-group">
+		<input type="search" minlength="2" required="true" aria-label="Search this site" id="search" value="" name="s" class="search-field form-control" placeholder="Search this site...">
+		<span class="input-group-btn">
+			<button aria-labelledby="header-search" id="Submit" class="search-submit btn btn-default"><span class="glyphicon glyphicon-search"></span><span id="header-search" class="hidden">Submit Search</span>
+			</button>
+		</span>
+	</div>
+</form></section><section class="widget text-5 widget_text col-md-4 col-sm-6">			<div class="textwidget"></div>
+		</section>
+	  </div>
+  </div>
+  	<div id="copyright">
+                    <p class="copyright">&copy; 2025 ITS Educational Technologies</p>
+        	</div>
+</footer>
+
+<script type="text/javascript">
+const wpvCtHead = document.getElementsByTagName( "head" )[ 0 ];
+const wpvCtExtraCss = document.createElement( "style" );
+wpvCtExtraCss.textContent = '/* ----------------------------------------- *//* Content Template: service-single-view - start *//* ----------------------------------------- */#feat-img-h, .type-service header { display:none; }.type-service .breadcrumbs {    display:none;}.content {  padding-top:0;}.service .btn-primary {  margin: 0 1em 1em 0;}.service-parallax .col-lg-6 {    width: fit-content;}.service-title-container {  background-color: rgba(0,0,0,0.5);  padding: 0.5em 0;  margin: 3em 0;}article.type-service > div > div.navbar-container.container {	padding:0;}@media (max-width:781px){  .type-service img.alignright {    float:none;    margin: 1em;   }  #second-nav > ul {    padding:0;  }} #topBtn {  display: none; /* Hidden by default */  position: fixed; /* Fixed/sticky position */  bottom: 100px; /* Place the button at the bottom of the page */  right: 80px; /* Place the button 30px from the right */  z-index: 99; /* Make sure it does not overlap */  border: none; /* Remove borders */  outline: none; /* Remove outline */  background-color: #454545; /* Set a background color */  color: white; /* Text color */  cursor: pointer; /* Add a mouse pointer on hover */  padding: 15px; /* Some padding */  border-radius: 10px; /* Rounded corners */  font-size: 18px; /* Increase font size */}#topBtn:hover {  background-color: #007fae; /* Add a navy background on hover */}.service-title-container h1 {  color: #fff;  font-weight: 700;  font-size: 3.5em;  margin:0.5em;}.testimonial {    font-size: 0.9em;    background-image: url(wp-content/uploads/sites/1218/2021/08/quote-img.png);    border-width: 3px;    border-style: solid;    border-color: rgb(220, 240, 250);    border-image: initial;    border-radius: 8px;    padding: 2em;    margin: 2em 0px;    background-repeat: no-repeat;    background-position: right top;}.testimonial p{color:#000000;width:80%;line-height:1.4em;}.inst_title{color: #F56516;margin-top:2em;font-weight:600;font-size:1.1em;text-transform: uppercase;}/* ----------------------------------------- *//* Content Template: service-single-view - end *//* ----------------------------------------- *//* ----------------------------------------- *//* Content Template: services-menu - start *//* ----------------------------------------- */#second-nav > ul.navbar-nav-2 {  list-style-type:none;}@media (min-width:782px) {  .service-nav .navbar-container.container {    padding:0;  }  #second-nav > ul.navbar-nav-2 {    display:inline-flex;    padding: 1em 0;  }  #second-nav > .navbar-nav-2 h3 {    float:left;    margin-top:12px;    margin-bottom:0;  }  #second-nav > .navbar-nav-2 > li {    position: relative;    display: block;    padding: 8px 20px 8px 20px;    font-size: 1 em;    font-weight:600;  }}#second-nav. > navbar-nav-2 >li>a {  text-shadow:none;}.type-service .breadcrumbs {  display:none;}/* ----------------------------------------- *//* Content Template: services-menu - end *//* ----------------------------------------- *//* ----------------------------------------- *//* Content Template: search-widget-insert - start *//* ----------------------------------------- */li.navbar-search {    padding: .5em 0;}@media (min-width: 1200px){  li.navbar-search {    margin-left:auto;    }}@media (min-width:782px) {  .navbar-nav {    display:inline-flex;    margin: 5.5px -15px;    width:100%;  }}.navbar-search .form-control {  height:34px;  padding:6px;  line-height: 1.5;}.navbar-search .btn {  padding: 5px;  line-height:1.5;}/* ----------------------------------------- *//* Content Template: search-widget-insert - end *//* ----------------------------------------- */';
+wpvCtHead.appendChild( wpvCtExtraCss );
+</script>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/sites\/1218\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/heelium\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript">
+    /*<![CDATA[*/
+    (function() {
+    var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+    sz.src = '//siteimproveanalytics.com/js/siteanalyze_35044.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+    })();
+    /*]]>*/
+</script><script type="text/javascript" src="https://edtech.unc.edu/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script type="text/javascript" id="cookie-banner-script-js-extra">
+/* <![CDATA[ */
+var cookieBannerSettings = {"text":"This website uses cookies and similar technologies to understand visitor experiences. By using this website, you consent to UNC-Chapel Hill's cookie usage in accordance with their <a href='https:\/\/www.unc.edu\/about\/privacy-statement\/'>Privacy Notice<\/a>.","buttonText":"I Accept","blogId":"1218"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://edtech.unc.edu/wp-content/plugins/unc-cookie-banner/dist/cookie-banner.js?ver=22447759e5dd5bf1c282" id="cookie-banner-script-js"></script>
+<script type="text/javascript" id="collapseomatic-js-js-before">
+/* <![CDATA[ */
+const com_options = {"colomatduration":"fast","colomatslideEffect":"slideFade","colomatpauseInit":"","colomattouchstart":""}
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://edtech.unc.edu/wp-content/plugins/jquery-collapse-o-matic/js/collapse.js?ver=1.7.2" id="collapseomatic-js-js"></script>
+<script type="text/javascript" src="https://edtech.unc.edu/wp-content/themes/heelium/assets/js/parallax.js?ver=1.0" id="parallax-js"></script>
+<script type="text/javascript" src="https://edtech.unc.edu/wp-content/themes/heelium/assets/js/scripts.min.js?ver=4a104043f9e790655efb66c6a538540c" id="roots_scripts-js"></script>
+<script type="text/javascript" src="https://edtech.unc.edu/wp-content/plugins/unc-easy-bootstrap-shortcode/shortcode/toggles/toggle.js?ver=1.1.17" id="unc_ebs_toggle-js"></script>
+	<script> jQuery('.modal').on('hidden.bs.modal', function (e) {
+	// do something...
+	jQuery('.modal iframe').attr("src", jQuery(".modal  iframe").attr("src"));
+	});
+	</script>
+	
+<script type="text/javascript">
+//-----------------------------------------
+// Content Template: service-single-view - start
+//-----------------------------------------
+jQuery(document).ready(function ($){
+  $('.breadcrumbs').insertAfter('#parallax-section');
+     })
+
+//Get the button:
+mybutton = document.getElementById("topBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+//-----------------------------------------
+// Content Template: service-single-view - end
+//-----------------------------------------
+//-----------------------------------------
+// Content Template: search-widget-insert - start
+//-----------------------------------------
+jQuery(document).ready(function($) {
+  $('.search-form').wrap('<li class="navbar-search"></li>');
+  $('ul.navbar-nav').append($('.navbar-search'));
+});
+//-----------------------------------------
+// Content Template: search-widget-insert - end
+//-----------------------------------------
+</script>
+<style type="text/css" id="unc-ebs-dynamic-styles">#panel-heading-details-0-0{background-color:#007fae}#button-details-0-0{color:#ffffff}</style>    </div>
+</div>
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-6b53be0d94491620b86","applicationID":"781537153","transactionName":"YVdbMkRVDxUCB0cIDFgdbBRfG04PDQBWGU1GWkk=","queueTime":0,"applicationTime":553,"atts":"TRBYRAxPHBs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

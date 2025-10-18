@@ -1,0 +1,688 @@
+{
+  "quiz_info": {
+    "id": 743848,
+    "position": 2,
+    "description": null,
+    "points_possible": 4.0,
+    "grading_type": "points",
+    "created_at": "2025-09-04T03:16:10Z",
+    "updated_at": "2025-10-16T18:18:45Z",
+    "due_at": null,
+    "final_grader_id": null,
+    "grader_count": 0,
+    "graders_anonymous_to_graders": false,
+    "grader_comments_visible_to_graders": true,
+    "grader_names_visible_to_final_grader": true,
+    "lock_at": null,
+    "unlock_at": null,
+    "assignment_group_id": 208380,
+    "peer_reviews": false,
+    "anonymous_peer_reviews": false,
+    "automatic_peer_reviews": false,
+    "intra_group_peer_reviews": false,
+    "post_to_sis": false,
+    "grade_group_students_individually": false,
+    "group_category_id": null,
+    "grading_standard_id": null,
+    "moderated_grading": false,
+    "hide_in_gradebook": false,
+    "omit_from_final_grade": false,
+    "suppress_assignment": false,
+    "anonymous_instructor_annotations": false,
+    "anonymous_grading": false,
+    "allowed_attempts": -1,
+    "annotatable_attachment_id": null,
+    "secure_params": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsdGlfYXNzaWdubWVudF9pZCI6ImYyZmEwNTY3LWFhMGQtNGYzNC1iZGVmLWM1ZTIwMzg4OGYyNiJ9.13nto3FxyOoXRSRA-qD2FcGmHinFskHbEMT7dN4dULk",
+    "lti_context_id": "f2fa0567-aa0d-4f34-bdef-c5e203888f26",
+    "course_id": 97934,
+    "name": "Q2 section 1",
+    "submission_types": [
+      "external_tool"
+    ],
+    "has_submitted_submissions": true,
+    "due_date_required": false,
+    "max_name_length": 255,
+    "in_closed_grading_period": false,
+    "graded_submissions_exist": false,
+    "is_quiz_assignment": false,
+    "can_duplicate": true,
+    "original_course_id": null,
+    "original_assignment_id": null,
+    "original_lti_resource_link_id": null,
+    "original_assignment_name": null,
+    "original_quiz_id": null,
+    "workflow_state": "published",
+    "important_dates": false,
+    "is_quiz_lti_assignment": true,
+    "frozen_attributes": [
+      "submission_types"
+    ],
+    "external_tool_tag_attributes": {
+      "url": "https://uncch.quiz-lti-iad-prod.instructure.com/lti/launch",
+      "new_tab": null,
+      "external_data": "",
+      "resource_link_id": "3ec7d2c9a99ae4145b71960e2ea593ce3dcc464d",
+      "resource_link_title": null,
+      "content_type": "ContextExternalTool",
+      "content_id": 116,
+      "custom_params": null
+    },
+    "muted": true,
+    "html_url": "https://uncch.instructure.com/courses/97934/assignments/743848",
+    "has_overrides": true,
+    "url": "https://uncch.instructure.com/api/v1/courses/97934/external_tools/sessionless_launch?assignment_id=743848&launch_type=assessment",
+    "needs_grading_count": 27,
+    "sis_assignment_id": null,
+    "integration_id": null,
+    "integration_data": {},
+    "published": true,
+    "unpublishable": false,
+    "only_visible_to_overrides": false,
+    "visible_to_everyone": true,
+    "locked_for_user": false,
+    "submissions_download_url": "https://uncch.instructure.com/courses/97934/assignments/743848/submissions?zip=1",
+    "post_manually": false,
+    "anonymize_students": false,
+    "require_lockdown_browser": false,
+    "restrict_quantitative_data": false
+  },
+  "question_structure": {
+    "quiz_type": "new",
+    "quiz_data": {
+      "id": "743848",
+      "title": "Q2 section 1",
+      "instructions": "<p>This is a closed book quiz. You have 10 minutes to complete it.</p>",
+      "assignment_group_id": "208380",
+      "points_possible": 4.0,
+      "due_at": null,
+      "lock_at": null,
+      "unlock_at": null,
+      "published": true,
+      "grading_type": "points",
+      "quiz_settings": {
+        "calculator_type": "none",
+        "filter_ip_address": false,
+        "filters": {},
+        "one_at_a_time_type": "question",
+        "allow_backtracking": true,
+        "shuffle_answers": false,
+        "shuffle_questions": false,
+        "require_student_access_code": false,
+        "student_access_code": null,
+        "has_time_limit": true,
+        "session_time_limit_in_seconds": 720,
+        "multiple_attempts": {},
+        "result_view_settings": {}
+      },
+      "items": [
+        {
+          "id": "452018",
+          "position": 1,
+          "points_possible": 2.0,
+          "properties": {},
+          "entry_type": "Item",
+          "entry_editable": true,
+          "stimulus_quiz_entry_id": "",
+          "status": "immutable",
+          "entry": {
+            "title": "Endogenous vs Exogenous Variables",
+            "item_body": "<p>In the context of the following model&nbsp; classify the variables.</p>\n<p><img src=\"https://inst-fs-iad-prod.inscloudgate.net/files/f808f9fc-d903-4816-aadb-4863e3495fa2/Screenshot+2025-09-03+at+11.48.04%E2%80%AFPM.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6Im5ldy1xdWl6emVzL21haW4ifQ.eyJyZXNvdXJjZSI6Ii9maWxlcy9mODA4ZjlmYy1kOTAzLTQ4MTYtYWFkYi00ODYzZTM0OTVmYTIvU2NyZWVuc2hvdCsyMDI1LTA5LTAzK2F0KzExLjQ4LjA0JUUyJTgwJUFGUE0ucG5nIiwidGVuYW50X2F1dGgiOnsibG9jYXRpb24iOiJxdWl6LzgxMTAwMDAwMDAwMDQzOTA2In0sImV4cCI6MTc2MDcwNzQzOCwiaWF0IjoxNzYwNjYwNjM4LCJpc3MiOiJuZXctcXVpenplcyIsImF1ZCI6Imh0dHBzOi8vaW5zdC1mcy1pYWQtcHJvZC5pbnNjbG91ZGdhdGUubmV0In0.hBbsgD1YwtCORW5dZNG8VWPsRe-1e4OtoGFS5XdmBAkdvEBZgT6jeQzzhrxkGGiKPSC1aq0dGyP9d0oCDFKSNg\" alt=\"Screenshot 2025-09-03 at 11.48.04 PM.png\" width=\"50%\" height=\"50%\" data-old-link=\"/courses/97934/files/12381584/preview?verifier=tFOJEsCZPYtb7uJ8iK6qDLeILqF6lf3kURf9U1s2\"></p>\n<p><img src=\"https://inst-fs-iad-prod.inscloudgate.net/files/9b063a0d-1ad9-48dd-938c-628bca67f883/Screenshot+2025-09-03+at+11.50.26%E2%80%AFPM.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6Im5ldy1xdWl6emVzL21haW4ifQ.eyJyZXNvdXJjZSI6Ii9maWxlcy85YjA2M2EwZC0xYWQ5LTQ4ZGQtOTM4Yy02MjhiY2E2N2Y4ODMvU2NyZWVuc2hvdCsyMDI1LTA5LTAzK2F0KzExLjUwLjI2JUUyJTgwJUFGUE0ucG5nIiwidGVuYW50X2F1dGgiOnsibG9jYXRpb24iOiJxdWl6LzgxMTAwMDAwMDAwMDQzOTA2In0sImV4cCI6MTc2MDcwOTE0NywiaWF0IjoxNzYwNjYyMzQ3LCJpc3MiOiJuZXctcXVpenplcyIsImF1ZCI6Imh0dHBzOi8vaW5zdC1mcy1pYWQtcHJvZC5pbnNjbG91ZGdhdGUubmV0In0.Dt4VtlQWYzqJmwZi1-jiIjBjrT4KdRpPFMx8-nGHc-CtA69eUTsB9iaTvoeoyTdKvMmBoB1fusJ0YzCO2gUCig\" alt=\"Screenshot 2025-09-03 at 11.50.26 PM-1.png\" width=\"50%\" height=\"50%\" data-old-link=\"/courses/97934/files/12381600/preview?verifier=CEm7bYtAjAcdpNIfagK1UjZcq2r5bNfQWkClnNqf\">S</p>\n<p>Source: MaCurdy, Thomas E. \"An empirical model of labor supply in a life-cycle setting.\" Journal of political Economy 89, no. 6 (1981): 1059-1085.</p>",
+            "calculator_type": "none",
+            "interaction_data": {
+              "categories": {
+                "3670c948-f13b-4c1e-b014-f1a14e653929": {
+                  "id": "3670c948-f13b-4c1e-b014-f1a14e653929",
+                  "item_body": "endogenous"
+                },
+                "f615b7ad-0015-452e-8ee6-da6dd5501606": {
+                  "id": "f615b7ad-0015-452e-8ee6-da6dd5501606",
+                  "item_body": "exogenous"
+                }
+              },
+              "distractors": {
+                "07b3251f-0a87-4e1b-9612-315df7324a36": {
+                  "id": "07b3251f-0a87-4e1b-9612-315df7324a36",
+                  "item_body": "W(t)"
+                },
+                "0c7a8e81-b55d-4a6e-9787-3b211aed236b": {
+                  "id": "0c7a8e81-b55d-4a6e-9787-3b211aed236b",
+                  "item_body": "R(t)"
+                },
+                "41957a6f-3003-4515-97a0-a24fe4edbfa1": {
+                  "id": "41957a6f-3003-4515-97a0-a24fe4edbfa1",
+                  "item_body": "N(t)"
+                },
+                "994dc73f-b42d-420e-ae07-e8959ddc5c44": {
+                  "id": "994dc73f-b42d-420e-ae07-e8959ddc5c44",
+                  "item_body": "ρ "
+                },
+                "c8ef6870-1016-4e37-9af6-8a405ea12193": {
+                  "id": "c8ef6870-1016-4e37-9af6-8a405ea12193",
+                  "item_body": "L(t)"
+                },
+                "df79258f-9a16-4f71-b71f-a4cc41cf98a0": {
+                  "id": "df79258f-9a16-4f71-b71f-a4cc41cf98a0",
+                  "item_body": "C(t)"
+                },
+                "e904ed86-8824-4464-bcf7-f6d338525567": {
+                  "id": "e904ed86-8824-4464-bcf7-f6d338525567",
+                  "item_body": "A(0)"
+                }
+              },
+              "category_order": [
+                "3670c948-f13b-4c1e-b014-f1a14e653929",
+                "f615b7ad-0015-452e-8ee6-da6dd5501606"
+              ]
+            },
+            "properties": {
+              "shuffle_rules": {
+                "questions": {
+                  "shuffled": false
+                }
+              }
+            },
+            "scoring_data": {
+              "value": [
+                {
+                  "id": "3670c948-f13b-4c1e-b014-f1a14e653929",
+                  "scoring_data": {
+                    "value": [
+                      "c8ef6870-1016-4e37-9af6-8a405ea12193",
+                      "df79258f-9a16-4f71-b71f-a4cc41cf98a0",
+                      "41957a6f-3003-4515-97a0-a24fe4edbfa1"
+                    ]
+                  },
+                  "scoring_algorithm": "AllOrNothing"
+                },
+                {
+                  "id": "f615b7ad-0015-452e-8ee6-da6dd5501606",
+                  "scoring_data": {
+                    "value": [
+                      "e904ed86-8824-4464-bcf7-f6d338525567",
+                      "07b3251f-0a87-4e1b-9612-315df7324a36",
+                      "994dc73f-b42d-420e-ae07-e8959ddc5c44",
+                      "0c7a8e81-b55d-4a6e-9787-3b211aed236b"
+                    ]
+                  },
+                  "scoring_algorithm": "AllOrNothing"
+                }
+              ],
+              "score_method": "all_or_nothing"
+            },
+            "answer_feedback": {},
+            "scoring_algorithm": "Categorization",
+            "interaction_type_slug": "categorization",
+            "feedback": {}
+          }
+        },
+        {
+          "id": "452019",
+          "position": 2,
+          "points_possible": 2.0,
+          "properties": {},
+          "entry_type": "Item",
+          "entry_editable": true,
+          "stimulus_quiz_entry_id": "",
+          "status": "immutable",
+          "entry": {
+            "title": "Lagrangian and recipe #1",
+            "item_body": "<p>Consider the problem of maximizing the following function <img class=\"equation_image\" title=\"f(x,y)=x\\cdot y - x^2+\\log(y)\" src=\"/equation_images/f(x%252Cy)%253Dx%255Ccdot%2520y%2520-%2520x%255E2%252B%255Clog(y)?scale=1\" alt=\"LaTeX: f(x,y)=x\\cdot y - x^2+\\log(y)\" data-equation-content=\"f(x,y)=x\\cdot y - x^2+\\log(y)\" data-ignore-a11y-check=\"\"> subject to the equality constraint constraint; <img class=\"equation_image\" title=\"x+3y=100\" src=\"/equation_images/x%252B3y%253D100?scale=1\" alt=\"LaTeX: x+3y=100\" data-equation-content=\"x+3y=100\" data-ignore-a11y-check=\"\">.</p>\n<ol style=\"list-style-type: decimal;\">\n<li>Write the corresponding Lagrangian for this maximization problem.</li>\n<li>In words describe the steps of Recipe #1 to solve this problem. Mathematica notation is NOT required. Computations are NOT required. Please, try to describe it using short sentences.</li>\n</ol>",
+            "calculator_type": "none",
+            "interaction_data": {
+              "rce": true,
+              "essay": null,
+              "word_count": false,
+              "file_upload": false,
+              "spell_check": false,
+              "word_limit_max": null,
+              "word_limit_min": null,
+              "word_limit_enabled": false
+            },
+            "properties": {
+              "word_limit": false,
+              "spell_check": false,
+              "word_limit_max": 0,
+              "word_limit_min": 0,
+              "show_word_count": false,
+              "rich_content_editor": false
+            },
+            "scoring_data": {
+              "value": ""
+            },
+            "answer_feedback": {},
+            "scoring_algorithm": "None",
+            "interaction_type_slug": "essay",
+            "feedback": {}
+          }
+        }
+      ]
+    }
+  },
+  "sample_submissions": [
+    {
+      "submission_id": 36510431,
+      "user_id": 57953,
+      "workflow_state": "pending_review",
+      "score": 2.0,
+      "answers": [],
+      "error": "Could not find quiz_submission_id",
+      "new_quiz_api_data": {
+        "preview_url_data": null,
+        "quiz_api_data": null,
+        "submissions_download_data": {
+          "note": "Not JSON response",
+          "content_type": "text/html; charset=UTF-8",
+          "content_length": 94421
+        },
+        "errors": []
+      },
+      "full_submission_object": {
+        "id": 36510431,
+        "user_id": 57953,
+        "url": "https://uncch.instructure.com/courses/97934/external_tools/retrieve?assignment_id=743848&url=https%3A%2F%2Funcch.quiz-lti-iad-prod.instructure.com%2Flti%2Flaunch%3Fparticipant_session_id%3D1563551%26quiz_session_id%3D1576640",
+        "score": 2.0,
+        "grade": "2",
+        "excused": null,
+        "attempt": 1,
+        "submission_type": "basic_lti_launch",
+        "submitted_at": "2025-09-04T14:41:40Z",
+        "body": null,
+        "assignment_id": 743848,
+        "graded_at": "2025-09-04T14:41:41Z",
+        "grade_matches_current_submission": true,
+        "grader_id": -116,
+        "workflow_state": "pending_review",
+        "late_policy_status": null,
+        "points_deducted": null,
+        "grading_period_id": null,
+        "cached_due_date": null,
+        "extra_attempts": null,
+        "posted_at": "2025-09-04T14:41:40Z",
+        "redo_request": false,
+        "sticker": null,
+        "custom_grade_status_id": null,
+        "late": false,
+        "missing": false,
+        "seconds_late": 0,
+        "entered_grade": "2",
+        "entered_score": 2.0,
+        "preview_url": "https://uncch.instructure.com/courses/97934/assignments/743848/submissions/57953?preview=1&version=2",
+        "external_tool_url": "https://uncch.quiz-lti-iad-prod.instructure.com/lti/launch?participant_session_id=1563551&quiz_session_id=1576640",
+        "submission_history": [
+          {
+            "id": 36510431,
+            "grade": "2",
+            "score": 2.0,
+            "submitted_at": "2025-09-04T14:41:40Z",
+            "assignment_id": 743848,
+            "user_id": 57953,
+            "submission_type": "basic_lti_launch",
+            "workflow_state": "pending_review",
+            "updated_at": "2025-09-04T14:41:43Z",
+            "grade_matches_current_submission": true,
+            "graded_at": "2025-09-04T14:41:41Z",
+            "turnitin_data": {},
+            "excused": null,
+            "points_deducted": null,
+            "grading_period_id": null,
+            "url": "https://uncch.quiz-lti-iad-prod.instructure.com/lti/launch?participant_session_id=1563551&quiz_session_id=1576640"
+          }
+        ],
+        "submission_comments": [],
+        "user": {
+          "id": 57953,
+          "name": "Gabriel Perez",
+          "created_at": "2022-05-19T19:48:14-04:00",
+          "sortable_name": "Perez, Gabriel",
+          "short_name": "Gabriel Perez",
+          "sis_user_id": "730402967",
+          "integration_id": null,
+          "login_id": "gperez12",
+          "avatar_url": "https://uncch.instructure.com/images/messages/avatar-50.png"
+        },
+        "assignment_visible": true
+      }
+    },
+    {
+      "submission_id": 36510433,
+      "user_id": 62002,
+      "workflow_state": "pending_review",
+      "score": 2.0,
+      "answers": [],
+      "error": "Could not find quiz_submission_id",
+      "new_quiz_api_data": {
+        "preview_url_data": null,
+        "quiz_api_data": null,
+        "submissions_download_data": {
+          "note": "Not JSON response",
+          "content_type": "text/html; charset=UTF-8",
+          "content_length": 94421
+        },
+        "errors": []
+      },
+      "full_submission_object": {
+        "id": 36510433,
+        "user_id": 62002,
+        "url": "https://uncch.instructure.com/courses/97934/external_tools/retrieve?assignment_id=743848&url=https%3A%2F%2Funcch.quiz-lti-iad-prod.instructure.com%2Flti%2Flaunch%3Fparticipant_session_id%3D1563543%26quiz_session_id%3D1576632",
+        "score": 2.0,
+        "grade": "2",
+        "excused": null,
+        "attempt": 1,
+        "submission_type": "basic_lti_launch",
+        "submitted_at": "2025-09-04T14:39:46Z",
+        "body": null,
+        "assignment_id": 743848,
+        "graded_at": "2025-09-04T14:39:46Z",
+        "grade_matches_current_submission": true,
+        "grader_id": -116,
+        "workflow_state": "pending_review",
+        "late_policy_status": null,
+        "points_deducted": null,
+        "grading_period_id": null,
+        "cached_due_date": null,
+        "extra_attempts": null,
+        "posted_at": "2025-09-04T14:39:46Z",
+        "redo_request": false,
+        "sticker": null,
+        "custom_grade_status_id": null,
+        "late": false,
+        "missing": false,
+        "seconds_late": 0,
+        "entered_grade": "2",
+        "entered_score": 2.0,
+        "preview_url": "https://uncch.instructure.com/courses/97934/assignments/743848/submissions/62002?preview=1&version=2",
+        "external_tool_url": "https://uncch.quiz-lti-iad-prod.instructure.com/lti/launch?participant_session_id=1563543&quiz_session_id=1576632",
+        "submission_history": [
+          {
+            "id": 36510433,
+            "grade": "2",
+            "score": 2.0,
+            "submitted_at": "2025-09-04T14:39:46Z",
+            "assignment_id": 743848,
+            "user_id": 62002,
+            "submission_type": "basic_lti_launch",
+            "workflow_state": "pending_review",
+            "updated_at": "2025-09-04T14:39:48Z",
+            "grade_matches_current_submission": true,
+            "graded_at": "2025-09-04T14:39:46Z",
+            "turnitin_data": {},
+            "excused": null,
+            "points_deducted": null,
+            "grading_period_id": null,
+            "url": "https://uncch.quiz-lti-iad-prod.instructure.com/lti/launch?participant_session_id=1563543&quiz_session_id=1576632"
+          }
+        ],
+        "submission_comments": [],
+        "user": {
+          "id": 62002,
+          "name": "Davis Prevette",
+          "created_at": "2022-05-19T19:52:14-04:00",
+          "sortable_name": "Prevette, Davis",
+          "short_name": "Davis Prevette",
+          "sis_user_id": "730466398",
+          "integration_id": null,
+          "login_id": "dprev",
+          "avatar_url": "https://uncch.instructure.com/images/messages/avatar-50.png"
+        },
+        "assignment_visible": true
+      }
+    },
+    {
+      "submission_id": 36510434,
+      "user_id": 62423,
+      "workflow_state": "pending_review",
+      "score": 0.0,
+      "answers": [],
+      "error": "Could not find quiz_submission_id",
+      "new_quiz_api_data": {
+        "preview_url_data": null,
+        "quiz_api_data": null,
+        "submissions_download_data": {
+          "note": "Not JSON response",
+          "content_type": "text/html; charset=UTF-8",
+          "content_length": 94421
+        },
+        "errors": []
+      },
+      "full_submission_object": {
+        "id": 36510434,
+        "user_id": 62423,
+        "url": "https://uncch.instructure.com/courses/97934/external_tools/retrieve?assignment_id=743848&url=https%3A%2F%2Funcch.quiz-lti-iad-prod.instructure.com%2Flti%2Flaunch%3Fparticipant_session_id%3D1563554%26quiz_session_id%3D1576643",
+        "score": 0.0,
+        "grade": "0",
+        "excused": null,
+        "attempt": 1,
+        "submission_type": "basic_lti_launch",
+        "submitted_at": "2025-09-04T14:41:53Z",
+        "body": null,
+        "assignment_id": 743848,
+        "graded_at": "2025-09-04T14:41:53Z",
+        "grade_matches_current_submission": true,
+        "grader_id": -116,
+        "workflow_state": "pending_review",
+        "late_policy_status": null,
+        "points_deducted": null,
+        "grading_period_id": null,
+        "cached_due_date": null,
+        "extra_attempts": null,
+        "posted_at": "2025-09-04T14:41:53Z",
+        "redo_request": false,
+        "sticker": null,
+        "custom_grade_status_id": null,
+        "late": false,
+        "missing": false,
+        "seconds_late": 0,
+        "entered_grade": "0",
+        "entered_score": 0.0,
+        "preview_url": "https://uncch.instructure.com/courses/97934/assignments/743848/submissions/62423?preview=1&version=2",
+        "external_tool_url": "https://uncch.quiz-lti-iad-prod.instructure.com/lti/launch?participant_session_id=1563554&quiz_session_id=1576643",
+        "submission_history": [
+          {
+            "id": 36510434,
+            "grade": "0",
+            "score": 0.0,
+            "submitted_at": "2025-09-04T14:41:53Z",
+            "assignment_id": 743848,
+            "user_id": 62423,
+            "submission_type": "basic_lti_launch",
+            "workflow_state": "pending_review",
+            "updated_at": "2025-09-04T14:41:54Z",
+            "grade_matches_current_submission": true,
+            "graded_at": "2025-09-04T14:41:53Z",
+            "turnitin_data": {},
+            "excused": null,
+            "points_deducted": null,
+            "grading_period_id": null,
+            "url": "https://uncch.quiz-lti-iad-prod.instructure.com/lti/launch?participant_session_id=1563554&quiz_session_id=1576643"
+          }
+        ],
+        "submission_comments": [],
+        "user": {
+          "id": 62423,
+          "name": "Ophelia Zhu",
+          "created_at": "2022-05-19T19:52:36-04:00",
+          "sortable_name": "Zhu, Ophelia",
+          "short_name": "Ophelia Zhu",
+          "sis_user_id": "730467283",
+          "integration_id": null,
+          "login_id": "ophezhu",
+          "avatar_url": "https://uncch.instructure.com/images/messages/avatar-50.png"
+        },
+        "assignment_visible": true
+      }
+    },
+    {
+      "submission_id": 36510439,
+      "user_id": 67239,
+      "workflow_state": "pending_review",
+      "score": 2.0,
+      "answers": [],
+      "error": "Could not find quiz_submission_id",
+      "new_quiz_api_data": {
+        "preview_url_data": null,
+        "quiz_api_data": null,
+        "submissions_download_data": {
+          "note": "Not JSON response",
+          "content_type": "text/html; charset=UTF-8",
+          "content_length": 94421
+        },
+        "errors": []
+      },
+      "full_submission_object": {
+        "id": 36510439,
+        "user_id": 67239,
+        "url": "https://uncch.instructure.com/courses/97934/external_tools/retrieve?assignment_id=743848&url=https%3A%2F%2Funcch.quiz-lti-iad-prod.instructure.com%2Flti%2Flaunch%3Fparticipant_session_id%3D1563552%26quiz_session_id%3D1576641",
+        "score": 2.0,
+        "grade": "2",
+        "excused": null,
+        "attempt": 1,
+        "submission_type": "basic_lti_launch",
+        "submitted_at": "2025-09-04T14:41:59Z",
+        "body": null,
+        "assignment_id": 743848,
+        "graded_at": "2025-09-04T14:41:59Z",
+        "grade_matches_current_submission": true,
+        "grader_id": -116,
+        "workflow_state": "pending_review",
+        "late_policy_status": null,
+        "points_deducted": null,
+        "grading_period_id": null,
+        "cached_due_date": null,
+        "extra_attempts": null,
+        "posted_at": "2025-09-04T14:41:59Z",
+        "redo_request": false,
+        "sticker": null,
+        "custom_grade_status_id": null,
+        "late": false,
+        "missing": false,
+        "seconds_late": 0,
+        "entered_grade": "2",
+        "entered_score": 2.0,
+        "preview_url": "https://uncch.instructure.com/courses/97934/assignments/743848/submissions/67239?preview=1&version=2",
+        "external_tool_url": "https://uncch.quiz-lti-iad-prod.instructure.com/lti/launch?participant_session_id=1563552&quiz_session_id=1576641",
+        "submission_history": [
+          {
+            "id": 36510439,
+            "grade": "2",
+            "score": 2.0,
+            "submitted_at": "2025-09-04T14:41:59Z",
+            "assignment_id": 743848,
+            "user_id": 67239,
+            "submission_type": "basic_lti_launch",
+            "workflow_state": "pending_review",
+            "updated_at": "2025-09-04T14:42:01Z",
+            "grade_matches_current_submission": true,
+            "graded_at": "2025-09-04T14:41:59Z",
+            "turnitin_data": {},
+            "excused": null,
+            "points_deducted": null,
+            "grading_period_id": null,
+            "url": "https://uncch.quiz-lti-iad-prod.instructure.com/lti/launch?participant_session_id=1563552&quiz_session_id=1576641"
+          }
+        ],
+        "submission_comments": [],
+        "user": {
+          "id": 67239,
+          "name": "Riya Chawan",
+          "created_at": "2022-05-19T19:57:32-04:00",
+          "sortable_name": "Chawan, Riya",
+          "short_name": "Riya Chawan",
+          "sis_user_id": "730517624",
+          "integration_id": null,
+          "login_id": "riyac",
+          "avatar_url": "https://uncch.instructure.com/images/messages/avatar-50.png"
+        },
+        "assignment_visible": true
+      }
+    },
+    {
+      "submission_id": 36510440,
+      "user_id": 70001,
+      "workflow_state": "pending_review",
+      "score": 0.0,
+      "answers": [],
+      "error": "Could not find quiz_submission_id",
+      "new_quiz_api_data": {
+        "preview_url_data": null,
+        "quiz_api_data": null,
+        "submissions_download_data": {
+          "note": "Not JSON response",
+          "content_type": "text/html; charset=UTF-8",
+          "content_length": 94421
+        },
+        "errors": []
+      },
+      "full_submission_object": {
+        "id": 36510440,
+        "user_id": 70001,
+        "url": "https://uncch.instructure.com/courses/97934/external_tools/retrieve?assignment_id=743848&url=https%3A%2F%2Funcch.quiz-lti-iad-prod.instructure.com%2Flti%2Flaunch%3Fparticipant_session_id%3D1563547%26quiz_session_id%3D1576636",
+        "score": 0.0,
+        "grade": "0",
+        "excused": null,
+        "attempt": 1,
+        "submission_type": "basic_lti_launch",
+        "submitted_at": "2025-09-04T14:39:27Z",
+        "body": null,
+        "assignment_id": 743848,
+        "graded_at": "2025-09-04T14:39:29Z",
+        "grade_matches_current_submission": true,
+        "grader_id": -116,
+        "workflow_state": "pending_review",
+        "late_policy_status": null,
+        "points_deducted": null,
+        "grading_period_id": null,
+        "cached_due_date": null,
+        "extra_attempts": null,
+        "posted_at": "2025-09-04T14:39:27Z",
+        "redo_request": false,
+        "sticker": null,
+        "custom_grade_status_id": null,
+        "late": false,
+        "missing": false,
+        "seconds_late": 0,
+        "entered_grade": "0",
+        "entered_score": 0.0,
+        "preview_url": "https://uncch.instructure.com/courses/97934/assignments/743848/submissions/70001?preview=1&version=2",
+        "external_tool_url": "https://uncch.quiz-lti-iad-prod.instructure.com/lti/launch?participant_session_id=1563547&quiz_session_id=1576636",
+        "submission_history": [
+          {
+            "id": 36510440,
+            "grade": "0",
+            "score": 0.0,
+            "submitted_at": "2025-09-04T14:39:27Z",
+            "assignment_id": 743848,
+            "user_id": 70001,
+            "submission_type": "basic_lti_launch",
+            "workflow_state": "pending_review",
+            "updated_at": "2025-09-04T14:39:30Z",
+            "grade_matches_current_submission": true,
+            "graded_at": "2025-09-04T14:39:29Z",
+            "turnitin_data": {},
+            "excused": null,
+            "points_deducted": null,
+            "grading_period_id": null,
+            "url": "https://uncch.quiz-lti-iad-prod.instructure.com/lti/launch?participant_session_id=1563547&quiz_session_id=1576636"
+          }
+        ],
+        "submission_comments": [],
+        "user": {
+          "id": 70001,
+          "name": "Zachary Mara",
+          "created_at": "2022-05-19T20:00:05-04:00",
+          "sortable_name": "Mara, Zachary",
+          "short_name": "Zachary Mara",
+          "sis_user_id": "730531080",
+          "integration_id": null,
+          "login_id": "zmmara",
+          "avatar_url": "https://uncch.instructure.com/images/messages/avatar-50.png"
+        },
+        "assignment_visible": true
+      }
+    }
+  ],
+  "metadata": {
+    "course_id": 97934,
+    "timestamp": "20251016_205410",
+    "num_submissions_sampled": 5
+  }
+}
