@@ -1,0 +1,81 @@
+Patch Instructions: Fix redundant comment posting in categorization_grader.py
+==========================================================================
+
+Goal:
+-----
+Prevent Canvas grader from posting "New score for ..." comments when
+the old and new scores are numerically equal (within a tolerance).
+
+Change Summary:
+----------------
+1. Add a tolerance constant EPS = 0.001
+2. Modify update_grade() to only include comments when needed.
+3. Skip comment creation when old == new.
+
+--------------------------------------------------------------------------
+
+1️⃣  Add the EPS constant
+-------------------------
+After line 28 (right below REPORT_TIMEOUT = 900), insert:
+
+    EPS = 0.001
+
+--------------------------------------------------------------------------
+
+2️⃣  Modify update_grade() to make the comment optional
+------------------------------------------------------
+Locate the method definition around line 237:
+
+    def update_grade(self, course_id: int, assignment_id: int, user_id: int,
+                    grade: float, comment: str) -> bool:
+
+Replace with:
+
+    def update_grade(self, course_id: int, assignment_id: int, user_id: int,
+                    grade: float, comment: Optional[str] = None) -> bool:
+
+Then, inside that same method, replace lines 241–244:
+
+    data = {
+        'submission[posted_grade]': str(grade),
+        'comment[text_comment]': comment
+    }
+
+with this safer version:
+
+    data = {
+        'submission[posted_grade]': str(grade)
+    }
+    if comment:
+        data['comment[text_comment]'] = comment
+
+--------------------------------------------------------------------------
+
+3️⃣  Skip building/posting the comment when the score hasn’t changed
+-------------------------------------------------------------------
+Find lines 637–642 (the feedback string construction).
+
+Replace those lines with:
+
+    equal = abs(grade.old_question_grade - grade.new_question_grade) < EPS
+    feedback = None if equal else (
+        f"New score for {selected_question.title}: "
+        f"old score = {grade.old_question_grade:.1f}, new score = {grade.new_question_grade:.1f}\n"
+        f"Correct = {grade.correct_count}, Misclassified = {grade.misclassified_count}\n"
+        f"Grading formula: (correct - 0.5 * misclassified) / total * points_possible"
+    )
+
+(Optional) You can log skipped comments for transparency:
+
+    if equal:
+        print(f"  • Skipped comment (no change): {grade.student_name}")
+
+--------------------------------------------------------------------------
+
+✅ Result:
+----------
+- The grader still updates grades as before.
+- Comments are **not posted** when the per-question score didn’t change (|old−new| < 0.001).
+- No redundant equal-score comments appear in Canvas anymore.
+
+==========================================================================

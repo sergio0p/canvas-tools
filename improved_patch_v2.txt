@@ -1,0 +1,123 @@
+Patch Instructions v2: Skip Redundant Grade Updates in categorization_grader.py
+==================================================================================
+
+Goal:
+-----
+Skip entire grade update (including comment) when the question grade hasn't 
+changed, since unchanged question grade = unchanged total grade.
+
+Change Summary:
+----------------
+1. Add a tolerance constant EPS = 0.001
+2. Modify update_grade() to make comment optional
+3. Skip entire grade update when old == new (no API call, no comment)
+
+--------------------------------------------------------------------------
+
+1️⃣  Add the EPS constant
+-------------------------
+After line 28 (right below REPORT_TIMEOUT = 900), insert:
+
+    EPS = 0.001  # Tolerance for comparing floating-point grades
+
+--------------------------------------------------------------------------
+
+2️⃣  Modify update_grade() to make the comment optional
+------------------------------------------------------
+Locate the method definition around line 237:
+
+    def update_grade(self, course_id: int, assignment_id: int, user_id: int,
+                    grade: float, comment: str) -> bool:
+
+Replace with:
+
+    def update_grade(self, course_id: int, assignment_id: int, user_id: int,
+                    grade: float, comment: Optional[str] = None) -> bool:
+
+Then, inside that same method, replace lines 241–244:
+
+    data = {
+        'submission[posted_grade]': str(grade),
+        'comment[text_comment]': comment
+    }
+
+with this safer version:
+
+    data = {
+        'submission[posted_grade]': str(grade)
+    }
+    if comment:
+        data['comment[text_comment]'] = comment
+
+--------------------------------------------------------------------------
+
+3️⃣  Skip entire update when grade unchanged
+-------------------------------------------
+Find lines 637–655 (the feedback comment construction and grade update).
+
+Replace the entire block:
+
+    # Build feedback comment
+    feedback = (
+        f"New score for {selected_question.title}: "
+        f"old score = {grade.old_question_grade:.1f}, new score = {grade.new_question_grade:.1f}\n"
+        f"Correct = {grade.correct_count}, Misclassified = {grade.misclassified_count}\n"
+        f"Grading formula: (correct - 0.5 * misclassified) / total * points_possible"
+    )
+
+    success = client.update_grade(
+        selected_course.id,
+        selected_assignment.id,
+        grade.student_id,
+        grade.new_total_grade,
+        feedback
+    )
+
+    if success:
+        success_count += 1
+        print(f"  ✓ Updated: {grade.student_name}")
+    else:
+        failed_count += 1
+
+With this new version:
+
+    # Skip update if question grade unchanged (which means total grade unchanged too)
+    grade_changed = abs(grade.old_question_grade - grade.new_question_grade) >= EPS
+
+    if not grade_changed:
+        print(f"  ⊘ Skipped (no change): {grade.student_name}")
+        continue
+
+    # Build feedback comment
+    feedback = (
+        f"New score for {selected_question.title}: "
+        f"old score = {grade.old_question_grade:.1f}, new score = {grade.new_question_grade:.1f}\n"
+        f"Correct = {grade.correct_count}, Misclassified = {grade.misclassified_count}\n"
+        f"Grading formula: (correct - 0.5 * misclassified) / total * points_possible"
+    )
+
+    success = client.update_grade(
+        selected_course.id,
+        selected_assignment.id,
+        grade.student_id,
+        grade.new_total_grade,
+        feedback
+    )
+
+    if success:
+        success_count += 1
+        print(f"  ✓ Updated: {grade.student_name}")
+    else:
+        failed_count += 1
+
+--------------------------------------------------------------------------
+
+✅ Result:
+----------
+- Question grade unchanged → Total grade unchanged → Skip entirely (no API call)
+- Question grade changed → Total grade changed → Update with comment
+- No redundant "New score: 5.0 → 5.0" comments
+- Reduced Canvas API traffic
+- More efficient grading process
+
+==========================================================================
