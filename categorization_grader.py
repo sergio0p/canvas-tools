@@ -26,6 +26,7 @@ API_QUIZ = f"{HOST}/api/quiz/v1"
 
 POLL_INTERVAL = 2.0  # seconds
 REPORT_TIMEOUT = 900  # 15 minutes
+EPS = 0.001  # Tolerance for comparing floating-point grades
 
 
 @dataclass
@@ -234,14 +235,15 @@ class CanvasAPIClient:
         return response.json()
 
     def update_grade(self, course_id: int, assignment_id: int, user_id: int,
-                    grade: float, comment: str) -> bool:
+                    grade: float, comment: Optional[str] = None) -> bool:
         """Update student's quiz grade and add feedback comment"""
         url = f"{API_V1}/courses/{course_id}/assignments/{assignment_id}/submissions/{user_id}"
 
         data = {
-            'submission[posted_grade]': str(grade),
-            'comment[text_comment]': comment
+            'submission[posted_grade]': str(grade)
         }
+        if comment:
+            data['comment[text_comment]'] = comment
 
         response = self.session.put(url, data=data)
 
@@ -633,6 +635,13 @@ def main():
                 failed_count = 0
 
                 for grade in grades:
+                    # Skip update if question grade unchanged (which means total grade unchanged too)
+                    grade_changed = abs(grade.old_question_grade - grade.new_question_grade) >= EPS
+
+                    if not grade_changed:
+                        print(f"  ⊘ Skipped (no change): {grade.student_name}")
+                        continue
+
                     # Build feedback comment
                     feedback = (
                         f"New score for {selected_question.title}: "

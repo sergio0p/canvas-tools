@@ -45,58 +45,70 @@ security add-generic-password -a openai -s openai_api_key -w 'your_openai_api_ke
 
 ### AI-Powered Essay Grading
 
-This repository contains an essay grading system for Canvas New Quizzes that uses OpenAI API for automated grading. The system is split into two parts for flexibility and resumability.
+This repository contains a **completed and working** essay grading system for Canvas New Quizzes that uses AI models (OpenAI GPT-5, Claude Sonnet 4.5, etc.) for automated grading with human-in-the-loop validation.
 
-#### Files
+**New Framework Feature**: The grading system now **requires structured output** using OpenAI's JSON Schema response format to ensure consistent, validated grading results.
 
-- `essay_grader.py` - Original monolithic script (kept for reference)
-- `essay_grader_part_a.py` - Script A: Fetches submissions and grades with AI
-- `essay_grader_part_b.py` - Script B: Reviews and uploads grades to Canvas
+All essay grading tools are located in the `Essays/` subdirectory. See [Essays/README.md](Essays/README.md) for detailed documentation.
 
-#### How It Works
+#### Key Features
 
-**Script A - Grading Phase:**
-1. Authenticates with Canvas and OpenAI
-2. Prompts user to select course → assignment → essay question
-3. Gets grading guidelines (from file or manual input)
-4. Fetches all student submissions
-5. Grades essays in parallel using OpenAI API
-6. Serializes complete state to `essays_{course_id}_{timestamp}.json`
+- **Structured Output Enforcement**: Uses JSON Schema (`response_format`) to guarantee valid grade values and feedback format
+- **Multi-Model Support**: GPT-4o, GPT-5, Claude Sonnet 4.5, with automatic API provider detection
+- **Model Testing**: Compare different AI models on the same essays (Script AA)
+- **Parallel Grading**: 5 concurrent API requests for faster processing
+- **Two-Phase Workflow**: Separate grading (Script A) and validation (Script B) phases
+- **State Persistence**: Full resumability with JSON checkpoint files
+- **Student Analysis Caching**: Reuse Canvas submissions across model tests
+- **Two-Comment System**: Separate feedback and model answers
+- **Menu-Driven Overrides**: Quick feedback selection from predefined templates
 
-**Script B - Validation Phase:**
-1. Lists all available grading sessions from JSON files
-2. User selects which session to continue
-3. Creates backup (.bak.json)
-4. Deserializes state and resumes validation
-5. For each student, displays essay and AI grading
-6. User chooses:
-   - **(v)alidate** - Upload AI grade immediately
-   - **(o)verride** - Provide custom grade/feedback and upload
-   - **(s)kip** - Move to next student
-   - **(q)uit** - Exit and save progress
-7. Updates JSON after each upload (removes processed students)
-8. Can pause/resume anytime
+#### Scripts
 
-#### State Serialization (Checkpointing)
+- `Essays/essay_grader_a.py` - **Main grading script** (fetch submissions + AI grading)
+- `Essays/essay_grader_aa.py` - **Model testing script** (compare different AI models)
+- `Essays/essay_grader_b.py` - **Validation script** (review grades + upload to Canvas)
+- `Essays/essay_grader.py` - Legacy monolithic version (deprecated)
 
-The scripts use state serialization to split the workflow. Script A saves all necessary data to JSON:
-- Grading results (student submissions, AI grades, AI feedback)
-- Course/assignment/question metadata
-- Skipped students list
+#### Structured Output Schema
 
-Script B loads this exact state and continues from validation, requiring no additional user input about course/assignment selection.
+The new framework enforces grading consistency using OpenAI's structured output:
 
-#### Usage
-
-**Step 1: Grade essays**
-```bash
-python3 essay_grader_part_a.py
+```python
+response_format={
+    "type": "json_schema",
+    "json_schema": {
+        "name": "grading_schema",
+        "schema": {
+            "type": "object",
+            "properties": {
+                "grade": {"type": "number", "enum": [0, 1, 1.5, 2]},
+                "feedback": {"type": "string"}
+            },
+            "required": ["grade", "feedback"]
+        }
+    }
+}
 ```
 
-**Step 2: Review and upload (can be done later, on different machine, etc.)**
+This guarantees AI responses contain only valid grades and properly formatted feedback.
+
+#### Quick Start
+
 ```bash
-python3 essay_grader_part_b.py
+cd Essays
+
+# Step 1: Grade essays with AI
+python3 essay_grader_a.py
+
+# Step 2: Review and upload
+python3 essay_grader_b.py
+
+# Optional: Test different models
+python3 essay_grader_aa.py
 ```
+
+See the [Essays README](Essays/README.md) for complete setup instructions, API key configuration, and detailed workflow documentation.
 
 ### canvas_assignment_manager.py
 
