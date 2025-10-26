@@ -1,0 +1,426 @@
+{
+  "grading_results": [
+    {
+      "student_id": 61878,
+      "student_name": "Anshul Patel",
+      "essay_text": "1. A0 = (20,0) A1 = (22,4) A2 = (15,0)\n2. M0 = (10,10) M1 = (3,13.5) M2 = (13.5 , 3)\n3.\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 3.5,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 8/16 (1.6 points)\nTotal: 3.5/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 3.5,
+      "approved": null
+    },
+    {
+      "student_id": 63828,
+      "student_name": "Camila Rodriguez-Uceta",
+      "essay_text": "ECON416- PS2.pdf\nECON416- PS2.pdf",
+      "ai_grade": 0.0,
+      "ai_feedback": "Part 1: A0=(20,0), A1=(22,4), A2=(15,0) but no answers provided (0 points)\nPart 2: M0=(10,10), M1=(3,13.5), M2=(13.5,3) but no answers provided (0 points)\nPart 3: 0/16 (0 points)\nTotal: 0/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 0.0,
+      "approved": null
+    },
+    {
+      "student_id": 71583,
+      "student_name": "Laura Green",
+      "essay_text": "1. 22(1.5) = 33 < 30 (No!), so you must do 30/1.5 = 20\nA0 = (20, 0)\n22(1) = 22 < 30 (Yes!), so X = 22. 30-22 = 8/2 = 4\nA1 = (22, 4)\n22(2) = 44 < 30 (No!), so you must do 30/2 = 15\nA2 = (15, 0)\n2. 30/2 = 15/1.5 = 10\nM0 = (10, 10)\n0.9(30) = 27, Y = 27/2 = 13.5. X = 3/1 = 3.\nM1 = (3, 13.5)\n0.1(30) = 3, X = 27/2 = 13.5. Y = 3/1 = 3.\nM2 = (13.5, 3)\n3.\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A1\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR M0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1\nUsed ChatGPT for help on number 3.",
+      "ai_grade": 3.6,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 12/16 (2.4 points)\nTotal: 3.6/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 3.6,
+      "approved": null
+    },
+    {
+      "student_id": 73485,
+      "student_name": "Leah Fisher",
+      "essay_text": "Find the baskets chosen by Antonia in each period and label them as A0, A1, and A2.\nA0=(20,0) A1=(22,4), A2=(15,0)\nFind the baskets chosen by Marie in each period and label them as M0, M1, and M2.\nM0=(10,10), M1=(3,13.5) M2=(13.5,3)\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 2.8,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 5/16 (1.0 points)\nTotal: 2.8/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 2.8,
+      "approved": null
+    },
+    {
+      "student_id": 73661,
+      "student_name": "Parkman Cook",
+      "essay_text": "1: A0 = (20, 0)\nA1 = (22,4)\nA2 = (15, 0)\n2: M0 = (10, 10)\nM1 = (3, 13.5). This assumes she can buy half of a good so she can spend all 90% on the more expensive good.\nM2 = (13.5, 3). This assumes she can buy half of a good so she can spend all 90% on the more expensive good.\n3:\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A1\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 4.1,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 13/16 (2.6 points)\nTotal: 4.1/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 4.1,
+      "approved": null
+    },
+    {
+      "student_id": 73714,
+      "student_name": "Austin Collins",
+      "essay_text": "A0: (20,0)\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 2.\u00a0 M0: (10,10)\nA1: (22,4) \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 M1: (3, 13.5)\nA2: (15,0)\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 M2: (13.5,3)\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A1\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR M0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 3.7,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 11/16 (1.9 points)\nTotal: 3.7/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 3.7,
+      "approved": null
+    },
+    {
+      "student_id": 73820,
+      "student_name": "Benjamin Creed",
+      "essay_text": "A0 Basket: (20,0)\nA1Basket: (22,4)\nA2 Basket: (15,0)\nM0 Basket: (10,10)\nM1 Basket: (3,13.5)\nM2 Basket: (13.5,3)\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A1\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR M0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 4.7,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 14/16 (2.8 points)\nTotal: 4.7/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 4.7,
+      "approved": null
+    },
+    {
+      "student_id": 74048,
+      "student_name": "Joseph Deaton",
+      "essay_text": "1. A0 = (20,0), A1 = (22,4), A2 = (15,0)\n2. M0 (10,10), M1 (3,13.5), M2 (13.5,3)\n3.\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 4.7,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 13/16 (2.6 points)\nTotal: 4.4/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 4.7,
+      "approved": null
+    },
+    {
+      "student_id": 74561,
+      "student_name": "Travis Clawson",
+      "essay_text": "1) A0= (20,0), A1= (22,4), A2= (15,0)\n2) M0= (10,10), M1= (3,13.5), M2= (13.5,3)\n3)\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A1\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 3.5,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 9/16 (1.8 points)\nTotal: 3.5/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 3.5,
+      "approved": null
+    },
+    {
+      "student_id": 74588,
+      "student_name": "Jackson Hill",
+      "essay_text": "A0 = (20,0), A1 = (22,4), A2 = (15,0)\nM0 = (10,10), M1 = (3,13.5), M2 = (13.5,3)\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A1\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 4.5,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 15/16 (2.7 points)\nTotal: 4.5/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 4.5,
+      "approved": null
+    },
+    {
+      "student_id": 74589,
+      "student_name": "Ari Etin",
+      "essay_text": "Find the baskets chosen by Antonia in each period and\u00a0 label them as A0, A1, and A2.\nA0 = (20, 0)\nA1 = (22, 4)\nA2 = (15, 0)\nFind the baskets chosen by Marie in each period and\u00a0 label them as M0, M1, and M2.\nM0 = (10, 10)\nM1 = (3, 13.5)\nM2 = (13.5, 3)\nUse the rich-text editor to mark in blue (the color option is the option that follows the bold, italic, underline options) the correct relations and mark in red the incorrect relations. There is no need to justify your choices.\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR M0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 4.1,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 13/16 (2.6 points)\nTotal: 4.1/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 4.1,
+      "approved": null
+    },
+    {
+      "student_id": 74978,
+      "student_name": "Caleb Glass",
+      "essay_text": "1.\nA0: X=20 Y=0\nA1: X=22 Y=4\nA2: X=15 Y=0\nM0: X=10 Y=10\nM1: X=3 Y=13.5\nM2: X=13.5 Y=3\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A1\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 3.9,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 13/16 (2.6 points)\nTotal: 3.9/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 3.9,
+      "approved": null
+    },
+    {
+      "student_id": 76578,
+      "student_name": "Katherine Ryan",
+      "essay_text": "IMG_6400-1.jpg\nIMG_6399-1.jpg\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 3.0,
+      "ai_feedback": "Part 1: A0=(20,0), A1=(22,4), A2=(15,0) but your answer is not provided (0 points)\nPart 2: M0=(10,10), M1=(3,13.5), M2=(13.5,3) but your answer is not provided (0 points)\nPart 3: 15/16 (3.0 points)\nTotal: 3.0/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 3.0,
+      "approved": null
+    },
+    {
+      "student_id": 77274,
+      "student_name": "William Lowery",
+      "essay_text": "1. A0: (20,0) A1: (22,4) A2: (15,0)\n2. M0: (10,10) M1: (3,13.5) M2: (13.5,3)\n3.\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 3.2,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 7/16 (1.4 points)\nTotal: 3.2/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 3.2,
+      "approved": null
+    },
+    {
+      "student_id": 78369,
+      "student_name": "Rohan Chand",
+      "essay_text": "Antonia\nA0 = (20, 0)\nA1 = (22, 4)\nA2 = (15, 0)\nDirectly revealed (true statements)\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\n(all other DR statements are false)\nStrict revealed (true statements)\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\n(all other SDR statements are false)\nMarie\nM0 = (10, 10)\nM1 = (4, 13)\nM2 = (13, 4)\nDirectly revealed (true statements)\nM0 \u2265DR M1, M1 \u2265DR M0\nM0 \u2265DR M2, M2 \u2265DR M0\nM1 \u2265DR M2, M2 \u2265DR M1\n(i.e., every pair is mutually directly revealed)\nStrict revealed\nNone (all false) because every pair is revealed both ways.",
+      "ai_grade": 3.4,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: M0=(10,10), M1=(3,13.5), M2=(13.5,3) but your answer has M1=(4,13), M2=(13,4) (0.3 points)\nPart 3: 12/16 (2.4 points)\nTotal: 3.6/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 3.4,
+      "approved": null
+    },
+    {
+      "student_id": 80152,
+      "student_name": "Valeria Vargas",
+      "essay_text": "1. A0=(20,0) AT P0=(1.5,1.5)\nA1= (22,4) AT P1= (1,2)\nA2=(15,0) AT P2=(2,1)\n2. M0=(10,10) at p0= (1.5,1.5)\nM1= (3,13.5) at P1=(1,2)\nM2=(13.5,3) at P2= (2,1)\n3.\ndirectly revealed relation (Antonia):\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia):\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A\ndirectly revealed relation (Marie):\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie):\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 3.6,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 9/16 (1.8 points)\nTotal: 3.6/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 3.6,
+      "approved": null
+    },
+    {
+      "student_id": 84942,
+      "student_name": "Khanh Hoang",
+      "essay_text": "A0=(20,0)\nA1=(22,4)\nA2=(15,0)\nM0=(10,10)\nM1=(3,13.5)\nM2=(13.5,3)\nPrices are as follows p0=(1.5,1.5), p1=(1,2) and p2=(2,1).\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR M0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 4.5,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 14/16 (2.8 points)\nTotal: 4.5/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 4.5,
+      "approved": null
+    },
+    {
+      "student_id": 99021,
+      "student_name": "Jackson Crawford",
+      "essay_text": "1)\u00a0 Antonia:\nA0 = (20, 0)\nA1 = (22, 4)\nA2 = (15, 0)\n2) Marie:\nM0 = (10, 10)\nM1 = (3, 13.5)\nM2 = (13.5, 3)\n3)\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 3.8,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 10/16 (2.0 points)\nTotal: 3.8/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 3.8,
+      "approved": null
+    },
+    {
+      "student_id": 99048,
+      "student_name": "Megan Buchsbaum",
+      "essay_text": "1. A0: (20,0)\nA1: (22,4)\nA2: (15, 0)\n2. M0: (10,10)\nM1: (3, 13.5)\nM2: (13.5, 3)\n3.\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 2.9,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 11/16 (2.2 points)\nTotal: 4.0/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 2.9,
+      "approved": null
+    },
+    {
+      "student_id": 101572,
+      "student_name": "Samuel Romerhaus",
+      "essay_text": "Doc3-1.pdf",
+      "ai_grade": 0.0,
+      "ai_feedback": "Part 1: A0=(20,0), A1=(22,4), A2=(15,0) but your answer has no entries reported (0 points)\nPart 2: M0=(10,10), M1=(3,13.5), M2=(13.5,3) but your answer has no entries reported (0 points)\nPart 3: 0/16 (0 points)\nTotal: 0/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 0.0,
+      "approved": null
+    },
+    {
+      "student_id": 101843,
+      "student_name": "Andre Henderson",
+      "essay_text": "1)\nx\n=30/\n1.5\n\u200b\n=\n20\n,\ny\n=\n0\n\u21d2\nA\n0\n=\n(\n20\n,\n0\n)\ny\n=(30-22)/2\n=\n4\n\u21d2\nA\n1\n=\n(\n22\n,\n4\n)\nx\n=30/2\n=\n15\n,\ny\n=\n0\n\u21d2\nA\n2\n=\n(\n15\n,\n0)\n2)\nx\n=\ny\n=30/(\n2\n\u00d7\n1.5)\n\u200b\n=\n10\n\u21d2\nM\n0\n=\n(\n10\n,\n10\n)\nMarie uses:\n90% of income on\nY\n\u2192\n0.9\n\u00d7\n30\n=\n27\n0.9 \\times 30 = 27\n\u2192\n27\n2\n=\n13.5\nunits of Y\n10% of income on\nX\n\u2192\n0.1\n\u00d7\n30\n=\n3\n0.1 \\times 30 = 3\n\u2192\n3\n1\n=\n3\nunits of X\nSo: Prices:\np\n1\n=\n(\n1\n,\n2\n)\np_1 = (1, 2)\nM\n1\n=\n(\n3\n,\n13.5\n)\nPrices:\np2\n=\n(\n2,1\n)\n\u200b\n\u200b\u200b\nM\n2\n=\n(13.5\n,\n3\n)\n3)\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M",
+      "ai_grade": 3.2,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 7/16 (1.4 points)\nTotal: 3.2/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 3.2,
+      "approved": null
+    },
+    {
+      "student_id": 103203,
+      "student_name": "Benjamin Kern",
+      "essay_text": "1)\nA0: (20,0)\nA1: (22,4)\nA2: (15,0)\n2)\nM0: (10,10)\nM1: (3,13.5)\nM2: (13.5, 3)\n3)\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 3.0,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 6/16 (1.2 points)\nTotal: 3.0/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 3.0,
+      "approved": null
+    },
+    {
+      "student_id": 103615,
+      "student_name": "Shengqi Wang",
+      "essay_text": "Antonia\nRule:\nIf\n22\np\nX\n>\n30\n22p_X > 30\n22\np\nX\n\u200b\n>\n30\n, she can\u2019t afford 22 units of\nX\nX\nX\n\u2192 spends all income on\nX\nX\nX\n.\nIf\n22\np\nX\n\u2264\n30\n22p_X \\le 30\n22\np\nX\n\u200b\n\u2264\n30\n, she buys\n22\n22\n22\nunits of\nX\nX\nX\nand uses the leftover\n30\n\u2212\n22\np\nX\n30-22p_X\n30\n\u2212\n22\np\nX\n\u200b\nto buy\nY\nY\nY\n.\nTherefore:\np\n0\n=\n(\n1.5\n,\n1.5\n)\np_0=(1.5,1.5)\np\n0\n\u200b\n=\n(\n1.5\n,\n1.5\n)\n:\n22\n\u00d7\n1.5\n=\n33\n>\n30\n22\\times1.5=33>30\n22\n\u00d7\n1.5\n=\n33\n>\n30\n\u2192\nA\n0\n=\n(\n30\n/\n1.5\n,\n0\n)\n=\n(\n20\n,\n0\n)\nA0=(30/1.5,\\,0)=(20,0)\nA\n0\n=\n(\n30/1.5\n,\n0\n)\n=\n(\n20\n,\n0\n)\n.\np\n1\n=\n(\n1\n,\n2\n)\np_1=(1,2)\np\n1\n\u200b\n=\n(\n1\n,\n2\n)\n:\n22\n\u00d7\n1\n=\n22\n\u2264\n30\n22\\times1=22\\le30\n22\n\u00d7\n1\n=\n22\n\u2264\n30\n\u2192 leftover\n8\n8\n8\n\u2192\nY\n=\n8\n/\n2\n=\n4\nY=8/2=4\nY\n=\n8/2\n=\n4\n\u2192\nA\n1\n=\n(\n22\n,\n4\n)\nA1=(22,4)\nA\n1\n=\n(\n22\n,\n4\n)\n.\np\n2\n=\n(\n2\n,\n1\n)\np_2=(2,1)\np\n2\n\u200b\n=\n(\n2\n,\n1\n)\n:\n22\n\u00d7\n2\n=\n44\n>\n30\n22\\times2=44>30\n22\n\u00d7\n2\n=\n44\n>\n30\n\u2192\nA\n2\n=\n(\n30\n/\n2\n,\n0\n)\n=\n(\n15\n,\n0\n)\nA2=(30/2,\\,0)=(15,0)\nA\n2\n=\n(\n30/2\n,\n0\n)\n=\n(\n15\n,\n0\n)\n.\nMarie\nRule:\nIf one good is more expensive, spend\n90%\nof income on the\nmore expensive\ngood and\n10%\non the cheaper one.\nIf prices are equal, spend the whole income to buy\nequal quantities\nof both goods.\nTherefore:\np\n0\n=\n(\n1.5\n,\n1.5\n)\np_0=(1.5,1.5)\np\n0\n\u200b\n=\n(\n1.5\n,\n1.5\n)\n:\nprices equal \u2192 buy equal amounts \u2192\n1.5\nx\n+\n1.5\ny\n=\n30\n1.5x+1.5y=30\n1.5\nx\n+\n1.5\ny\n=\n30\nwith\nx\n=\ny\nx=y\nx\n=\ny\n\u21d2\nx\n=\ny\n=\n10\nx=y=10\nx\n=\ny\n=\n10\n\u2192\nM\n0\n=\n(\n10\n,\n10\n)\nM0=(10,10)\nM\n0\n=\n(\n10\n,\n10\n)\n.\np\n1\n=\n(\n1\n,\n2\n)\np_1=(1,2)\np\n1\n\u200b\n=\n(\n1\n,\n2\n)\n:\nY\nY\nY\nis more expensive \u2192\n0.9\n\u22c5\n30\n=\n27\n0.9\\cdot30=27\n0.9\n\u22c5\n30\n=\n27\non\nY\nY\nY\n\u21d2\n27\n/\n2\n=\n13.5\n27/2=13.5\n27/2\n=\n13.5\n;\n0.1\n\u22c5\n30\n=\n3\n0.1\\cdot30=3\n0.1\n\u22c5\n30\n=\n3\non\nX\nX\nX\n\u21d2\n3\n/\n1\n=\n3\n3/1=3\n3/1\n=\n3\n\u2192\nM\n1\n=\n(\n3\n,\n13.5\n)\nM1=(3,13.5)\nM\n1\n=\n(\n3\n,\n13.5\n)\n.\np\n2\n=\n(\n2\n,\n1\n)\np_2=(2,1)\np\n2\n\u200b\n=\n(\n2\n,\n1\n)\n:\nX\nX\nX\nis more expensive \u2192\n27\n27\n27\non\nX\nX\nX\n\u21d2\n27\n/\n2\n=\n13.5\n27/2=13.5\n27/2\n=\n13.5\n;\n3\n3\n3\non\nY\nY\nY\n\u21d2\n3\n/\n1\n=\n3\n3/1=3\n3/1\n=\n3\n\u2192\nM\n2\n=\n(\n13.5\n,\n3\n)\nM2=(13.5,3)\nM\n2\n=\n(\n13.5\n,\n3\n)\n.",
+      "ai_grade": 5.0,
+      "ai_feedback": "",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 5.0,
+      "approved": null
+    },
+    {
+      "student_id": 104786,
+      "student_name": "Madison Avery",
+      "essay_text": "1) Period 0: (1.5,1.5) , wants x but 22*1.5 = 33 > 30, so spends all income on x: 30/1.5 = 20 --> A0 = (20,0)\nPeriod 1: (1,2), wants x so 22*1 = 22 < 0, so 30-22 = 8 , y = 8/2=4 --> \u00a0A1 = (22,4)\nPeriod 2: (2,1), wants x but 22*2 = 44 > 30, so she spends all income on x: 30/2 = 15 --> A2 = (15,0)\n2) Period 0: (1.5, 1.5), when equal prices = split evenly, \u00a0(30/2) / 1.5 = 10 --> M0 = (10, 10)\nPeriod 1: (1,2), Y more expensive, so 90% of 30 is 27, 27/2 =13.5 = y, 10% of 30 is 3, 3/1 = 3 = x --> M1 = (3, 13.5)\nPeriod 2: (2,1), X more expensive, so 90% of 30 is 27,2 = 13.5 = x, 10% of 30 is 3 so 3/1 = 3 = y --> M2 = (13.5, 3)\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A1\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nA2 \u2265DR A2\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A1\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A1\nA2 >SDR A2\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M1\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nM2 \u2265DR M2\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M1\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1\nM2 >SDR M2",
+      "ai_grade": 2.7,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 9/16 (1.8 points)\nTotal: 3.6/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 2.7,
+      "approved": null
+    },
+    {
+      "student_id": 106046,
+      "student_name": "Youssouf Diombera",
+      "essay_text": "1.\nFind the baskets chosen by Antonia in each period and label them as A0, A1, and A2.\n| Period | Label | Antonia\u2019s Bundle (X, Y) |\n| 0 | A0 | (20, 0) |\n| 1 | A1 | (22, 4)\n| 2 | A2 | (15, 0)\n2. Find the baskets chosen by Marie in each period and label them as M0, M1, and\nM2.\n2.\n| Period | Label | Marie\u2019s Bundle (X, Y) |\n| 0 | M0 | (10, 10)\n| 1 | M1 | (3, 13.5)\n| 2 | M2 | (13.5,",
+      "ai_grade": 3.2,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: M0=(10,10), M1=(3,13.5), M2=(13.5,3) but your answer has M2=(13.5, not complete) (0.6 points)\nPart 3: 8/16 (1.6 points)\nTotal: 3.2/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 3.2,
+      "approved": null
+    },
+    {
+      "student_id": 106077,
+      "student_name": "Brendan Schultz",
+      "essay_text": "A0\n= (20, 0) at p\u2080 = (1.5, 1.5)\nA1\n= (22, 4) at p\u2081 = (1, 2)\nA2\n= (15, 0) at p\u2082 = (2, 1)\nMarie:\nM0\n= (10, 10) at p\u2080 = (1.5, 1.5)\nM1\n= (2, 14) or (3, 13.5) at p\u2081 = (1, 2)\nM2\n= (14, 2) or (13.5, 3) at p\u2082 = (2, 1)\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR M0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 3.8,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: M0=(10,10), M1=(3,13.5), M2=(13.5,3) but your answer has M1=(2,14) or (3,13.5), M2=(14,2) or (13.5,3) (0.6 points)\nPart 3: 16/16 (2.4 points)\nTotal: 3.8/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 3.8,
+      "approved": null
+    },
+    {
+      "student_id": 106382,
+      "student_name": "Julian Stewart",
+      "essay_text": "1. A0 = 20 units of X, 0 units of Y\nA1 = 22 units of X, 4 units of Y\nA2 = 15 units of X, 0 units of Y\n2. M0 = 10 units of X, 10 units of Y\nM1= 2 units of X, 14 units of Y\nM2= 14 units of X, 2 units of Y\n3.\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1\n*This assignment was completed with the assistance of Ai in order to correctly define and give examples of directly revealed and strictly revealed relations.",
+      "ai_grade": 2.5,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: M0=(10,10), M1=(3,13.5), M2=(13.5,3) but your answer has M1=2 and M2=14 instead of 3 and 13.5; 14 and 2 instead of 13.5 and 3 (0.3 points)\nPart 3: 13/16 (2.3 points)\nTotal: 3.5/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 2.5,
+      "approved": null
+    },
+    {
+      "student_id": 106582,
+      "student_name": "Rebecca Tabakin",
+      "essay_text": "directly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR M0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 2.4,
+      "ai_feedback": "Part 1: A0=(20,0), A1=(22,4), A2=(15,0) but there is no response provided (0 points)\nPart 2: M0=(10,10), M1=(3,13.5), M2=(13.5,3) but there is no response provided (0 points)\nPart 3: 12/16 (2.4 points)\nTotal: 2.4/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 2.4,
+      "approved": null
+    },
+    {
+      "student_id": 106609,
+      "student_name": "Emily Feddersen",
+      "essay_text": "Find the baskets chosen by Antonia in each period and\u00a0 label them as A0, A1, and A2.\nAntonia's baskets: A0 = (20,0), A1 = (22,4), A2 = (15,0)\n2. Find the baskets chosen by Marie in each period and\u00a0 label them as M0, M1, and M2.\nMarie's baskets: M0 = (10,10), M1 = (3,13.5), M2 = (13.5, 3)\n3. Use the rich-text editor to mark in blue (the color option is the option that follows the bold, italic, underline options) the correct relations and mark in red the incorrect relations. There is no need to justify your choices.\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A1\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 3.6,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 12/16 (2.4 points)\nTotal: 3.6/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 3.6,
+      "approved": null
+    },
+    {
+      "student_id": 106743,
+      "student_name": "Bryan Baez",
+      "essay_text": "1. A0=(20,0)\u00a0 \u00a0 \u00a0 \u00a0 A1= (22,4)\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0A2=(15,0)\n2. M0=(10,10)\u00a0 \u00a0 \u00a0 \u00a0M1=(3,13)\u00a0 \u00a0 \u00a0 \u00a0 \u00a0M2=(13,3)\n3.\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 3.7,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: M0=(10,10), M1=(3,13.5), M2=(13.5,3) but your answer has M1=(3,13) and M2=(13,3) (0.3 points)\nPart 3: 14/16 (2.8 points)\nTotal: 4.0/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 3.7,
+      "approved": null
+    },
+    {
+      "student_id": 106925,
+      "student_name": "Aarush Khanna",
+      "essay_text": "1.\nAntonia\u2019s baskets:\nA0 = (20, 0)\nA1 = (22, 4)\nA2 = (15, 0)\n2.\nMarie\u2019s baskets:\nM0 = (10, 10)\nM1 = (3, 13.5)\nM2 = (13.5, 3)\n3.\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A1\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR M0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 4.5,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 13/16 (2.6 points)\nTotal: 4.4/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 4.5,
+      "approved": null
+    },
+    {
+      "student_id": 131774,
+      "student_name": "Joshua Cash",
+      "essay_text": "A0 >DR A1: 39>30\nA0>DR A2: 22.5<30\nA1 >DR A0: 20<30\nA2 >DR A0: 15<30\nA2 >DR A0: 40>30\nA2 >DR A1: 48>30\nA0 >SDR A1:\nA0 >SDR A2: 22.5<30\nA1 >SDR A0: 20<30\nA1 >SDR A2: 15<30\nA2 >SDR A0: 40>30\nA2 >SDR A1: 48>30\nM0 >DR M1: 24.75<30\nM0 >DR M2: 24.75<30\nM1 >DR M0: 30<30\nM1 >DR M2: 19.5<30\nM2 >DR M0: 30<30\nM2 >DR M1: 19.5<30\nM0 >SDR M1: 24.75<30\nM0 >SDR M2: 24.75<30\nM1 >SDR M0: 30=30\nM1 >SDR M2: 19.5<30\nM2 >SDR M0: 30=30\nM2 >SDR M1: 19.5<30",
+      "ai_grade": 1.0,
+      "ai_feedback": "Part 1: A0=(20,0), A1=(22,4), A2=(15,0) but your answer has no values provided (0.0 points)\nPart 2: M0=(10,10), M1=(3,13.5), M2=(13.5,3) but your answer has no values provided (0.0 points)\nPart 3: 5/16 (1.0 points)\nTotal: 1.0/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 1.0,
+      "approved": null
+    },
+    {
+      "student_id": 136238,
+      "student_name": "Owen Martin",
+      "essay_text": "1. A0: (20,0)\u00a0 \u00a0 A1: (22,4)\u00a0 \u00a0 A2: (15,0)\n2. M0: (10,10)\u00a0 \u00a0 M1: (3,13.5)\u00a0 \u00a0 M2: (13.5,3)\n3. For relationships that were strictly directly revealed I also highlighted the directly revealed option for that relationship.\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 4.0,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 11/16 (2.2 points)\nTotal: 4.0/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 4.0,
+      "approved": null
+    },
+    {
+      "student_id": 137749,
+      "student_name": "Tyler Burke",
+      "essay_text": "1. A0 (20, 0) A1 (22,4) A2 (15,0)\n2. M0 (10,10) M1 (3, 13.5) M2 (13.5, 3)\nDirectly Revealed Relation (Antonia)\nA0 \u2265DR A1: Incorrect\nA0 \u2265DR A2: Correct\nA1 \u2265DR A0: Correct\nA1 \u2265DR A2: Incorrect\nA2 \u2265DR A0: Incorrect\nA2 \u2265DR A1: Incorrect\nStrict Revealed Relation (Antonia)\nA0 >SDR A1: Incorrect\nA0 >SDR A2: Correct\nA1 >SDR A0: Correct\nA1 >SDR A2: Incorrect\nA2 >SDR A0: Incorrect\nA2 >SDR A: Incorrect\nDirectly Revealed Relation (Marie)\nM0 \u2265DR M1: Correct\nM0 \u2265DR M2: Correct\nM1 \u2265DR M0: Correct\nM1 \u2265DR M2: Incorrect\nM2 \u2265DR M0: Correct\nM2 \u2265DR M1: Correct\nStrict Revealed Relation (Marie)\nM0 >SDR M1: Correct\nM0 >SDR M2: Correct\nM1 >SDR M0: Correct\nM1 >SDR M2: Correct\nM2 >SDR M0: Correct\nM2 >SDR M1: Correct",
+      "ai_grade": 4.7,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 15/16 (3.0 points)\nTotal: 4.7/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 4.7,
+      "approved": null
+    },
+    {
+      "student_id": 137871,
+      "student_name": "Lauren Church",
+      "essay_text": "416 PS2 On Paper - Lauren Church-1.pdf",
+      "ai_grade": 0.0,
+      "ai_feedback": "Part 1: A0=(20,0), A1=(22,4), A2=(15,0) but your answer has no values (0 points)\nPart 2: M0=(10,10), M1=(3,13.5), M2=(13.5,3) but your answer has no values (0 points)\nPart 3: 0/16 (0 points)\nTotal: 0/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 0.0,
+      "approved": null
+    },
+    {
+      "student_id": 138722,
+      "student_name": "Joseph Showalter",
+      "essay_text": "1. Antonia: A0 = (20,0), A1 = (22,4), A2 = (15,0)\n2. Marie: M0 = (10,10), M1 = (3, 13.5), M2 = (13.5, 3)\n3.\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A1\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 3.6,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: M0=(10,10), M1=(3,13.5), M2=(13.5,3) but your answer has M2=(13.5, 3) (0.9 points)\nPart 3: 12/16 (2.4 points)\nTotal: 4.2/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 3.6,
+      "approved": null
+    },
+    {
+      "student_id": 140283,
+      "student_name": "Matthew Pierson",
+      "essay_text": "PS2-1.docx",
+      "ai_grade": 0.0,
+      "ai_feedback": "Part 1: A0=(20,0), A1=(22,4), A2=(15,0) but your answer has no data (0 points)\nPart 2: M0=(10,10), M1=(3,13.5), M2=(13.5,3) but your answer has no data (0 points)\nPart 3: 0/16 (0 points)\nTotal: 0/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 0.0,
+      "approved": null
+    },
+    {
+      "student_id": 167665,
+      "student_name": "Sebastiano Fraser-Taliente",
+      "essay_text": "1. A0 = (20,0) | A1 = (22,4) | A2 = (15,0)\n2. M0 = (10,10) | M1 = (13.5,3) | (M2 = (3,13.5) | Unsure on whether to round up or down, if only whole goods taken, quantities could be (14,2)&(2,14) or (13,4)&(4,13). Preference on half items not specified.\n3.\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A1\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR M0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 3.8,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: M0=(10,10), M1=(3,13.5), M2=(13.5,3) but your answer has M1 and M2 interchanged (0.6 points)\nPart 3: 12/16 (2.4 points)\nTotal: 3.8/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 3.8,
+      "approved": null
+    },
+    {
+      "student_id": 167667,
+      "student_name": "Sara Zhu",
+      "essay_text": "Q1, Q2: Please see the attachments\nPs2-1.pdf\nQ3:\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1\nPs2.pdf",
+      "ai_grade": 2.4,
+      "ai_feedback": "Part 1: A0=(20,0), A1=(22,4), A2=(15,0) but your answer has attachments not shown here (0 points)\nPart 2: M0=(10,10), M1=(3,13.5), M2=(13.5,3) but your answer has attachments not shown here (0 points)\nPart 3: 12/16 (2.4 points)\nTotal: 2.4/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 2.4,
+      "approved": null
+    },
+    {
+      "student_id": 167777,
+      "student_name": "Maria Holguin Donoso",
+      "essay_text": "A0: 20X\nA1: 22X + 4Y\nA2: 15X\nM0: 10X + 10Y\nM1: 3X + 13,5Y\nM2: 13,5X + 3Y\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A1\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 3.4,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 8/16 (1.6 points)\nTotal: 3.4/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 3.4,
+      "approved": null
+    },
+    {
+      "student_id": 167826,
+      "student_name": "Toluwanimi Soyemi",
+      "essay_text": "1) A0: (x,y) = (20,0)\nA1: (22,4)\nA2: (15,0)\n2) M0: (10,10)\nM1: (3,13.5)\nM2: (13.5,3)\n3)\ndirectly revealed relation (Antonia)\nA0 \u2265DR A1\nA0 \u2265DR A2\nA1 \u2265DR A0\nA1 \u2265DR A2\nA2 \u2265DR A0\nA2 \u2265DR A1\nstrict revealed relation (Antonia)\nA0 >SDR A1\nA0 >SDR A2\nA1 >SDR A0\nA1 >SDR A2\nA2 >SDR A0\nA2 >SDR A\ndirectly revealed relation (Marie)\nM0 \u2265DR M1\nM0 \u2265DR M2\nM1 \u2265DR M0\nM1 \u2265DR M2\nM2 \u2265DR A0\nM2 \u2265DR M1\nstrict revealed relation (Marie)\nM0 >SDR M1\nM0 >SDR M2\nM1 >SDR M0\nM1 >SDR M2\nM2 >SDR M0\nM2 >SDR M1",
+      "ai_grade": 4.1,
+      "ai_feedback": "Part 1: (0.9 points)\nPart 2: (0.9 points)\nPart 3: 13/16 (2.3 points)\nTotal: 4.1/5.0",
+      "old_assignment_grade": 0.0,
+      "new_assignment_grade": 4.1,
+      "approved": null
+    }
+  ],
+  "skipped": [],
+  "json_filename": "text_entries_96082_20251026_013408.json",
+  "selected_course": {
+    "id": 96082,
+    "name": "ECON416.001.FA25"
+  },
+  "selected_assignment": {
+    "id": 742119,
+    "name": "PS 2",
+    "points_possible": 4.0
+  },
+  "grading_config_filename": "grading_config_economics.json"
+}
