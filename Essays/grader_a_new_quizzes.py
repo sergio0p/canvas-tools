@@ -547,39 +547,44 @@ def get_user_choice(prompt: str, max_choice: int) -> int:
 
 
 def select_grading_config() -> str:
-    """Let user select a grading configuration JSON file"""
-    import glob
-    
-    json_files = glob.glob("grading_config_*.json")
-    
-    if not json_files:
-        print("❌ No grading configuration files found (grading_config_*.json)")
-        sys.exit(1)
-    
-    # Sort alphabetically
-    json_files.sort()
-    
+    """Let user enter grading configuration JSON file path"""
     print("\n" + "=" * 100)
-    print("SELECT GRADING CONFIGURATION FILE")
+    print("GRADING CONFIGURATION FILE")
     print("=" * 100)
-    print("This file contains the grading schema and instructions for the AI.")
+    print("Enter the path to your grading config JSON file.")
+    print("You can drag & drop the file into the terminal or type/paste the path.")
     print("=" * 100)
-    
-    for i, filename in enumerate(json_files, 1):
-        print(f"{i}. {filename}")
-    
-    print("=" * 100)
-    
+
     while True:
         try:
-            choice = input(f"\nSelect file (1-{len(json_files)}): ").strip()
-            choice_num = int(choice)
-            if 1 <= choice_num <= len(json_files):
-                return json_files[choice_num - 1]
+            filepath = input("\nFile path: ").strip()
+
+            if not filepath:
+                print("❌ No file path entered")
+                continue
+
+            # Remove quotes if user dragged/dropped (some terminals add quotes)
+            if filepath.startswith("'") and filepath.endswith("'"):
+                filepath = filepath[1:-1]
+            if filepath.startswith('"') and filepath.endswith('"'):
+                filepath = filepath[1:-1]
+
+            # Check if file exists
+            if os.path.isfile(filepath):
+                # Verify it's a JSON file
+                if filepath.endswith('.json'):
+                    return filepath
+                else:
+                    print(f"⚠️  Warning: File doesn't have .json extension")
+                    confirm = input("Use anyway? (y/n): ").strip().lower()
+                    if confirm == 'y':
+                        return filepath
             else:
-                print(f"Please enter a number between 1 and {len(json_files)}")
-        except ValueError:
-            print("Invalid input. Please enter a number.")
+                print(f"❌ File not found: {filepath}")
+                retry = input("Try again? (y/n): ").strip().lower()
+                if retry != 'y':
+                    print("❌ Cannot continue without grading configuration")
+                    sys.exit(1)
         except KeyboardInterrupt:
             print("\n\n👋 Cancelled by user")
             sys.exit(0)
@@ -666,7 +671,7 @@ def main():
 
     questions = []
     for item in quiz_items:
-        q = essay_grader.parse_quiz_item(item)
+        q = EssayGrader.parse_quiz_item(item)
         if q:
             questions.append(q)
 

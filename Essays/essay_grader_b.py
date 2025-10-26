@@ -195,7 +195,7 @@ def display_feedback_menu(part_name: str, options: List[Dict]) -> int:
         options: List of menu options from load_feedback_menu()
 
     Returns:
-        Selected option number (1-based)
+        Selected option number (1-based), where len(options)+1 indicates manual input
     """
     print(f"\n{'=' * 80}")
     print(f"SELECT FEEDBACK FOR {part_name}")
@@ -205,21 +205,49 @@ def display_feedback_menu(part_name: str, options: List[Dict]) -> int:
         print(f"\n{opt['number']}. {opt['name']}")
         print(f"   Feedback: \"{opt['feedback']}\"")
 
+    # Add manual input option as the last option
+    manual_option_num = len(options) + 1
+    print(f"\n{manual_option_num}. Manual input")
+    print(f"   Feedback: (You will be prompted to enter custom feedback)")
+
     print('=' * 80)
 
     while True:
         try:
-            choice = input(f"\nSelect option (1-{len(options)}): ").strip()
+            choice = input(f"\nSelect option (1-{manual_option_num}): ").strip()
             choice_num = int(choice)
-            if 1 <= choice_num <= len(options):
+            if 1 <= choice_num <= manual_option_num:
                 return choice_num
             else:
-                print(f"Please enter a number between 1 and {len(options)}")
+                print(f"Please enter a number between 1 and {manual_option_num}")
         except ValueError:
             print("Invalid input. Please enter a number.")
         except KeyboardInterrupt:
             print("\n\n👋 Cancelled by user")
             sys.exit(0)
+
+
+def get_manual_feedback(part_name: str) -> str:
+    """
+    Get manual feedback input from user for a specific part.
+
+    Args:
+        part_name: Name of the part (e.g., "Part 1: Lagrangian Expression")
+
+    Returns:
+        Manual feedback text entered by user
+    """
+    print(f"\n{'=' * 80}")
+    print(f"ENTER MANUAL FEEDBACK FOR {part_name}")
+    print('=' * 80)
+    print("Enter your feedback below (enter a blank line when done):")
+    lines = []
+    while True:
+        line = input()
+        if line.strip() == "":
+            break
+        lines.append(line)
+    return "\n".join(lines)
 
 
 def display_submission_for_review(result: GradingResult, index: int, total: int) -> None:
@@ -551,12 +579,20 @@ def main():
             # Select Part 1 feedback
             part1_choice = display_feedback_menu("Part 1: Lagrangian Expression",
                                                  feedback_menu['part1_options'])
-            part1_feedback = feedback_menu['part1_options'][part1_choice - 1]['feedback']
+            if part1_choice == len(feedback_menu['part1_options']) + 1:
+                # Manual input selected
+                part1_feedback = get_manual_feedback("Part 1: Lagrangian Expression")
+            else:
+                part1_feedback = feedback_menu['part1_options'][part1_choice - 1]['feedback']
 
             # Select Part 2 feedback
             part2_choice = display_feedback_menu("Part 2: Solution Procedure",
                                                  feedback_menu['part2_options'])
-            part2_feedback = feedback_menu['part2_options'][part2_choice - 1]['feedback']
+            if part2_choice == len(feedback_menu['part2_options']) + 1:
+                # Manual input selected
+                part2_feedback = get_manual_feedback("Part 2: Solution Procedure")
+            else:
+                part2_feedback = feedback_menu['part2_options'][part2_choice - 1]['feedback']
 
             # Combine feedback
             combined_feedback = f"{part1_feedback}\n\n{part2_feedback}"

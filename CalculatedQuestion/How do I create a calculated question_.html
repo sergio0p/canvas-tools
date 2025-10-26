@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en"><head><style type="text/css">.turbo-progress-bar {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #0076ff;
+  z-index: 2147483647;
+  transition:
+    width 300ms ease-out,
+    opacity 150ms 150ms ease-in;
+  transform: translate3d(0, 0, 0);
+}
+</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How do I create a calculated question?</title>
+<meta name="description" content="sakai.samigo">
+
+<meta name="turbo-prefetch" content="false">
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="_0L3gAoZvmsKiWkolMvZE391jvdkAOoTdDW7jwVXs4BwPu9gdtuMD1D9Ri7j3qTqSLEQouju6Ogg88cFFV5fOA">
+
+  <meta name="csp-nonce">
+
+
+
+
+    <link rel="stylesheet" href="How%20do%20I%20create%20a%20calculated%20question__files/helvetica-817579c9.css">
+
+<link rel="stylesheet" href="How%20do%20I%20create%20a%20calculated%20question__files/alpha-3d4ee299.css" data-turbo-track="reload">
+<style>
+  /* headings */
+  h1,
+  h1.toc-heading,
+  h2.toc-heading {
+    color: #;
+  }
+
+  h2.toc-subheading,
+  h3.toc-subheading,
+  h4.toc-subheading,
+  h5.toc-subheading,
+  h6.toc-subheading {
+    color: #;
+  }
+
+  .screensteps-article-content h2 {
+    color: #;
+  }
+
+  .screensteps-article-content h3,
+  .screensteps-article-content h4,
+  .screensteps-article-content h5,
+  .screensteps-article-content h6 {
+    color: #;
+  }
+
+  .screensteps-sidebar h3 {
+    color: #;
+  }
+
+  .sidebar-subheading {
+    color: #;
+  }
+
+  .comments-heading {
+    color: #;
+  }
+
+  /* base/_buttons */
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"],
+  button,
+  .screensteps-bg-action-color,
+  .screensteps-courses .screensteps-progress-bar::before,
+  .classic-sidebar .ss-button {
+    background-color: #2a94c0;
+  }
+
+  input[type="button"]:hover,
+  input[type="reset"]:hover,
+  input[type="submit"]:hover,
+  button:hover,
+  button.screensteps-bg-action-color:hover,
+  a.screensteps-bg-action-color:hover,
+  .classic-sidebar .ss-button:hover {
+    background-color: #d55c59;
+  }
+
+  /* base/_forms */
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="password"]:focus,
+  input[type="search"]:focus,
+  input[type="tel"]:focus,
+  input[type="text"]:focus,
+  input[type="url"]:focus,
+  input[type="color"]:focus,
+  input[type="date"]:focus,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="month"]:focus,
+  input[type="time"]:focus,
+  input[type="week"]:focus,
+  select[multiple=multiple]:focus,
+  textarea:focus {
+    border-color: #2a94c0;
+  }
+
+
+  .screensteps-training-site .screensteps-main-search .search-field:not(:placeholder-shown) {
+    box-shadow: 0 0 0 2px #f5f5f5;
+  }
+
+  /* base/_typography */
+  body {
+    background-color: #f5f5f5 !important;
+    color: #;
+  }
+
+  a, .screensteps-sidebar-widget .icon-links button {
+    color: #2a94c0;
+  }
+
+
+
+  /* _screensteps-container */
+  .screensteps-container a:visited {
+    color: #206685;
+  }
+ .screensteps-container a:active,
+ .screensteps-container a:focus,
+ .screensteps-container a:hover {
+    color: #d55c59;
+  }
+
+  /* _screensteps-manual-contents */
+  .screensteps-manual-contents h2 a {
+    color: #2a94c0;
+  }
+  /* _screensteps-foldable-sections */
+  .screensteps-main-content .embedded-chapter-article > * {
+    color: #2a94c0;
+  }
+
+  /* screensteps-header */
+  .screensteps-branding h1,
+  .screensteps-header .screensteps-branding a,
+  .screensteps-training-site .screensteps-profile-subnav-toggle {
+    color: #555555;
+  }
+
+  .screensteps-header .screensteps-branding a:hover {
+    color: #d55c59;
+  }
+
+  /* meta data text */
+  .chapter-count,
+  .screensteps-comment-count,
+  .screensteps-lesson-details,
+  .nested-chapter-lessons a.active:after,
+  .screensteps-single-comment time {
+    color: #;
+  }
+</style>
+
+<script src="How%20do%20I%20create%20a%20calculated%20question__files/jquery-9eb95fa6.js"></script>
+<script src="How%20do%20I%20create%20a%20calculated%20question__files/application-2162f41b.js" defer="defer" data-turbo-track="reload"></script>
+
+
+  <style media=""></style>
+
+    <meta name="turbo-visit-control" content="reload">
+
+    <script>jQuery(document).ready(function() {
+ var searchRes = $('ul.screensteps-found-lessons li.screensteps-lesson h2.lesson-title');
+ if ((searchRes.length == 1) && ~window.location.search.indexOf('tag=')) {
+ window.location.replace(searchRes.find('a').attr('href'));
+ }
+});</script>
+
+
+
+
+      <meta name="keen-data" data-project-id="591daac30935ce40a59fb7ab" data-write-key="C89A9A1A8DB4C585F119F8F81ABB9621940DBBADDA5C72C2B87B1BD3464890D23FD250B0FFA4A1056DCB210616545B7B6C9DDF2054167B5219A3DD81E8DF90A321BE0C1B35BA19F2E3E85730FB96C1F93F8C66D8CD449FE6EFE43D98453632D1" data-article-id="954698" data-space-id="5276" data-manual-id="" data-article-type-id="0" data-course-id="" data-user-id="" data-user-public-id="" data-account-id="7dad475c4f" data-account-billing-type="full_users" data-source-id="1">
+
+      <link rel="alternate" type="application/rss+xml" title="RSS: All Lessons for Sakai Community Documentation" href="https://sakai.screenstepslive.com/s/sakai_help.rss">
+  
+
+  </head>
+  <body id="body" class="site-article helvetica-body helvetica-header js-loaded" data-content-template="2015" data-controller="toaster">
+      
+
+      <header class="screensteps-header" role="banner">
+  <a class="skip-navigation--link" id="skip-navigation" href="#screensteps-main-content">
+  Skip to main content
+</a>
+
+  <div class="screensteps-branding">
+    <div class="logo-wrapper">
+        <span class="company-logo">
+          <a href="https://sakai.screenstepslive.com/s/sakai_help" title="Sakai Community Documentation">
+            <img alt="Sakai Documentation" class="screensteps-site-logo" src="How%20do%20I%20create%20a%20calculated%20question__files/sakai-logo-trans.png">
+          </a>
+        </span>
+    </div>
+
+  </div>
+</header>
+
+
+    <div class="screensteps-container-wrapper">
+      <main class="screensteps-container">
+          <div class="screensteps-site-title-wrapper">
+            <h1 class="screensteps-site-title toc-heading">Sakai Community Documentation</h1>
+          </div>
+          <div class="screensteps-main-search" role="search">
+              <form id="screensteps-search-form" role="search" action="/s/sakai_help/searches" accept-charset="UTF-8" method="get">
+  <div class="screensteps-search-form">
+    <label for="text">Search term</label>
+    <input type="search" name="text" id="text" class="search-field" placeholder="Enter a keyword or topic to search" aria-label="Search">
+    
+    <input type="submit" name="commit" value="Search" class="search-submit" data-disable-with="Search">
+  </div>
+</form>
+
+          </div>
+        
+
+<div class="screensteps-content-wrapper manual-lesson lesson left-sidebar" data-screensteps-article="true">
+  <div class="screensteps-main-content" role="main">
+
+    <div id="screensteps-main-content">
+      <div class="screensteps-article" data-screensteps-article="true">
+  <!-- 9 -->
+
+<div class="article__content screensteps-article-content" data-controller="article photoswipe" data-article-id="954698" data-article-type-id="0" data-space-id="5276" data-manual-id="81161" data-workflow="false" data-article-rewrite-links-value="true" data-article-base-path-value="/s/sakai_help/" data-photoswipe-article-id-value="954698" data-article-author-action-outlet=".nav__item" data-checklist-article-id-value="954698" data-workflow-article-id-value="954698">
+  
+
+    <h1 class="lesson">How do I create a calculated question?</h1>
+    <div class="screensteps-steps" data-role="steps-container">
+          <div class="instructions screensteps-textblock screensteps-wrapper--introduction screensteps-wrapper" tabindex="0" role="status" aria-label="introduction">
+  <div id="text-content_BCB83860-7ED6-0136-7753-06467EE270FA" class="text-block-content">
+    <p>This allows for a calculated question to be added to a new or 
+existing assessment. A calculated question calculates new answers for 
+every test, based on variables whose value changes each time. The answer
+ is based on a formula, using those variables.</p>
+  </div>
+</div>
+      <div class="step step-depth-1" data-step-uuid="BCB84CE0-7ED6-0136-7754-06467EE270FA">
+      <h2 id="go-to-tests-quizzes" tabindex="0">
+        <a class="screensteps-anchor" tabindex="-1" aria-hidden="true" data-turbo="false" href="#go-to-tests-quizzes"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" enable-background="new 0 0 20 20" role="img" aria-labelledby="aa30eu1vknxxp2qcph5nelicl3x72y17"><title id="aa30eu1vknxxp2qcph5nelicl3x72y17">Heading anchor</title><path d="M7.859 14.691l-.81.805c-.701.695-1.843.695-2.545 0-.336-.334-.521-.779-.521-1.252s.186-.916.521-1.252l2.98-2.955c.617-.613 1.779-1.515 2.626-.675.389.386 1.016.384 1.403-.005.385-.389.383-1.017-.006-1.402-1.438-1.428-3.566-1.164-5.419.675l-2.98 2.956c-.715.709-1.108 1.654-1.108 2.658 0 1.006.394 1.949 1.108 2.658.736.73 1.702 1.096 2.669 1.096.967 0 1.934-.365 2.669-1.096l.811-.805c.389-.385.391-1.012.005-1.4-.387-.388-1.014-.39-1.403-.006zm9.032-11.484c-1.547-1.534-3.709-1.617-5.139-.197l-1.009 1.002c-.389.386-.392 1.013-.006 1.401.386.389 1.013.391 1.402.005l1.01-1.001c.74-.736 1.711-.431 2.346.197.336.335.522.779.522 1.252s-.186.917-.522 1.251l-3.18 3.154c-1.454 1.441-2.136.766-2.427.477-.389-.386-1.016-.383-1.401.005-.386.389-.384 1.017.005 1.401.668.662 1.43.99 2.228.99.977 0 2.01-.492 2.993-1.467l3.18-3.153c.712-.71 1.107-1.654 1.107-2.658 0-1.005-.395-1.949-1.109-2.659z"></path></svg></a>
+        Go to Tests &amp; Quizzes.
+</h2>      <div class="image">
+  <img width="200" height="122" style="max-width: min(100%, 200px);" loading="lazy" data-action="click-&gt;photoswipe#open" data-photoswipe-target="photo" data-srcset="https://media.screensteps.com/image_assets/assets/002/142/823/original/171702ca-d389-440c-b8d3-dddd7b28ddf7.png 200w" data-src="https://media.screensteps.com/image_assets/assets/002/142/823/original/171702ca-d389-440c-b8d3-dddd7b28ddf7.png" data-sizes="auto" class="clickable lazyautosizes ls-is-cached lazyloaded" src="How%20do%20I%20create%20a%20calculated%20question__files/171702ca-d389-440c-b8d3-dddd7b28ddf7.png" data-image-id="g0" sizes="200px" srcset="How%20do%20I%20create%20a%20calculated%20question__files/171702ca-d389-440c-b8d3-dddd7b28ddf7.png 200w">
+</div>
+
+      <div class="instructions screensteps-textblock" tabindex="0">
+  <div id="text-content_BCB87420-7ED6-0136-7756-06467EE270FA" class="text-block-content">
+    <p>Select the <strong>Tests &amp; Quizzes</strong> tool from the Tool Menu in your site.</p>
+  </div>
+</div>
+</div>
+      <div class="step step-depth-1" data-step-uuid="BCB88770-7ED6-0136-7757-06467EE270FA">
+      <h2 id="select-an-assessment" tabindex="0">
+        <a class="screensteps-anchor" tabindex="-1" aria-hidden="true" data-turbo="false" href="#select-an-assessment"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" enable-background="new 0 0 20 20" role="img" aria-labelledby="a13x0lq4mteng2d0m2xf07xxc1pueby8"><title id="a13x0lq4mteng2d0m2xf07xxc1pueby8">Heading anchor</title><path d="M7.859 14.691l-.81.805c-.701.695-1.843.695-2.545 0-.336-.334-.521-.779-.521-1.252s.186-.916.521-1.252l2.98-2.955c.617-.613 1.779-1.515 2.626-.675.389.386 1.016.384 1.403-.005.385-.389.383-1.017-.006-1.402-1.438-1.428-3.566-1.164-5.419.675l-2.98 2.956c-.715.709-1.108 1.654-1.108 2.658 0 1.006.394 1.949 1.108 2.658.736.73 1.702 1.096 2.669 1.096.967 0 1.934-.365 2.669-1.096l.811-.805c.389-.385.391-1.012.005-1.4-.387-.388-1.014-.39-1.403-.006zm9.032-11.484c-1.547-1.534-3.709-1.617-5.139-.197l-1.009 1.002c-.389.386-.392 1.013-.006 1.401.386.389 1.013.391 1.402.005l1.01-1.001c.74-.736 1.711-.431 2.346.197.336.335.522.779.522 1.252s-.186.917-.522 1.251l-3.18 3.154c-1.454 1.441-2.136.766-2.427.477-.389-.386-1.016-.383-1.401.005-.386.389-.384 1.017.005 1.401.668.662 1.43.99 2.228.99.977 0 2.01-.492 2.993-1.467l3.18-3.153c.712-.71 1.107-1.654 1.107-2.658 0-1.005-.395-1.949-1.109-2.659z"></path></svg></a>
+        Select an assessment.
+</h2>      <div class="instructions screensteps-textblock" tabindex="0">
+  <div id="text-content_BCB89A70-7ED6-0136-7758-06467EE270FA" class="text-block-content">
+    <p>Questions may be added to any assessment. Select an existing assessment or create a new one. </p>
+<p><em>Note: You may also <a href="https://sakai.screenstepslive.com/s/sakai_help/a/954715" target="_blank" data-internal-link-id="954715" data-internal-link="article">add a question directly to a question pool</a>. </em></p>
+  </div>
+</div>
+        <div class="step step-depth-2 child-step" data-step-uuid="BCB8AB70-7ED6-0136-7759-06467EE270FA">
+      <h3 id="create-a-new-assessment" tabindex="0">
+        <a class="screensteps-anchor" tabindex="-1" aria-hidden="true" data-turbo="false" href="#create-a-new-assessment"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" enable-background="new 0 0 20 20" role="img" aria-labelledby="arasnxipivp7q0aw7nks8t59zcc6ebli"><title id="arasnxipivp7q0aw7nks8t59zcc6ebli">Heading anchor</title><path d="M7.859 14.691l-.81.805c-.701.695-1.843.695-2.545 0-.336-.334-.521-.779-.521-1.252s.186-.916.521-1.252l2.98-2.955c.617-.613 1.779-1.515 2.626-.675.389.386 1.016.384 1.403-.005.385-.389.383-1.017-.006-1.402-1.438-1.428-3.566-1.164-5.419.675l-2.98 2.956c-.715.709-1.108 1.654-1.108 2.658 0 1.006.394 1.949 1.108 2.658.736.73 1.702 1.096 2.669 1.096.967 0 1.934-.365 2.669-1.096l.811-.805c.389-.385.391-1.012.005-1.4-.387-.388-1.014-.39-1.403-.006zm9.032-11.484c-1.547-1.534-3.709-1.617-5.139-.197l-1.009 1.002c-.389.386-.392 1.013-.006 1.401.386.389 1.013.391 1.402.005l1.01-1.001c.74-.736 1.711-.431 2.346.197.336.335.522.779.522 1.252s-.186.917-.522 1.251l-3.18 3.154c-1.454 1.441-2.136.766-2.427.477-.389-.386-1.016-.383-1.401.005-.386.389-.384 1.017.005 1.401.668.662 1.43.99 2.228.99.977 0 2.01-.492 2.993-1.467l3.18-3.153c.712-.71 1.107-1.654 1.107-2.658 0-1.005-.395-1.949-1.109-2.659z"></path></svg></a>
+        Create a New Assessment.
+</h3>        <div class="step step-depth-3 child-step" data-step-uuid="b7e7ff06-d9a6-44af-8223-c46b3e7e0f9a">
+      <h4 id="click-add" tabindex="0">
+        <a class="screensteps-anchor" tabindex="-1" aria-hidden="true" data-turbo="false" href="#click-add"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" enable-background="new 0 0 20 20" role="img" aria-labelledby="ameov60eqvi41m1uerdxhosejd123b6x"><title id="ameov60eqvi41m1uerdxhosejd123b6x">Heading anchor</title><path d="M7.859 14.691l-.81.805c-.701.695-1.843.695-2.545 0-.336-.334-.521-.779-.521-1.252s.186-.916.521-1.252l2.98-2.955c.617-.613 1.779-1.515 2.626-.675.389.386 1.016.384 1.403-.005.385-.389.383-1.017-.006-1.402-1.438-1.428-3.566-1.164-5.419.675l-2.98 2.956c-.715.709-1.108 1.654-1.108 2.658 0 1.006.394 1.949 1.108 2.658.736.73 1.702 1.096 2.669 1.096.967 0 1.934-.365 2.669-1.096l.811-.805c.389-.385.391-1.012.005-1.4-.387-.388-1.014-.39-1.403-.006zm9.032-11.484c-1.547-1.534-3.709-1.617-5.139-.197l-1.009 1.002c-.389.386-.392 1.013-.006 1.401.386.389 1.013.391 1.402.005l1.01-1.001c.74-.736 1.711-.431 2.346.197.336.335.522.779.522 1.252s-.186.917-.522 1.251l-3.18 3.154c-1.454 1.441-2.136.766-2.427.477-.389-.386-1.016-.383-1.401.005-.386.389-.384 1.017.005 1.401.668.662 1.43.99 2.228.99.977 0 2.01-.492 2.993-1.467l3.18-3.153c.712-.71 1.107-1.654 1.107-2.658 0-1.005-.395-1.949-1.109-2.659z"></path></svg></a>
+        Click Add.
+</h4>      <div class="image">
+  <a tabindex="-1" data-photoswipe-target="photo" data-action="photoswipe#open" data-width="1067" data-height="95" data-image-id="2142835" href="https://media.screensteps.com/image_assets/assets/002/142/835/original/f40abf9a-a5a7-4824-aad4-feb0f198cc85.png"><img width="1067" height="95" style="max-width: min(100%, 1067px);" loading="lazy" data-srcset="https://media.screensteps.com/image_assets/assets/002/142/835/original/f40abf9a-a5a7-4824-aad4-feb0f198cc85.png 1067w, https://media.screensteps.com/image_assets/assets/002/142/835/medium/f40abf9a-a5a7-4824-aad4-feb0f198cc85.png 855w" data-src="https://media.screensteps.com/image_assets/assets/002/142/835/medium/f40abf9a-a5a7-4824-aad4-feb0f198cc85.png" data-sizes="auto" class="lazyautosizes lazyloaded" src="How%20do%20I%20create%20a%20calculated%20question__files/f40abf9a-a5a7-4824-aad4-feb0f198cc85_002.png" sizes="699px" srcset="How%20do%20I%20create%20a%20calculated%20question__files/f40abf9a-a5a7-4824-aad4-feb0f198cc85.png 1067w, How%20do%20I%20create%20a%20calculated%20question__files/f40abf9a-a5a7-4824-aad4-feb0f198cc85_002.png 855w"><span class="preview_image" aria-label="Zoom image: "></span></a>
+</div>
+
+      <div class="image">
+  <img width="540" height="285" style="max-width: min(100%, 540px);" loading="lazy" data-action="click-&gt;photoswipe#open" data-photoswipe-target="photo" data-srcset="https://media.screensteps.com/image_assets/assets/002/142/811/original/d4eff2c9-4491-48df-9f8c-2f1b2cd2fb94.png 540w" data-src="https://media.screensteps.com/image_assets/assets/002/142/811/original/d4eff2c9-4491-48df-9f8c-2f1b2cd2fb94.png" data-sizes="auto" class="clickable lazyautosizes ls-is-cached lazyloaded" src="How%20do%20I%20create%20a%20calculated%20question__files/d4eff2c9-4491-48df-9f8c-2f1b2cd2fb94.png" data-image-id="g1" sizes="540px" srcset="How%20do%20I%20create%20a%20calculated%20question__files/d4eff2c9-4491-48df-9f8c-2f1b2cd2fb94.png 540w">
+</div>
+
+      <div class="instructions screensteps-textblock" tabindex="0">
+  <div id="text-content_BCB8D2D0-7ED6-0136-775B-06467EE270FA" class="text-block-content">
+    <p>For more information on creating new assessments, see <a href="https://sakai.screenstepslive.com/s/sakai_help/a/954665" target="_blank" data-internal-link-id="954665" data-internal-link="article">How do I create an assessment?</a> </p>
+  </div>
+</div>
+</div>
+</div>
+        <div class="step step-depth-2 child-step" data-step-uuid="BCB8E430-7ED6-0136-775C-06467EE270FA">
+      <h3 id="or-edit-an-existing-assessment" tabindex="0">
+        <a class="screensteps-anchor" tabindex="-1" aria-hidden="true" data-turbo="false" href="#or-edit-an-existing-assessment"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" enable-background="new 0 0 20 20" role="img" aria-labelledby="ati361ksahrmzmp5mkil1s18mgxsi6yg"><title id="ati361ksahrmzmp5mkil1s18mgxsi6yg">Heading anchor</title><path d="M7.859 14.691l-.81.805c-.701.695-1.843.695-2.545 0-.336-.334-.521-.779-.521-1.252s.186-.916.521-1.252l2.98-2.955c.617-.613 1.779-1.515 2.626-.675.389.386 1.016.384 1.403-.005.385-.389.383-1.017-.006-1.402-1.438-1.428-3.566-1.164-5.419.675l-2.98 2.956c-.715.709-1.108 1.654-1.108 2.658 0 1.006.394 1.949 1.108 2.658.736.73 1.702 1.096 2.669 1.096.967 0 1.934-.365 2.669-1.096l.811-.805c.389-.385.391-1.012.005-1.4-.387-.388-1.014-.39-1.403-.006zm9.032-11.484c-1.547-1.534-3.709-1.617-5.139-.197l-1.009 1.002c-.389.386-.392 1.013-.006 1.401.386.389 1.013.391 1.402.005l1.01-1.001c.74-.736 1.711-.431 2.346.197.336.335.522.779.522 1.252s-.186.917-.522 1.251l-3.18 3.154c-1.454 1.441-2.136.766-2.427.477-.389-.386-1.016-.383-1.401.005-.386.389-.384 1.017.005 1.401.668.662 1.43.99 2.228.99.977 0 2.01-.492 2.993-1.467l3.18-3.153c.712-.71 1.107-1.654 1.107-2.658 0-1.005-.395-1.949-1.109-2.659z"></path></svg></a>
+        Or edit an existing assessment. 
+</h3>      <div class="image">
+  <a tabindex="-1" data-photoswipe-target="photo" data-action="photoswipe#open" data-width="1056" data-height="404" data-image-id="2142813" href="https://media.screensteps.com/image_assets/assets/002/142/813/original/23794cad-43d5-41de-a2c9-c3b7a92af59b.png"><img width="1056" height="404" style="max-width: min(100%, 1056px);" loading="lazy" data-srcset="https://media.screensteps.com/image_assets/assets/002/142/813/original/23794cad-43d5-41de-a2c9-c3b7a92af59b.png 1056w, https://media.screensteps.com/image_assets/assets/002/142/813/medium/23794cad-43d5-41de-a2c9-c3b7a92af59b.png 855w" data-src="https://media.screensteps.com/image_assets/assets/002/142/813/medium/23794cad-43d5-41de-a2c9-c3b7a92af59b.png" data-sizes="auto" class="lazyautosizes lazyloaded" src="How%20do%20I%20create%20a%20calculated%20question__files/23794cad-43d5-41de-a2c9-c3b7a92af59b_002.png" sizes="699px" srcset="How%20do%20I%20create%20a%20calculated%20question__files/23794cad-43d5-41de-a2c9-c3b7a92af59b.png 1056w, How%20do%20I%20create%20a%20calculated%20question__files/23794cad-43d5-41de-a2c9-c3b7a92af59b_002.png 855w"><span class="preview_image" aria-label="Zoom image: "></span></a>
+</div>
+
+</div>
+</div>
+      <div class="step step-depth-1" data-step-uuid="BCB90730-7ED6-0136-775E-06467EE270FA">
+      <h2 id="select-calculated-question-from-drop-down-menu" tabindex="0">
+        <a class="screensteps-anchor" tabindex="-1" aria-hidden="true" data-turbo="false" href="#select-calculated-question-from-drop-down-menu"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" enable-background="new 0 0 20 20" role="img" aria-labelledby="a85t79p7guqvo0s6oujd6mmt7di7b22d"><title id="a85t79p7guqvo0s6oujd6mmt7di7b22d">Heading anchor</title><path d="M7.859 14.691l-.81.805c-.701.695-1.843.695-2.545 0-.336-.334-.521-.779-.521-1.252s.186-.916.521-1.252l2.98-2.955c.617-.613 1.779-1.515 2.626-.675.389.386 1.016.384 1.403-.005.385-.389.383-1.017-.006-1.402-1.438-1.428-3.566-1.164-5.419.675l-2.98 2.956c-.715.709-1.108 1.654-1.108 2.658 0 1.006.394 1.949 1.108 2.658.736.73 1.702 1.096 2.669 1.096.967 0 1.934-.365 2.669-1.096l.811-.805c.389-.385.391-1.012.005-1.4-.387-.388-1.014-.39-1.403-.006zm9.032-11.484c-1.547-1.534-3.709-1.617-5.139-.197l-1.009 1.002c-.389.386-.392 1.013-.006 1.401.386.389 1.013.391 1.402.005l1.01-1.001c.74-.736 1.711-.431 2.346.197.336.335.522.779.522 1.252s-.186.917-.522 1.251l-3.18 3.154c-1.454 1.441-2.136.766-2.427.477-.389-.386-1.016-.383-1.401.005-.386.389-.384 1.017.005 1.401.668.662 1.43.99 2.228.99.977 0 2.01-.492 2.993-1.467l3.18-3.153c.712-.71 1.107-1.654 1.107-2.658 0-1.005-.395-1.949-1.109-2.659z"></path></svg></a>
+        Select Calculated Question from drop-down menu.
+</h2>      <div class="image">
+  <img width="349" height="690" style="max-width: min(100%, 349px);" loading="lazy" data-action="click-&gt;photoswipe#open" data-photoswipe-target="photo" data-srcset="https://media.screensteps.com/image_assets/assets/002/142/832/original/8f774b0e-61ba-4882-b2ba-d95bd67788bc.png 349w" data-src="https://media.screensteps.com/image_assets/assets/002/142/832/original/8f774b0e-61ba-4882-b2ba-d95bd67788bc.png" data-sizes="auto" class="clickable lazyload" src="How%20do%20I%20create%20a%20calculated%20question__files/8f774b0e-61ba-4882-b2ba-d95bd67788bc.png" data-image-id="g2">
+</div>
+
+      <div class="instructions screensteps-textblock" tabindex="0">
+  <div id="text-content_BCB92AE0-7ED6-0136-7760-06467EE270FA" class="text-block-content">
+    <p>After selecting Calculated Question from the drop-down menu, the program will open options for the question.</p>
+  </div>
+</div>
+</div>
+      <div class="step step-depth-1" data-step-uuid="BCB93DC0-7ED6-0136-7761-06467EE270FA">
+      <h2 id="set-the-point-value-for-the-question" tabindex="0">
+        <a class="screensteps-anchor" tabindex="-1" aria-hidden="true" data-turbo="false" href="#set-the-point-value-for-the-question"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" enable-background="new 0 0 20 20" role="img" aria-labelledby="a7rdinp7q2w1tiyyov6fym8qrm2unabl"><title id="a7rdinp7q2w1tiyyov6fym8qrm2unabl">Heading anchor</title><path d="M7.859 14.691l-.81.805c-.701.695-1.843.695-2.545 0-.336-.334-.521-.779-.521-1.252s.186-.916.521-1.252l2.98-2.955c.617-.613 1.779-1.515 2.626-.675.389.386 1.016.384 1.403-.005.385-.389.383-1.017-.006-1.402-1.438-1.428-3.566-1.164-5.419.675l-2.98 2.956c-.715.709-1.108 1.654-1.108 2.658 0 1.006.394 1.949 1.108 2.658.736.73 1.702 1.096 2.669 1.096.967 0 1.934-.365 2.669-1.096l.811-.805c.389-.385.391-1.012.005-1.4-.387-.388-1.014-.39-1.403-.006zm9.032-11.484c-1.547-1.534-3.709-1.617-5.139-.197l-1.009 1.002c-.389.386-.392 1.013-.006 1.401.386.389 1.013.391 1.402.005l1.01-1.001c.74-.736 1.711-.431 2.346.197.336.335.522.779.522 1.252s-.186.917-.522 1.251l-3.18 3.154c-1.454 1.441-2.136.766-2.427.477-.389-.386-1.016-.383-1.401.005-.386.389-.384 1.017.005 1.401.668.662 1.43.99 2.228.99.977 0 2.01-.492 2.993-1.467l3.18-3.153c.712-.71 1.107-1.654 1.107-2.658 0-1.005-.395-1.949-1.109-2.659z"></path></svg></a>
+        Set the point value for the question.
+</h2>      <div class="image">
+  <img width="528" height="52" style="max-width: min(100%, 528px);" loading="lazy" data-action="click-&gt;photoswipe#open" data-photoswipe-target="photo" data-srcset="https://media.screensteps.com/image_assets/assets/002/142/819/original/cfd9a8af-6d23-4d12-95c8-c80e80370bb2.png 528w" data-src="https://media.screensteps.com/image_assets/assets/002/142/819/original/cfd9a8af-6d23-4d12-95c8-c80e80370bb2.png" data-sizes="auto" class="clickable lazyload" src="How%20do%20I%20create%20a%20calculated%20question__files/cfd9a8af-6d23-4d12-95c8-c80e80370bb2.png" data-image-id="g3">
+</div>
+
+      <div class="instructions screensteps-textblock" tabindex="0">
+  <div id="text-content_BCB960D0-7ED6-0136-7763-06467EE270FA" class="text-block-content">
+    <p>Enter the point value for this question. &nbsp;Questions may be worth any point value you choose. </p>
+<p><em>Tip: Keep in mind that the point value of all the questions in 
+the assessment will equal the point value of the assessment in the 
+Gradebook. &nbsp;So, if you want your assessment to be worth a total of 
+100 points, you should assign point values to your questions 
+accordingly.</em></p>
+  </div>
+</div>
+</div>
+      <div class="step step-depth-1" data-step-uuid="BCB97330-7ED6-0136-7764-06467EE270FA">
+      <h2 id="display-points" tabindex="0">
+        <a class="screensteps-anchor" tabindex="-1" aria-hidden="true" data-turbo="false" href="#display-points"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" enable-background="new 0 0 20 20" role="img" aria-labelledby="atqhqr5dx5yk8mgdjwlsy4e41spfrfn6"><title id="atqhqr5dx5yk8mgdjwlsy4e41spfrfn6">Heading anchor</title><path d="M7.859 14.691l-.81.805c-.701.695-1.843.695-2.545 0-.336-.334-.521-.779-.521-1.252s.186-.916.521-1.252l2.98-2.955c.617-.613 1.779-1.515 2.626-.675.389.386 1.016.384 1.403-.005.385-.389.383-1.017-.006-1.402-1.438-1.428-3.566-1.164-5.419.675l-2.98 2.956c-.715.709-1.108 1.654-1.108 2.658 0 1.006.394 1.949 1.108 2.658.736.73 1.702 1.096 2.669 1.096.967 0 1.934-.365 2.669-1.096l.811-.805c.389-.385.391-1.012.005-1.4-.387-.388-1.014-.39-1.403-.006zm9.032-11.484c-1.547-1.534-3.709-1.617-5.139-.197l-1.009 1.002c-.389.386-.392 1.013-.006 1.401.386.389 1.013.391 1.402.005l1.01-1.001c.74-.736 1.711-.431 2.346.197.336.335.522.779.522 1.252s-.186.917-.522 1.251l-3.18 3.154c-1.454 1.441-2.136.766-2.427.477-.389-.386-1.016-.383-1.401.005-.386.389-.384 1.017.005 1.401.668.662 1.43.99 2.228.99.977 0 2.01-.492 2.993-1.467l3.18-3.153c.712-.71 1.107-1.654 1.107-2.658 0-1.005-.395-1.949-1.109-2.659z"></path></svg></a>
+        Display points?
+</h2>      <div class="image">
+  <img width="478" height="56" style="max-width: min(100%, 478px);" loading="lazy" data-action="click-&gt;photoswipe#open" data-photoswipe-target="photo" data-srcset="https://media.screensteps.com/image_assets/assets/002/142/830/original/8e92ec4c-d201-4782-8059-c8f8dcbe0190.png 478w" data-src="https://media.screensteps.com/image_assets/assets/002/142/830/original/8e92ec4c-d201-4782-8059-c8f8dcbe0190.png" data-sizes="auto" class="clickable lazyload" src="How%20do%20I%20create%20a%20calculated%20question__files/8e92ec4c-d201-4782-8059-c8f8dcbe0190.png" data-image-id="g4">
+</div>
+
+      <div class="instructions screensteps-textblock" tabindex="0">
+  <div id="text-content_BCB99520-7ED6-0136-7766-06467EE270FA" class="text-block-content">
+    <p>Do you want students to see the point value as they are taking the test? &nbsp;If so, leave the default setting of <strong>Yes</strong>. &nbsp;If you prefer that students do not see the point value for the question, select <strong>No</strong>.</p>
+  </div>
+</div>
+</div>
+      <div class="step step-depth-1" data-step-uuid="BCB9A510-7ED6-0136-7767-06467EE270FA">
+      <h2 id="add-question-text" tabindex="0">
+        <a class="screensteps-anchor" tabindex="-1" aria-hidden="true" data-turbo="false" href="#add-question-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" enable-background="new 0 0 20 20" role="img" aria-labelledby="a67bc7ambzuc0u0bvgaykd3ah1lc407g"><title id="a67bc7ambzuc0u0bvgaykd3ah1lc407g">Heading anchor</title><path d="M7.859 14.691l-.81.805c-.701.695-1.843.695-2.545 0-.336-.334-.521-.779-.521-1.252s.186-.916.521-1.252l2.98-2.955c.617-.613 1.779-1.515 2.626-.675.389.386 1.016.384 1.403-.005.385-.389.383-1.017-.006-1.402-1.438-1.428-3.566-1.164-5.419.675l-2.98 2.956c-.715.709-1.108 1.654-1.108 2.658 0 1.006.394 1.949 1.108 2.658.736.73 1.702 1.096 2.669 1.096.967 0 1.934-.365 2.669-1.096l.811-.805c.389-.385.391-1.012.005-1.4-.387-.388-1.014-.39-1.403-.006zm9.032-11.484c-1.547-1.534-3.709-1.617-5.139-.197l-1.009 1.002c-.389.386-.392 1.013-.006 1.401.386.389 1.013.391 1.402.005l1.01-1.001c.74-.736 1.711-.431 2.346.197.336.335.522.779.522 1.252s-.186.917-.522 1.251l-3.18 3.154c-1.454 1.441-2.136.766-2.427.477-.389-.386-1.016-.383-1.401.005-.386.389-.384 1.017.005 1.401.668.662 1.43.99 2.228.99.977 0 2.01-.492 2.993-1.467l3.18-3.153c.712-.71 1.107-1.654 1.107-2.658 0-1.005-.395-1.949-1.109-2.659z"></path></svg></a>
+        Add Question Text.
+</h2>      <div class="image">
+  <a tabindex="-1" data-photoswipe-target="photo" data-action="photoswipe#open" data-width="1046" data-height="641" data-image-id="2142825" href="https://media.screensteps.com/image_assets/assets/002/142/825/original/06373f4b-27c7-4c8c-b2bd-5c766bdb39f0.png"><img width="1046" height="641" style="max-width: min(100%, 1046px);" loading="lazy" data-srcset="https://media.screensteps.com/image_assets/assets/002/142/825/original/06373f4b-27c7-4c8c-b2bd-5c766bdb39f0.png 1046w, https://media.screensteps.com/image_assets/assets/002/142/825/medium/06373f4b-27c7-4c8c-b2bd-5c766bdb39f0.png 855w" data-src="https://media.screensteps.com/image_assets/assets/002/142/825/medium/06373f4b-27c7-4c8c-b2bd-5c766bdb39f0.png" data-sizes="auto" class=" lazyload" src="How%20do%20I%20create%20a%20calculated%20question__files/06373f4b-27c7-4c8c-b2bd-5c766bdb39f0.png"><span class="preview_image" aria-label="Zoom image: "></span></a>
+</div>
+
+      <div class="instructions screensteps-textblock" tabindex="0">
+  <div id="text-content_BCB9C6E0-7ED6-0136-7769-06467EE270FA" class="text-block-content">
+    <p>Type the <strong>Question Text</strong> into the text box 
+provided. This is the information that the student will see, including 
+the variable and formula placeholders (see examples below).</p>
+<p><strong>Variables</strong>: Define variables to use in this question 
+below. Reference them in the question text by putting them in single 
+curly braces eg. {x}. Variable names are alpha-numeric but must begin 
+with an alpha character. </p>
+<p>Example: Kevin has {x} apples. Jane eats {y}. How many does Kevin have now? {{z}}</p>
+<p><strong>Formulas</strong>: Place double curly braces (e.g. {{y}} 
+around a formula name, to define where the student's input box will 
+display. Formula names are alpha-numeric but must begin with an alpha 
+character. </p>
+<p>Example: Solve: COS({a}) * ({c} - {b}) = {{z}} Formula z would be COS({a}) * ({c}-{b})</p>
+<p>Keep in mind the following:</p>
+<ul>
+<li>You may define acceptable tolerance as a constant (0.01) or percentage (1.5%) of the answer. (Defaults to 0.01.)</li>
+<li>Variables and formulas support decimals. Default is 3.</li>
+<li>Valid Operators: + - * / ^ ! # ( ) </li>
+<li>You can use the following math functions: SIN, COS, TAN, ASIN, ACOS, ATAN, ABS, EXP, SGN, SQRT, LOG10, and LN. </li>
+<li>There are two built-in constants, PI(3.14...) and e(2.718...). Use them in your answer expression.</li>
+<li>Variables and Formulas cannot have the same name.</li>
+<li> See <a href="http://mathparser.org/mxparser-math-collection/">http://mathparser.org/mxparser-math-collection/</a> for the full set of valid math functions and operators. </li>
+</ul>
+<p><em>Note: To edit with <a href="https://sakai.screenstepslive.com/s/sakai_help/a/954561" target="_blank" data-internal-link-id="954561" data-internal-link="article">Rich-Text Editor</a>, click the hyperlink to open the full menu.</em></p>
+  </div>
+</div>
+</div>
+      <div class="step step-depth-1" data-step-uuid="BCB9D910-7ED6-0136-776A-06467EE270FA">
+      <h2 id="click-extract-variables-calculations-and-formulas" tabindex="0">
+        <a class="screensteps-anchor" tabindex="-1" aria-hidden="true" data-turbo="false" href="#click-extract-variables-calculations-and-formulas"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" enable-background="new 0 0 20 20" role="img" aria-labelledby="aerg7wk6a16f5eqc3nkxdsjhhei8f6bx"><title id="aerg7wk6a16f5eqc3nkxdsjhhei8f6bx">Heading anchor</title><path d="M7.859 14.691l-.81.805c-.701.695-1.843.695-2.545 0-.336-.334-.521-.779-.521-1.252s.186-.916.521-1.252l2.98-2.955c.617-.613 1.779-1.515 2.626-.675.389.386 1.016.384 1.403-.005.385-.389.383-1.017-.006-1.402-1.438-1.428-3.566-1.164-5.419.675l-2.98 2.956c-.715.709-1.108 1.654-1.108 2.658 0 1.006.394 1.949 1.108 2.658.736.73 1.702 1.096 2.669 1.096.967 0 1.934-.365 2.669-1.096l.811-.805c.389-.385.391-1.012.005-1.4-.387-.388-1.014-.39-1.403-.006zm9.032-11.484c-1.547-1.534-3.709-1.617-5.139-.197l-1.009 1.002c-.389.386-.392 1.013-.006 1.401.386.389 1.013.391 1.402.005l1.01-1.001c.74-.736 1.711-.431 2.346.197.336.335.522.779.522 1.252s-.186.917-.522 1.251l-3.18 3.154c-1.454 1.441-2.136.766-2.427.477-.389-.386-1.016-.383-1.401.005-.386.389-.384 1.017.005 1.401.668.662 1.43.99 2.228.99.977 0 2.01-.492 2.993-1.467l3.18-3.153c.712-.71 1.107-1.654 1.107-2.658 0-1.005-.395-1.949-1.109-2.659z"></path></svg></a>
+        Click Extract Variables, Calculations, and Formulas.
+</h2>      <div class="image">
+  <a tabindex="-1" data-photoswipe-target="photo" data-action="photoswipe#open" data-width="1060" data-height="441" data-image-id="2142809" href="https://media.screensteps.com/image_assets/assets/002/142/809/original/d4bc0934-81be-441a-a729-c33321194b40.png"><img width="1060" height="441" style="max-width: min(100%, 1060px);" loading="lazy" data-srcset="https://media.screensteps.com/image_assets/assets/002/142/809/original/d4bc0934-81be-441a-a729-c33321194b40.png 1060w, https://media.screensteps.com/image_assets/assets/002/142/809/medium/d4bc0934-81be-441a-a729-c33321194b40.png 855w" data-src="https://media.screensteps.com/image_assets/assets/002/142/809/medium/d4bc0934-81be-441a-a729-c33321194b40.png" data-sizes="auto" class=" lazyload" src="How%20do%20I%20create%20a%20calculated%20question__files/d4bc0934-81be-441a-a729-c33321194b40.png"><span class="preview_image" aria-label="Zoom image: "></span></a>
+</div>
+
+      <div class="instructions screensteps-textblock" tabindex="0">
+  <div id="text-content_BCB9FBF0-7ED6-0136-776C-06467EE270FA" class="text-block-content">
+    <p>Click the <strong>Extract Variables, Calculations, and Formulas from Question Text</strong> button to create the variables and formulas.</p>
+  </div>
+</div>
+</div>
+      <div class="step step-depth-1" data-step-uuid="BCBA0E90-7ED6-0136-776D-06467EE270FA">
+      <h2 id="define-ranges-of-variable-values" tabindex="0">
+        <a class="screensteps-anchor" tabindex="-1" aria-hidden="true" data-turbo="false" href="#define-ranges-of-variable-values"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" enable-background="new 0 0 20 20" role="img" aria-labelledby="a87bhid0i10394qz2ne2di8inlg53oev"><title id="a87bhid0i10394qz2ne2di8inlg53oev">Heading anchor</title><path d="M7.859 14.691l-.81.805c-.701.695-1.843.695-2.545 0-.336-.334-.521-.779-.521-1.252s.186-.916.521-1.252l2.98-2.955c.617-.613 1.779-1.515 2.626-.675.389.386 1.016.384 1.403-.005.385-.389.383-1.017-.006-1.402-1.438-1.428-3.566-1.164-5.419.675l-2.98 2.956c-.715.709-1.108 1.654-1.108 2.658 0 1.006.394 1.949 1.108 2.658.736.73 1.702 1.096 2.669 1.096.967 0 1.934-.365 2.669-1.096l.811-.805c.389-.385.391-1.012.005-1.4-.387-.388-1.014-.39-1.403-.006zm9.032-11.484c-1.547-1.534-3.709-1.617-5.139-.197l-1.009 1.002c-.389.386-.392 1.013-.006 1.401.386.389 1.013.391 1.402.005l1.01-1.001c.74-.736 1.711-.431 2.346.197.336.335.522.779.522 1.252s-.186.917-.522 1.251l-3.18 3.154c-1.454 1.441-2.136.766-2.427.477-.389-.386-1.016-.383-1.401.005-.386.389-.384 1.017.005 1.401.668.662 1.43.99 2.228.99.977 0 2.01-.492 2.993-1.467l3.18-3.153c.712-.71 1.107-1.654 1.107-2.658 0-1.005-.395-1.949-1.109-2.659z"></path></svg></a>
+        Define ranges of variable values.
+</h2>      <div class="image">
+  <a tabindex="-1" data-photoswipe-target="photo" data-action="photoswipe#open" data-width="1053" data-height="196" data-image-id="2142815" href="https://media.screensteps.com/image_assets/assets/002/142/815/original/0610cd6a-35d8-448c-ba22-d301eb64e606.png"><img width="1053" height="196" style="max-width: min(100%, 1053px);" loading="lazy" data-srcset="https://media.screensteps.com/image_assets/assets/002/142/815/original/0610cd6a-35d8-448c-ba22-d301eb64e606.png 1053w, https://media.screensteps.com/image_assets/assets/002/142/815/medium/0610cd6a-35d8-448c-ba22-d301eb64e606.png 855w" data-src="https://media.screensteps.com/image_assets/assets/002/142/815/medium/0610cd6a-35d8-448c-ba22-d301eb64e606.png" data-sizes="auto" class=" lazyload" src="How%20do%20I%20create%20a%20calculated%20question__files/0610cd6a-35d8-448c-ba22-d301eb64e606.png"><span class="preview_image" aria-label="Zoom image: "></span></a>
+</div>
+
+      <div class="instructions screensteps-textblock" tabindex="0">
+  <div id="text-content_BCBA3540-7ED6-0136-776F-06467EE270FA" class="text-block-content">
+    <p>Change the Min, Max, and Decimal Places for all of the variables to define their ranges of valid values.</p>
+  </div>
+</div>
+</div>
+      <div class="step step-depth-1" data-step-uuid="BCBA4850-7ED6-0136-7770-06467EE270FA">
+      <h2 id="enter-the-formula" tabindex="0">
+        <a class="screensteps-anchor" tabindex="-1" aria-hidden="true" data-turbo="false" href="#enter-the-formula"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" enable-background="new 0 0 20 20" role="img" aria-labelledby="a6rzg8bqhgmwhbf2l3zxk9f6r19rzmsx"><title id="a6rzg8bqhgmwhbf2l3zxk9f6r19rzmsx">Heading anchor</title><path d="M7.859 14.691l-.81.805c-.701.695-1.843.695-2.545 0-.336-.334-.521-.779-.521-1.252s.186-.916.521-1.252l2.98-2.955c.617-.613 1.779-1.515 2.626-.675.389.386 1.016.384 1.403-.005.385-.389.383-1.017-.006-1.402-1.438-1.428-3.566-1.164-5.419.675l-2.98 2.956c-.715.709-1.108 1.654-1.108 2.658 0 1.006.394 1.949 1.108 2.658.736.73 1.702 1.096 2.669 1.096.967 0 1.934-.365 2.669-1.096l.811-.805c.389-.385.391-1.012.005-1.4-.387-.388-1.014-.39-1.403-.006zm9.032-11.484c-1.547-1.534-3.709-1.617-5.139-.197l-1.009 1.002c-.389.386-.392 1.013-.006 1.401.386.389 1.013.391 1.402.005l1.01-1.001c.74-.736 1.711-.431 2.346.197.336.335.522.779.522 1.252s-.186.917-.522 1.251l-3.18 3.154c-1.454 1.441-2.136.766-2.427.477-.389-.386-1.016-.383-1.401.005-.386.389-.384 1.017.005 1.401.668.662 1.43.99 2.228.99.977 0 2.01-.492 2.993-1.467l3.18-3.153c.712-.71 1.107-1.654 1.107-2.658 0-1.005-.395-1.949-1.109-2.659z"></path></svg></a>
+        Enter the formula.
+</h2>      <div class="image">
+  <a tabindex="-1" data-photoswipe-target="photo" data-action="photoswipe#open" data-width="1054" data-height="244" data-image-id="2142817" href="https://media.screensteps.com/image_assets/assets/002/142/817/original/01de0613-4088-4e7a-84b5-0833ff419584.png"><img width="1054" height="244" style="max-width: min(100%, 1054px);" loading="lazy" data-srcset="https://media.screensteps.com/image_assets/assets/002/142/817/original/01de0613-4088-4e7a-84b5-0833ff419584.png 1054w, https://media.screensteps.com/image_assets/assets/002/142/817/medium/01de0613-4088-4e7a-84b5-0833ff419584.png 855w" data-src="https://media.screensteps.com/image_assets/assets/002/142/817/medium/01de0613-4088-4e7a-84b5-0833ff419584.png" data-sizes="auto" class=" lazyload" src="How%20do%20I%20create%20a%20calculated%20question__files/01de0613-4088-4e7a-84b5-0833ff419584.png"><span class="preview_image" aria-label="Zoom image: "></span></a>
+</div>
+
+      <div class="instructions screensteps-textblock" tabindex="0">
+  <div id="text-content_BCBA6FB0-7ED6-0136-7772-06467EE270FA" class="text-block-content">
+    <p>Enter the mathematical expression for each Formula, inserting the Variables where needed.</p>
+  </div>
+</div>
+</div>
+      <div class="step step-depth-1" data-step-uuid="BCBA8150-7ED6-0136-7773-06467EE270FA">
+      <h2 id="add-attachment-optional" tabindex="0">
+        <a class="screensteps-anchor" tabindex="-1" aria-hidden="true" data-turbo="false" href="#add-attachment-optional"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" enable-background="new 0 0 20 20" role="img" aria-labelledby="a2r9hog8jtbew4s5bzi7gwwbgnhbgfmd"><title id="a2r9hog8jtbew4s5bzi7gwwbgnhbgfmd">Heading anchor</title><path d="M7.859 14.691l-.81.805c-.701.695-1.843.695-2.545 0-.336-.334-.521-.779-.521-1.252s.186-.916.521-1.252l2.98-2.955c.617-.613 1.779-1.515 2.626-.675.389.386 1.016.384 1.403-.005.385-.389.383-1.017-.006-1.402-1.438-1.428-3.566-1.164-5.419.675l-2.98 2.956c-.715.709-1.108 1.654-1.108 2.658 0 1.006.394 1.949 1.108 2.658.736.73 1.702 1.096 2.669 1.096.967 0 1.934-.365 2.669-1.096l.811-.805c.389-.385.391-1.012.005-1.4-.387-.388-1.014-.39-1.403-.006zm9.032-11.484c-1.547-1.534-3.709-1.617-5.139-.197l-1.009 1.002c-.389.386-.392 1.013-.006 1.401.386.389 1.013.391 1.402.005l1.01-1.001c.74-.736 1.711-.431 2.346.197.336.335.522.779.522 1.252s-.186.917-.522 1.251l-3.18 3.154c-1.454 1.441-2.136.766-2.427.477-.389-.386-1.016-.383-1.401.005-.386.389-.384 1.017.005 1.401.668.662 1.43.99 2.228.99.977 0 2.01-.492 2.993-1.467l3.18-3.153c.712-.71 1.107-1.654 1.107-2.658 0-1.005-.395-1.949-1.109-2.659z"></path></svg></a>
+        Add attachment. (Optional)
+</h2>      <div class="image">
+  <img width="152" height="99" style="max-width: min(100%, 152px);" loading="lazy" data-action="click-&gt;photoswipe#open" data-photoswipe-target="photo" data-srcset="https://media.screensteps.com/image_assets/assets/002/142/828/original/7ab5f39f-46a7-4373-92fe-3f712c122b82.png 152w" data-src="https://media.screensteps.com/image_assets/assets/002/142/828/original/7ab5f39f-46a7-4373-92fe-3f712c122b82.png" data-sizes="auto" class="clickable lazyload" src="How%20do%20I%20create%20a%20calculated%20question__files/7ab5f39f-46a7-4373-92fe-3f712c122b82.png" data-image-id="g5">
+</div>
+
+      <div class="instructions screensteps-textblock" tabindex="0">
+  <div id="text-content_BCBAA630-7ED6-0136-7775-06467EE270FA" class="text-block-content">
+    <p>Click <strong>Add Attachments</strong> to browse for and select a file attachment if desired.</p>
+  </div>
+</div>
+</div>
+      <div class="step step-depth-1" data-step-uuid="BCBAB950-7ED6-0136-7776-06467EE270FA">
+      <h2 id="assign-to-part-optional" tabindex="0">
+        <a class="screensteps-anchor" tabindex="-1" aria-hidden="true" data-turbo="false" href="#assign-to-part-optional"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" enable-background="new 0 0 20 20" role="img" aria-labelledby="a6mkmsngxm6wasd6b56i4vcfec1ex6jl"><title id="a6mkmsngxm6wasd6b56i4vcfec1ex6jl">Heading anchor</title><path d="M7.859 14.691l-.81.805c-.701.695-1.843.695-2.545 0-.336-.334-.521-.779-.521-1.252s.186-.916.521-1.252l2.98-2.955c.617-.613 1.779-1.515 2.626-.675.389.386 1.016.384 1.403-.005.385-.389.383-1.017-.006-1.402-1.438-1.428-3.566-1.164-5.419.675l-2.98 2.956c-.715.709-1.108 1.654-1.108 2.658 0 1.006.394 1.949 1.108 2.658.736.73 1.702 1.096 2.669 1.096.967 0 1.934-.365 2.669-1.096l.811-.805c.389-.385.391-1.012.005-1.4-.387-.388-1.014-.39-1.403-.006zm9.032-11.484c-1.547-1.534-3.709-1.617-5.139-.197l-1.009 1.002c-.389.386-.392 1.013-.006 1.401.386.389 1.013.391 1.402.005l1.01-1.001c.74-.736 1.711-.431 2.346.197.336.335.522.779.522 1.252s-.186.917-.522 1.251l-3.18 3.154c-1.454 1.441-2.136.766-2.427.477-.389-.386-1.016-.383-1.401.005-.386.389-.384 1.017.005 1.401.668.662 1.43.99 2.228.99.977 0 2.01-.492 2.993-1.467l3.18-3.153c.712-.71 1.107-1.654 1.107-2.658 0-1.005-.395-1.949-1.109-2.659z"></path></svg></a>
+        Assign to part. (Optional)
+</h2>      <div class="image">
+  <img width="511" height="52" style="max-width: min(100%, 511px);" loading="lazy" data-action="click-&gt;photoswipe#open" data-photoswipe-target="photo" data-srcset="https://media.screensteps.com/image_assets/assets/002/142/839/original/5b1c5ee8-b552-4922-be72-fda67a8d5f51.png 511w" data-src="https://media.screensteps.com/image_assets/assets/002/142/839/original/5b1c5ee8-b552-4922-be72-fda67a8d5f51.png" data-sizes="auto" class="clickable lazyload" src="How%20do%20I%20create%20a%20calculated%20question__files/5b1c5ee8-b552-4922-be72-fda67a8d5f51.png" data-image-id="g6">
+</div>
+
+      <div class="instructions screensteps-textblock" tabindex="0">
+  <div id="text-content_BCBADB70-7ED6-0136-7778-06467EE270FA" class="text-block-content">
+    <p>If you have multiple parts in your assessment, you may assign the question to a different part.</p>
+  </div>
+</div>
+</div>
+      <div class="step step-depth-1" data-step-uuid="BCBAECD0-7ED6-0136-7779-06467EE270FA">
+      <h2 id="assign-to-pool-optional" tabindex="0">
+        <a class="screensteps-anchor" tabindex="-1" aria-hidden="true" data-turbo="false" href="#assign-to-pool-optional"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" enable-background="new 0 0 20 20" role="img" aria-labelledby="ag475gee50h6whvktlc8e06zwmacuna1"><title id="ag475gee50h6whvktlc8e06zwmacuna1">Heading anchor</title><path d="M7.859 14.691l-.81.805c-.701.695-1.843.695-2.545 0-.336-.334-.521-.779-.521-1.252s.186-.916.521-1.252l2.98-2.955c.617-.613 1.779-1.515 2.626-.675.389.386 1.016.384 1.403-.005.385-.389.383-1.017-.006-1.402-1.438-1.428-3.566-1.164-5.419.675l-2.98 2.956c-.715.709-1.108 1.654-1.108 2.658 0 1.006.394 1.949 1.108 2.658.736.73 1.702 1.096 2.669 1.096.967 0 1.934-.365 2.669-1.096l.811-.805c.389-.385.391-1.012.005-1.4-.387-.388-1.014-.39-1.403-.006zm9.032-11.484c-1.547-1.534-3.709-1.617-5.139-.197l-1.009 1.002c-.389.386-.392 1.013-.006 1.401.386.389 1.013.391 1.402.005l1.01-1.001c.74-.736 1.711-.431 2.346.197.336.335.522.779.522 1.252s-.186.917-.522 1.251l-3.18 3.154c-1.454 1.441-2.136.766-2.427.477-.389-.386-1.016-.383-1.401.005-.386.389-.384 1.017.005 1.401.668.662 1.43.99 2.228.99.977 0 2.01-.492 2.993-1.467l3.18-3.153c.712-.71 1.107-1.654 1.107-2.658 0-1.005-.395-1.949-1.109-2.659z"></path></svg></a>
+        Assign to pool. (Optional)
+</h2>      <div class="image">
+  <img width="587" height="44" style="max-width: min(100%, 587px);" loading="lazy" data-action="click-&gt;photoswipe#open" data-photoswipe-target="photo" data-srcset="https://media.screensteps.com/image_assets/assets/002/142/841/original/505b9418-bad7-4dc2-a531-5d685a83a8f7.png 587w" data-src="https://media.screensteps.com/image_assets/assets/002/142/841/original/505b9418-bad7-4dc2-a531-5d685a83a8f7.png" data-sizes="auto" class="clickable lazyload" src="How%20do%20I%20create%20a%20calculated%20question__files/505b9418-bad7-4dc2-a531-5d685a83a8f7.png" data-image-id="g7">
+</div>
+
+      <div class="instructions screensteps-textblock" tabindex="0">
+  <div id="text-content_BCBB0FF0-7ED6-0136-777B-06467EE270FA" class="text-block-content">
+    <p>If you have an existing question pool and would like to copy this question to the pool, select the pool name here.</p>
+  </div>
+</div>
+</div>
+      <div class="step step-depth-1" data-step-uuid="BCBB22F0-7ED6-0136-777C-06467EE270FA">
+      <h2 id="add-feedback-for-correct-answer-and-or-incorrect-answer-optional" tabindex="0">
+        <a class="screensteps-anchor" tabindex="-1" aria-hidden="true" data-turbo="false" href="#add-feedback-for-correct-answer-and-or-incorrect-answer-optional"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" enable-background="new 0 0 20 20" role="img" aria-labelledby="adu7ehjq60v7gukmlg1uoca95f8r5h8r"><title id="adu7ehjq60v7gukmlg1uoca95f8r5h8r">Heading anchor</title><path d="M7.859 14.691l-.81.805c-.701.695-1.843.695-2.545 0-.336-.334-.521-.779-.521-1.252s.186-.916.521-1.252l2.98-2.955c.617-.613 1.779-1.515 2.626-.675.389.386 1.016.384 1.403-.005.385-.389.383-1.017-.006-1.402-1.438-1.428-3.566-1.164-5.419.675l-2.98 2.956c-.715.709-1.108 1.654-1.108 2.658 0 1.006.394 1.949 1.108 2.658.736.73 1.702 1.096 2.669 1.096.967 0 1.934-.365 2.669-1.096l.811-.805c.389-.385.391-1.012.005-1.4-.387-.388-1.014-.39-1.403-.006zm9.032-11.484c-1.547-1.534-3.709-1.617-5.139-.197l-1.009 1.002c-.389.386-.392 1.013-.006 1.401.386.389 1.013.391 1.402.005l1.01-1.001c.74-.736 1.711-.431 2.346.197.336.335.522.779.522 1.252s-.186.917-.522 1.251l-3.18 3.154c-1.454 1.441-2.136.766-2.427.477-.389-.386-1.016-.383-1.401.005-.386.389-.384 1.017.005 1.401.668.662 1.43.99 2.228.99.977 0 2.01-.492 2.993-1.467l3.18-3.153c.712-.71 1.107-1.654 1.107-2.658 0-1.005-.395-1.949-1.109-2.659z"></path></svg></a>
+        Add feedback for correct answer and/or incorrect answer. (Optional)
+</h2>      <div class="image">
+  <img width="729" height="429" style="max-width: min(100%, 729px);" loading="lazy" data-action="click-&gt;photoswipe#open" data-photoswipe-target="photo" data-srcset="https://media.screensteps.com/image_assets/assets/002/142/821/original/a7a0c6c7-2036-4caf-9237-5200a09c56ab.png 729w" data-src="https://media.screensteps.com/image_assets/assets/002/142/821/original/a7a0c6c7-2036-4caf-9237-5200a09c56ab.png" data-sizes="auto" class="clickable lazyload" src="How%20do%20I%20create%20a%20calculated%20question__files/a7a0c6c7-2036-4caf-9237-5200a09c56ab.png" data-image-id="g8">
+</div>
+
+      <div class="instructions screensteps-textblock" tabindex="0">
+  <div id="text-content_BCBB4900-7ED6-0136-777E-06467EE270FA" class="text-block-content">
+    <p>Feedback is optional text available for the student to review 
+after the particular question is graded. For numeric response questions,
+ the feedback option is offered for correct and/or incorrect answers, if
+ desired.</p>
+<p><em>Note: To edit with Rich-Text Editor, click the hyperlink to open the full menu.</em></p>
+  </div>
+</div>
+</div>
+      <div class="step step-depth-1" data-step-uuid="BCBB5BE0-7ED6-0136-777F-06467EE270FA">
+      <h2 id="click-save" tabindex="0">
+        <a class="screensteps-anchor" tabindex="-1" aria-hidden="true" data-turbo="false" href="#click-save"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" enable-background="new 0 0 20 20" role="img" aria-labelledby="aiiftzla8ufjp9actob4qid71xp689hq"><title id="aiiftzla8ufjp9actob4qid71xp689hq">Heading anchor</title><path d="M7.859 14.691l-.81.805c-.701.695-1.843.695-2.545 0-.336-.334-.521-.779-.521-1.252s.186-.916.521-1.252l2.98-2.955c.617-.613 1.779-1.515 2.626-.675.389.386 1.016.384 1.403-.005.385-.389.383-1.017-.006-1.402-1.438-1.428-3.566-1.164-5.419.675l-2.98 2.956c-.715.709-1.108 1.654-1.108 2.658 0 1.006.394 1.949 1.108 2.658.736.73 1.702 1.096 2.669 1.096.967 0 1.934-.365 2.669-1.096l.811-.805c.389-.385.391-1.012.005-1.4-.387-.388-1.014-.39-1.403-.006zm9.032-11.484c-1.547-1.534-3.709-1.617-5.139-.197l-1.009 1.002c-.389.386-.392 1.013-.006 1.401.386.389 1.013.391 1.402.005l1.01-1.001c.74-.736 1.711-.431 2.346.197.336.335.522.779.522 1.252s-.186.917-.522 1.251l-3.18 3.154c-1.454 1.441-2.136.766-2.427.477-.389-.386-1.016-.383-1.401.005-.386.389-.384 1.017.005 1.401.668.662 1.43.99 2.228.99.977 0 2.01-.492 2.993-1.467l3.18-3.153c.712-.71 1.107-1.654 1.107-2.658 0-1.005-.395-1.949-1.109-2.659z"></path></svg></a>
+        Click Save.
+</h2>      <div class="image">
+  <img width="134" height="50" style="max-width: min(100%, 134px);" loading="lazy" data-action="click-&gt;photoswipe#open" data-photoswipe-target="photo" data-srcset="https://media.screensteps.com/image_assets/assets/002/142/837/original/179a5c15-f612-409f-9a02-62435fc623cb.png 134w" data-src="https://media.screensteps.com/image_assets/assets/002/142/837/original/179a5c15-f612-409f-9a02-62435fc623cb.png" data-sizes="auto" class="clickable lazyload" src="How%20do%20I%20create%20a%20calculated%20question__files/179a5c15-f612-409f-9a02-62435fc623cb.png" data-image-id="g9">
+</div>
+
+      <div class="instructions screensteps-textblock" tabindex="0">
+  <div id="text-content_BCBB7F80-7ED6-0136-7781-06467EE270FA" class="text-block-content">
+    <p>Click <strong>Save</strong> to save the question (or <strong>Cancel</strong> to exit).</p>
+  </div>
+</div>
+</div>
+
+
+    </div>
+
+
+  
+
+
+</div>
+  
+  
+</div>
+
+    </div>
+  </div>
+
+      <div class="screensteps-sidebar" role="complementary" aria-label="sidebar">
+        <div id="lesson-sidebar-info" class="screensteps-sidebar-widget">
+  <h3>Last Updated</h3><p>Mar 18, 2019</p>
+
+
+  <ul class="icon-links">
+      <li>  <turbo-frame data-controller="frame" id="pdf_button_lesson_954698">
+        <form action="/s/sakai_help/pdfs" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="BXqObxSMRWyBYdRr1urDcfW9HFbtQU0liuPs0w4ADZyGbi5AHQgWNg8UBNqB5wnhmMJPwddZqy3-foKVxA5BEg" autocomplete="off">
+      <input type="hidden" name="pdf[lesson_id]" id="pdf_lesson_id" value="954698" autocomplete="off">
+
+      <button name="button" type="submit" class="pdf lesson-pdf ico-download">
+        Generate Article PDF
+</button></form>
+</turbo-frame></li>
+
+  </ul>
+</div>
+
+    </div>
+
+</div>
+
+      </main>
+    </div>
+
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="How%20do%20I%20create%20a%20calculated%20question__files/88x31.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+    <template id="article_translations" data-translation-clipboard-copy="Click to copy" data-translation-clipboard-copied="Copied to clipboard!">
+</template>
+
+  
+  <script>
+//<![CDATA[
+  setTimeout(function(){if(document.body.className.indexOf('js-loaded')===-1){document.body.className+=' js-not-loaded';}},2000);
+
+//]]>
+</script>
+
+</body></html>

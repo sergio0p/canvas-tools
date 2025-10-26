@@ -52,19 +52,19 @@ xy - x² + log(y) - λ(x + 3y - 100)
 
 **Award 1 point if student describes ALL four steps:**
 
-1. Set up/write the Lagrangian
-2. Take partial derivatives (i.e., gradient) with respect to x, y, AND λ (MUST mention all three)
-3. Set derivatives (i.e. gradient) equal to zero (first-order conditions, FOCs)
-4. Solve the system of equations (FOCs) for x, y, AND λ
+Step 1: Set up/write the Lagrangian
+Step 2: Take partial derivatives (i.e., gradient) of the Lagrangian with respect to x, y, AND λ (MUST mention all three)
+Step 3: Set derivatives (i.e. gradient) equal to zero (first-order conditions, FOCs)
+Step 4: Solve the system of equations (FOCs) for x, y, AND λ
 
-**Award 0.5 points if student describes steps BUT omits reference to variables:**
+**Award 0.5 points if student describes steps 3 and 4 BUT omits reference to ALL variables x, y, AND λ in step 2:**
 * All four steps are present in correct order
 * Step 2 mentions taking derivatives or gradient BUT the student does NOT explicitly mention all three variables (x, y, λ) in steps 2 or 4
 * Common mistakes: saying "take derivatives with respect to x and y" without mentioning λ or "take derivatives"
 
-**Award 0 points if:**
+**Award 0 points otherwise:**
 
-* Missing any of the four steps
+* Steps are incorrect
 * Steps are in illogical order
 
 ## Output Format
@@ -88,6 +88,7 @@ Return ONLY a JSON object with this structure:
 **For Part 2:**
 
 * If correct (1 pt): Just say "Part 2: 1/1"
+* If partially correct (0.5 pt): Say "Part 2: 0.5/1 — [brief reason]"
 * If incorrect (0 pt): Say "Part 2: 0/1 — [brief reason]"
 
 Keep feedback concise. One sentence per part is enough. **Do not include model answers in the feedback.**
@@ -125,8 +126,8 @@ Student: "L = xy - x² + log(y) - λ(x + 3y - 100). Take derivatives wrt x and y
 
 Response:
 {
-  "grade": 1.0,
-  "feedback": "Part 1: 1/1\nPart 2: 0/1 — Must take derivative with respect to λ (the multiplier) as well"
+  "grade": 1.5,
+  "feedback": "Part 1: 1/1\nPart 2: 0.5/1 — Must take derivative with respect to λ (the multiplier) as well"
 }
 ```
 

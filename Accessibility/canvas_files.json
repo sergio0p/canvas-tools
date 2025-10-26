@@ -1,0 +1,27 @@
+{
+  "course_id": 97934,
+  "course_name": "ECON510.ALL.FA25",
+  "files": {
+    "BV86.pdf": {
+      "canvas_id": 12281714,
+      "canvas_filename": "BV86.pdf",
+      "display_name": "BV86.pdf",
+      "folder_id": 1473097,
+      "pages": 25
+    },
+    "name-correa-yildirim-2013-a-theory-of-charitable-fund-raising-with-costly-solicitations-1.pdf": {
+      "canvas_id": 11388404,
+      "canvas_filename": "name-correa-yildirim-2013-a-theory-of-charitable-fund-raising-with-costly-solicitations.pdf",
+      "display_name": "name-correa-yildirim-2013-a-theory-of-charitable-fund-raising-with-costly-solicitations-1.pdf",
+      "folder_id": 1482303,
+      "pages": 17
+    },
+    "name-correa-yildirim-2013-a-theory-of-charitable-fund-raising-with-costly-solicitations.pdf": {
+      "canvas_id": 11388402,
+      "canvas_filename": "name-correa-yildirim-2013-a-theory-of-charitable-fund-raising-with-costly-solicitations.pdf",
+      "display_name": "name-correa-yildirim-2013-a-theory-of-charitable-fund-raising-with-costly-solicitations.pdf",
+      "folder_id": 1482303,
+      "pages": 17
+    }
+  }
+}

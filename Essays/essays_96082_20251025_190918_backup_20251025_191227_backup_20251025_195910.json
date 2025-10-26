@@ -1,0 +1,19 @@
+{
+  "grading_results": [],
+  "skipped": [],
+  "json_filename": "essays_96082_20251025_190918.json",
+  "selected_course": {
+    "id": 96082,
+    "name": "ECON416.001.FA25"
+  },
+  "selected_assignment": {
+    "id": 746999,
+    "name": "Quiz 2"
+  },
+  "selected_question": {
+    "title": "Monkey and raisins - part 1",
+    "points_possible": 1.0,
+    "item_id": "414187"
+  },
+  "grading_config_filename": "/Users/sergiop/Dropbox/Scripts/Canvas/Essays/monkeys.json"
+}
